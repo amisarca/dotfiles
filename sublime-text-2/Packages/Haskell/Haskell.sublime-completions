@@ -1,0 +1,14 @@
+{
+  "scope": "source.haskell",
+
+  "completions":
+  [
+    "haskell",
+
+    { "trigger": "otherwise", "contents": "otherwise" },
+    { "trigger": "data", "contents": "data" },
+    { "trigger": "head", "contents": "head" },
+    { "trigger": "length", "contents": "length" },
+    { "trigger": "type", "contents": "type" }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "cmd": ["/home/andrei/.rbenv/bin/rbenv", "exec", "ruby", "$file"],
+  "selector": "source.ruby"
+}

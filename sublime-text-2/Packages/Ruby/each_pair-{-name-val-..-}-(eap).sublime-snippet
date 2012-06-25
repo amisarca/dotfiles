@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[each_pair ${1:{ |${2:name}, ${3:val}| $0 \}}]]></content>
+    <tabTrigger>eachp</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>each_pair { |name, val| .. }</description>
+</snippet>

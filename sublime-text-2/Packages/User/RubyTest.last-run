@@ -1,0 +1,4 @@
+{
+	"last_test_file": "manage_job_messages.feature",
+	"last_test_run": "cd '/home/andrei/code/rails/jobpt/' && rake cucumber features/manage_job_messages.feature -l 26"
+}

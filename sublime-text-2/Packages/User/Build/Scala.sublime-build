@@ -1,0 +1,4 @@
+{
+  "cmd": ["scala", "$file"],
+  "selector": "source.scala"
+}
