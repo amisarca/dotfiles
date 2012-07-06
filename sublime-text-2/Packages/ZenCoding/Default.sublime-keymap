@@ -215,7 +215,7 @@
   },
 {
     "keys": [
-      "ctrl+alt+n"
+      "ctrl+m"
     ],
     "__doc__": "Moves caret to matching opening or closing tag\n",
     "args": {
@@ -326,7 +326,7 @@
 },
 {
   "keys": [
-    "ctrl+shift+n"
+    "ctrl+shift+m"
   ],
   "__doc__": "Find and select HTML tag pair\n\n\n@param direction: Direction of pair matching: 'in' or 'out'. \n@type direction: str ",
   "args": {
