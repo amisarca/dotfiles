@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1341002385,
+	"auto_upgrade_last_run": 1341591076,
 	"installed_packages":
 	[
 		"Alignment",
@@ -10,6 +10,7 @@
 		"Prolog",
 		"RSpec",
 		"SFTP",
+		"SideBarEnhancements",
 		"SublimeTODO",
 		"Terminal",
 		"Theme - Soda",

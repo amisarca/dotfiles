@@ -1,4 +1,6 @@
 [
+	{ "keys": ["ctrl+q"], "command": "exit" },
+
 	{ "keys": ["ctrl+shift+n"], "command": "new_window" },
 	{ "keys": ["ctrl+shift+w"], "command": "close_window" },
 	{ "keys": ["ctrl+o"], "command": "prompt_open_file" },
@@ -20,6 +22,8 @@
 	{ "keys": ["delete"], "command": "right_delete" },
 	{ "keys": ["enter"], "command": "insert", "args": {"characters": "\n"} },
 	{ "keys": ["shift+enter"], "command": "insert", "args": {"characters": "\n"} },
+	{ "keys": ["keypad_enter"], "command": "insert", "args": {"characters": "\n"} },
+	{ "keys": ["shift+keypad_enter"], "command": "insert", "args": {"characters": "\n"} },
 
 	{ "keys": ["ctrl+z"], "command": "undo" },
 	{ "keys": ["ctrl+shift+z"], "command": "redo" },
@@ -27,13 +31,21 @@
 	{ "keys": ["ctrl+u"], "command": "soft_undo" },
 	{ "keys": ["ctrl+shift+u"], "command": "soft_redo" },
 
-	{ "keys": ["ctrl+shift+v"], "command": "paste_and_indent" },
 	{ "keys": ["shift+delete"], "command": "cut" },
 	{ "keys": ["ctrl+insert"], "command": "copy" },
 	{ "keys": ["shift+insert"], "command": "paste" },
+
+	// These two key bindings should replace the above three if you'd prefer
+	// the traditional X11 behavior of shift+insert pasting from the primary
+	// selection. The above CUA keys are the default, to match most GTK
+	// applications.
+	//{ "keys": ["shift+insert"], "command": "paste", "args": {"clipboard": "selection"} },
+	//{ "keys": ["shift+delete"], "command": "right_delete" },
+
 	{ "keys": ["ctrl+x"], "command": "cut" },
 	{ "keys": ["ctrl+c"], "command": "copy" },
 	{ "keys": ["ctrl+v"], "command": "paste" },
+	{ "keys": ["ctrl+shift+v"], "command": "paste_and_indent" },
 
 	{ "keys": ["left"], "command": "move", "args": {"by": "characters", "forward": false} },
 	{ "keys": ["right"], "command": "move", "args": {"by": "characters", "forward": true} },
@@ -54,8 +66,8 @@
 	{ "keys": ["alt+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
 	{ "keys": ["alt+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
 
-	{ "keys": ["ctrl+alt+up"], "command": "select_lines", "args": {"forward": false} },
-	{ "keys": ["ctrl+alt+down"], "command": "select_lines", "args": {"forward": true} },
+	{ "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
 
 	{ "keys": ["pageup"], "command": "move", "args": {"by": "pages", "forward": false} },
 	{ "keys": ["pagedown"], "command": "move", "args": {"by": "pages", "forward": true} },
@@ -70,7 +82,6 @@
 	{ "keys": ["ctrl+end"], "command": "move_to", "args": {"to": "eof", "extend": false} },
 	{ "keys": ["ctrl+shift+home"], "command": "move_to", "args": {"to": "bof", "extend": true} },
 	{ "keys": ["ctrl+shift+end"], "command": "move_to", "args": {"to": "eof", "extend": true} },
-
 
 	{ "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 1.0 } },
 	{ "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -1.0 } },
@@ -181,8 +192,8 @@
 	{ "keys": ["insert"], "command": "toggle_overwrite" },
 
 	{ "keys": ["ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
-	{ "keys": ["ctrl+d"], "command": "find_under_expand" },
-	{ "keys": ["ctrl+k", "ctrl+d"], "command": "find_under_expand_skip" },
+	{ "keys": ["alt+w"], "command": "find_under_expand" },
+	{ "keys": ["ctrl+k", "alt+w"], "command": "find_under_expand_skip" },
 	{ "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
 	{ "keys": ["ctrl+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },
 	{ "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "brackets"} },
@@ -191,8 +202,8 @@
 
 	{ "keys": ["alt+."], "command": "close_tag" },
 
-	{ "keys": ["ctrl+q"], "command": "toggle_record_macro" },
-	{ "keys": ["ctrl+shift+q"], "command": "run_macro" },
+	{ "keys": ["ctrl+alt+q"], "command": "toggle_record_macro" },
+	{ "keys": ["ctrl+alt+shift+q"], "command": "run_macro" },
 
 	{ "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line.sublime-macro"} },
 	{ "keys": ["ctrl+shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line Before.sublime-macro"} },
@@ -214,7 +225,7 @@
 	{ "keys": ["ctrl+shift+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":true} },
 	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find"} },
 	{ "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace"} },
-	{ "keys": ["ctrl+shift+h"], "command": "replace_next" },
+	{ "keys": ["f4"], "command": "replace_next" },
 	{ "keys": ["f3"], "command": "find_next" },
 	{ "keys": ["shift+f3"], "command": "find_prev" },
 	{ "keys": ["ctrl+f3"], "command": "find_under" },
@@ -223,15 +234,15 @@
 	{ "keys": ["ctrl+e"], "command": "slurp_find_string" },
 	{ "keys": ["ctrl+shift+e"], "command": "slurp_replace_string" },
 	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
-	{ "keys": ["f4"], "command": "next_result" },
-	{ "keys": ["shift+f4"], "command": "prev_result" },
+	{ "keys": ["f5"], "command": "next_result" },
+	{ "keys": ["shift+f5"], "command": "prev_result" },
 
 	{ "keys": ["f6"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
 	{ "keys": ["ctrl+f6"], "command": "next_misspelling" },
 	{ "keys": ["ctrl+shift+f6"], "command": "prev_misspelling" },
 
-	{ "keys": ["ctrl+shift+up"], "command": "swap_line_up" },
-	{ "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
 
 	{ "keys": ["ctrl+backspace"], "command": "delete_word", "args": { "forward": false } },
 	{ "keys": ["ctrl+shift+backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard BOL.sublime-macro"} },
@@ -243,12 +254,12 @@
 	{ "keys": ["ctrl+shift+/"], "command": "toggle_comment", "args": { "block": true } },
 
 	{ "keys": ["ctrl+j"], "command": "join_lines" },
-	{ "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+shift+down"], "command": "duplicate_line" },
 
 	{ "keys": ["ctrl+`"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
-	{ "keys": ["ctrl+space"], "command": "auto_complete" },
-	{ "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+	{ "keys": ["alt+/"], "command": "auto_complete" },
+	{ "keys": ["alt+/"], "command": "replace_completion_with_auto_complete", "context":
 		[
 			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
 			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
@@ -521,7 +532,7 @@
 	{ "keys": ["ctrl+shift+2"], "command": "move_to_group", "args": { "group": 1 } },
 	{ "keys": ["ctrl+shift+3"], "command": "move_to_group", "args": { "group": 2 } },
 	{ "keys": ["ctrl+shift+4"], "command": "move_to_group", "args": { "group": 3 } },
-	{ "keys": ["ctrl+0"], "command": "focus_side_bar" },
+	{ "keys": ["ctrl+\\"], "command": "focus_side_bar" },
 
 	{ "keys": ["alt+1"], "command": "select_by_index", "args": { "index": 0 } },
 	{ "keys": ["alt+2"], "command": "select_by_index", "args": { "index": 1 } },
@@ -540,7 +551,7 @@
 	{ "keys": ["ctrl+shift+f2"], "command": "clear_bookmarks" },
 	{ "keys": ["alt+f2"], "command": "select_all_bookmarks" },
 
-	{ "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
 
 	{ "keys": ["alt+q"], "command": "wrap_lines" },
 
@@ -559,9 +570,7 @@
 
 	{ "keys": ["ctrl++"], "command": "increase_font_size" },
 	{ "keys": ["ctrl+="], "command": "increase_font_size" },
-	{ "keys": ["ctrl+keypad_plus"], "command": "increase_font_size" },
 	{ "keys": ["ctrl+-"], "command": "decrease_font_size" },
-	{ "keys": ["ctrl+keypad_minus"], "command": "decrease_font_size" },
 
 	{ "keys": ["alt+shift+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
 

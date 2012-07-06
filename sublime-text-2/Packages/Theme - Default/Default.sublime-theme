@@ -228,13 +228,15 @@
     },
     {
         "class": "disclosure_button_control",
-        "layer0.texture": "Theme - Default/arrow_right.png",
+        // "layer0.texture": "Theme - Default/arrow_right.png",
+        "layer0.texture": "Theme - Default/group-closed-hover3.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Default/arrow_right_over.png",
+        // "layer1.texture": "Theme - Default/arrow_right_over.png",
+        "layer1.texture": "Theme - Default/group-closed-hover3.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
-        "content_margin": [9, 7, 8, 6]
+        "content_margin": [16, 7, 8, 6]
     },
     {
         "class": "disclosure_button_control",
@@ -249,8 +251,10 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Default/arrow_down.png",
-        "layer1.texture": "Theme - Default/arrow_down_over.png"
+        "layer0.texture": "Theme - Default/group-open2.png",
+        "layer1.texture": "Theme - Default/group-open2.png"
+        // "layer0.texture": "Theme - Default/arrow_down.png",
+        // "layer1.texture": "Theme - Default/arrow_down_over.png"
     },
     {
         "class": "table_row",
@@ -331,7 +335,8 @@
     },
     {
         "class": "sidebar_label",
-        "color": [230, 230, 230]
+        "color": [230, 230, 230],
+        "content_margin": [1,1,10,10]
         // "color": [0, 0, 0]
         // , "shadow_color": [250, 250, 250], "shadow_offset": [0, 0]
     },
@@ -363,6 +368,56 @@
     {
         "class": "status_button",
         "min_size": [100, 0]
+    },
+    // Sidebar heading
+    {
+        "class": "sidebar_heading",
+        "color": [250, 250, 250],
+        "font.bold": true,
+        "shadow_color": [0, 0, 0],
+        "shadow_offset": [0, 1]
+    },
+    // Sidebar entry
+    {
+        "class": "sidebar_label",
+        "color": [250, 250, 250],
+        "shadow_offset": [0, 0]
+    },
+    // Sidebar folder entry
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "color": [255, 255, 255],
+        "shadow_color": [0, 0, 0],
+        "shadow_offset": [0, 1]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+        "color": [255, 255, 255]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "settings": ["bold_folder_labels"],
+        "font.bold": true
+    },
+    // Sidebar entry selected
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255],
+        "shadow_color": [0, 0, 0],
+        "shadow_offset": [0, 1]
+    },
+
+    // Sidebar entry hovered
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [255, 255, 255],
+        "shadow_color": [0, 0, 0],
+        "shadow_offset": [0, 1]
     },
 
     /** Quick Panel **/
