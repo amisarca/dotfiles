@@ -350,7 +350,8 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [255, 255, 255],
+        // "layer0.tint": [255, 255, 255],
+        "layer0.tint": [70, 74, 91],
         "layer0.opacity": 1.0
     },
 
@@ -467,7 +468,6 @@
     // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.tint": [90, 94, 111], // for Blackboard
         //"layer0.texture": "Theme - Soda/Soda Light/sidebar-row-selected.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
