@@ -9,7 +9,7 @@
 		<dict>
 			<key>settings</key>
 			<dict>
-				<key>background</key> <!-- #232323 -->
+				<key>background</key>
 				<string>#0C1021</string>
 				<key>caret</key>
 				<string>#FFFFFFA6</string>
@@ -52,7 +52,7 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#212845</string>
+        <string>#191D2E</string>
       </dict>
     </dict>
 		<dict>
@@ -83,7 +83,7 @@
 		</dict>
     <dict>
       <key>name</key>
-      <string>Special function call</string>
+      <string>Special function call (SASS)</string>
       <key>scope</key>
       <string>special.function.call</string>
       <key>settings</key>

@@ -83,7 +83,7 @@
 		</dict>
     <dict>
       <key>name</key>
-      <string>Special function call</string>
+      <string>Special function call (SASS)</string>
       <key>scope</key>
       <string>special.function.call</string>
       <key>settings</key>

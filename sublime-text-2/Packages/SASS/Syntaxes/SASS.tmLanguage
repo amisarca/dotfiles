@@ -23,7 +23,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(url|image_url|image-url)\b</string>
+			<string>\b(url|image_url|image-url|darken)\b</string>
 			<key>name</key>
 			<string>special.function.call.sass</string>
 		</dict>

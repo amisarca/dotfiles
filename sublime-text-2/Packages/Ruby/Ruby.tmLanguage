@@ -102,7 +102,7 @@
 	<string>Ruby</string>
 	<key>patterns</key>
 	<array>
-        <dict>
+    <dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
