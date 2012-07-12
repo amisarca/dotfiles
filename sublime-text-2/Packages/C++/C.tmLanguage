@@ -505,7 +505,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.C99.c</string> <!-- support.function -->
+							<string>C99.c</string> <!-- support.function --> <!-- entity.name.C99.c --> <!-- method call -->
 						</dict>
 					</dict>
 					<key>match</key>
@@ -522,7 +522,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.any-method.c</string>
+							<string>entity.name.any-method.c</string> <!-- entity.name.any-method.c --> <!-- method call -->
 						</dict>
 						<key>3</key>
 						<dict>

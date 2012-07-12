@@ -81,6 +81,19 @@
 				<string>#CC7833</string>
 			</dict>
 		</dict>
+    <dict>
+      <key>name</key>
+      <string>Special function call</string>
+      <key>scope</key>
+      <string>special.function.call</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#DA4939</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Function (definition)</string>

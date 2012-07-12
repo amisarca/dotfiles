@@ -406,7 +406,7 @@
 			<key>match</key>
 			<string>\b[A-Z]\w*\b</string>
 			<key>name</key>
-			<string>constant.other.haskell</string>
+			<string>support.type.prelude.haskell</string>
 		</dict>
 		<dict>
 			<key>include</key>

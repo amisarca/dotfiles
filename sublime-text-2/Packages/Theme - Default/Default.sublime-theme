@@ -381,7 +381,7 @@
     {
         "class": "sidebar_label",
         "color": [250, 250, 250],
-        "shadow_offset": [0, 0]
+        "shadow_offset": [0, 1]
     },
     // Sidebar folder entry
     {

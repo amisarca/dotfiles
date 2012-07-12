@@ -279,6 +279,8 @@ class ZenListener(sublime_plugin.EventListener):
     def css_property_values(self, view, prefix, pos):
         prefix = css_prefixer(view, pos)
         prop   = find_css_property(view, pos)
+        print `prop`
+
         # These `values` are sourced from all the fully specified zen abbrevs
         # `d:n` => `display:none` so `display:n{tab}` will yield `none`
         values = css_property_values.get(prop)
@@ -332,8 +334,8 @@ class ZenListener(sublime_plugin.EventListener):
         for sub_selector, handler in COMPLETIONS:
             h_name = handler.__name__
             if h_name in black_list: continue
-            if view.match_selector(pos,  sub_selector):
-
+            if ( view.match_selector(pos,  sub_selector) or
+                 view.match_selector(pos -1,  sub_selector )):
                 c = h_name, prefix
                 oq_debug('handler: %r prefix: %r' % c)
                 oq_debug('pos: %r scope: %r' % (pos, view.syntax_name(pos)))
@@ -344,7 +346,7 @@ class ZenListener(sublime_plugin.EventListener):
                     if h_name == 'css_selectors':
                         return completions
                     else:
-                        return (completions, NO_BUF | NO_PLUG)
+                        return completions#, # NO_BUF | NO_PLUG)
 
 
         do_zen_expansion = True
@@ -372,7 +374,7 @@ class ZenListener(sublime_plugin.EventListener):
 
                              [(abbr, result, result)],
                              # 0,
-                             NO_BUF| NO_PLUG
+                             NO_BUF #| NO_PLUG
                         )
 
             except ZenInvalidAbbreviation:
@@ -402,7 +404,8 @@ class ZenListener(sublime_plugin.EventListener):
             oq_debug('css_property exact: %r prefix: %r properties: %r' % (
                       bool(exacts), prefix, properties ))
 
-            return [ (prefix, v, '%s:$1;' %  v) for v in properties ]
+            return ([ (prefix, v +'\t'+'zen:css_properties', '%s:$1;' %  v) for v in properties ],
+                     NO_BUF)
         else:
             return []
 
@@ -413,31 +416,58 @@ class ZenListener(sublime_plugin.EventListener):
             try:            result = expand_abbr(abbr)
             except          ZenInvalidAbbreviation: return None
             if result:
-                return result
+                return abbr, result
 
     def on_query_context(self, view, key, op, operand, match_all):
-        if key == "return_false":
-            return False
-
-        elif key == 'is_zen':
+        # TODO: is_zen, honour match_all, so that the extracted prefix is
+        # the same on all sides
+        if key == 'is_zen':
             debug('checking iz_zen context')
             context = ZenListener.check_context(view)
 
             if context is not None:
-                if op == sublime.OP_REGEX_MATCH:
-                    # this is a quick hack to allow the default tab binding
-                    # to work
-                    word_separators = view.settings().get('word_separators')
-                    view.settings().set('word_separators', '')
-                    sublime.set_timeout(
-                        lambda: view.settings().set (
-                                'word_separators', word_separators), 0)
-                    return False
+                abbr, result = context
+
+                if match_all == True:
+                    n = len(abbr)
+
+                    for sel in view.sel():
+                        a = view.substr(sublime.Region(sel.b-n, sel.b))
+                        if not a == abbr:
+                            return False
+
+                view.settings().set("zen_abbrev_cache", [abbr, result])
                 debug('is_zen context enabled')
                 return True
             else:
                 debug('is_zen context disabled')
                 return False
+
+
+################################################################################
+
+class ExpandZenAbbreviationOnTab(sublime_plugin.TextCommand):
+    """
+
+    This command is for when, on `<tab>`, you want to expand abbreviations in
+    contexts that on_query_completion will not, namely when the characters
+    preceding the cursor are word separators.
+
+    The default zen actions are not multi select aware.
+
+    """
+    def run(self, edit):
+        view         = self.view
+        settings     = view.settings()
+
+        abbr, result = settings.get("zen_abbrev_cache")
+        settings.erase('zen_abbrev_cache')
+
+        n            = len(abbr)
+        for sel in view.sel():
+            view.erase(edit, sublime.Region(sel.b-n, sel.b))
+
+        view.run_command('insert_snippet', {"contents": result})
 
 ################################################################################
 
@@ -445,9 +475,10 @@ class SetHtmlSyntaxAndInsertSkel(sublime_plugin.TextCommand):
     def run(self, edit, doctype=None):
         view     = self.view
         syntax   = zen_settings.get( 'default_html_syntax',
-                                     'Packages/HTML/HTML.tmlanguage' )
+                                     'Packages/HTML/HTML.tmLanguage' )
         view.set_syntax_file(syntax)
         view.run_command( 'insert_snippet',
-                          {'contents': expand_abbr('html:%s' % doctype)} )
+                {'contents': expand_abbr('html:%s' % doctype)} )
 
-################################################################################
+
+################################################################################A

@@ -841,11 +841,11 @@
 		<key>tag-generic-attribute</key>
 		<dict>
 			<key>match</key>
-			<string>\b([a-zA-Z\-:]+)</string>
+			<string>\b([a-zA-Z\-:]+=)</string>
 			<key>name</key>
 			<string>entity.other.attribute-name.html</string>
 		</dict>
-		<key>tag-id-attribute</key>
+		<!--key>tag-id-attribute</key>
 		<dict>
 			<key>begin</key>
 			<string>\b(id)\b\s*(=)</string>
@@ -854,7 +854,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.attribute-name.id.html</string>
+					<string>id.html</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -943,7 +943,7 @@
 					</array>
 				</dict>
 			</array>
-		</dict>
+		</dict> -->
 		<key>tag-stuff</key>
 		<dict>
 			<key>patterns</key>

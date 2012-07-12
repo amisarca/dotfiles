@@ -25,7 +25,7 @@
 			<key>match</key>
 			<string>\b(url|image_url|image-url)\b</string>
 			<key>name</key>
-			<string>support.function.sass</string>
+			<string>special.function.call.sass</string>
 		</dict>
         <dict>
 			<key>match</key>
@@ -144,7 +144,7 @@
 					<key>begin</key>
 					<string>(?=[A-Za-z_][A-Za-z0-9_-]*)</string>
 					<key>contentName</key>
-					<string>support.function.sass</string>
+					<string>special.function.call.sass</string>
 					<key>end</key>
 					<string>(?![A-Za-z0-9_-])</string>
 					<key>patterns</key>
@@ -178,7 +178,7 @@
 			<key>match</key>
 			<string>\.[a-zA-Z0-9_-]+</string>
 			<key>name</key>
-			<string>entity.other.attribute-name.id.sass</string>
+			<string>entity.name.function.id.sass</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -226,7 +226,7 @@
 			<key>match</key>
 			<string>\+[-\w]+</string>
 			<key>name</key>
-			<string>entity.other.attribute-name.tag.pseudo-class</string>
+			<string>entity.name.function.tag.pseudo-class</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -258,7 +258,7 @@
 			<key>match</key>
 			<string>:(before|after|first-child|last-child|first-line|first-letter|link|focus|lang|hover|active|visited)</string>
 			<key>name</key>
-			<string>entity.other.attribute-name.tag.pseudo-class</string>
+			<string>entity.name.function.pseudo-class</string>
 		</dict>
 		<dict>
 			<key>match</key>

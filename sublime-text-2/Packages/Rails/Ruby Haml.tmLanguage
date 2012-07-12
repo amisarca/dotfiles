@@ -126,7 +126,7 @@
 					<key>match</key>
 					<string>\.[\w-]+</string>
 					<key>name</key>
-					<string>entity.name.tag.id.haml</string>
+					<string>entity.name.function.id.haml</string>
 				</dict>
 				<dict>
 					<key>match</key>
