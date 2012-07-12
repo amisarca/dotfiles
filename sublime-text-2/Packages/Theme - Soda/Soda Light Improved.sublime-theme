@@ -350,7 +350,8 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [255, 255, 255],
+        // "layer0.tint": [255, 255, 255],
+        "layer0.tint": [70, 74, 91],
         "layer0.opacity": 1.0
     },
 
@@ -448,96 +449,100 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        "layer0.texture": "Theme - Soda/Soda Light/sidebar-bg.png",
+        "layer0.tint": [172, 172, 172],
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [1, 1, 2, 1],
+        "layer0.draw_center": false,
+        "layer0.inner_margin": [0, 0, 1, 0],
         "content_margin": [0, 0, 1, 0]
     },
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 3],
-        "indent": 15,
-        "indent_offset": 15,
-        "indent_top_level": false
+        "row_padding": [34, 3],
+        "indent": 10,
+        "indent_offset": 2,
+        "indent_top_level": false,
+        "layer0.tint": [70, 74, 91],
+        "layer0.opacity": 1.0
     },
     // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - Soda/Soda Light/sidebar-row-selected.png",
+        //"layer0.texture": "Theme - Soda/Soda Light/sidebar-row-selected.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
+    },
+    {
+        "class": "tree_row",
+        "attributes": ["hover"],
+        "layer0.opacity": 0.1,
+        "layer0.tint": [ 255, 255, 255 ]
     },
     // Sidebar row selected
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.2,
+        "layer0.tint": [255, 255, 255]
     },
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [110, 126, 141],
+        "color": [225, 225, 225],
         "font.bold": true,
-        "shadow_color": [249, 250, 252],
+        "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 1]
+    },
+    {
+        "class": "sidebar_heading",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255],
+        "shadow_color": [34, 94, 145]
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [0, 0, 0],
-        "shadow_color": [241, 244, 247],
+        "color": [230, 230, 230],
+        "shadow_color": [0, 0, 0],
+        "shadow_offset": [0, 1]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255],
+        // "shadow_color": [34, 94, 145],
         "shadow_offset": [0, 1]
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [70, 86, 102]
-    },
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        "color": [45, 56, 68]
-    },
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "settings": ["bold_folder_labels"],
-        "color": [110, 126, 141],
-        "font.bold": true
-    },
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        "settings": ["bold_folder_labels"],
-        "color": [81, 92, 103]
-    },
-    // Sidebar entry selected
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [255, 255, 255],
-        "shadow_color": [34, 94, 145],
+        "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 1]
     },
-
-//
-// SIDEBAR - OPEN FILE ICONS
-//
-
     // Sidebar file close
     {
         "class": "close_button",
         "layer0.texture": "Theme - Soda/Soda Light/file-close.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": 0,
+        "layer1.texture": "Theme - Soda/Soda Light/file-close-selected.png",
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": 0,
         "content_margin": [8, 8]
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1.0,
+        "layer1.opacity": 0.0
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
     },
     // Sidebar file dirty
     {
@@ -564,51 +569,30 @@
         "attributes": ["hover"],
         "layer0.texture": "Theme - Soda/Soda Light/file-close-hover.png"
     },
-    {
-        "class": "close_button",
-        "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/file-close-selected.png"
-    },
-
-//
-// SIDEBAR - GENERAL FILE ICONS
-//
-
     // Sidebar group closed
     {
         "class": "disclosure_button_control",
-        "content_margin": [8, 8],
-        "layer0.texture": "Theme - Soda/Soda Light/group-closed.png",
+        "content_margin": [17, 8, 17, 7],
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_closed_selected.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/group-closed-hover.png"
-    },
-    {
-        "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/group-closed-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_closed_selected.png"
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Soda/Soda Light/group-open.png"
-    },
-    {
-        "class": "disclosure_button_control",
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/group-open-hover.png"
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_open_selected.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/group-open-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_open_selected.png"
     },
 
 //

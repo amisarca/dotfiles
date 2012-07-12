@@ -9,7 +9,7 @@
 
 
     // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)
-    "theme": "Soda Light3.sublime-theme",
+    "theme": "Soda Light Improved.sublime-theme",
 
     // Note that the font_face and font_size are overriden in the platform
     // specific settings file, for example, "Preferences (Linux).sublime-settings".
