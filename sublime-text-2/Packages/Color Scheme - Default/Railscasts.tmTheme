@@ -255,19 +255,43 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>String interpolation</string>
-			<key>scope</key>
-			<string>constant.character.escaped, constant.character.escape, string source, string source.ruby</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#519F50</string>
-			</dict>
-		</dict>
+    <dict>
+      <key>name</key>
+      <string>String interpolation</string>
+      <key>scope</key>
+      <string>constant.character.escaped, constant.character.escape</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#519F50</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Embedded code markers</string>
+      <key>scope</key>
+      <string>punctuation.section.embedded.ruby</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#519F50</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>String source interpolation</string>
+      <key>scope</key>
+      <string>string source</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#E6E1DC</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Diff Add</string>

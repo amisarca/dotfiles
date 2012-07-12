@@ -28,7 +28,8 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.function.coffee</string>
+          <!-- <string>variable.parameter.function.coffee</string> -->
+					<string>function.coffee</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -319,7 +320,8 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.function.coffee</string>
+          <!-- <string>variable.paramete.function.coffee</string> -->
+					<string>function.coffee</string>
 				</dict>
 				<key>5</key>
 				<dict>
