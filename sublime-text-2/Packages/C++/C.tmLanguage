@@ -161,7 +161,7 @@
 		<dict>
 			<key>begin</key>
 			<string>(?x)
-        		^\s*\#\s*(define)\s+             # define
+        		^\s*(\#define)\s+             # define
         		((?&lt;id&gt;[a-zA-Z_][a-zA-Z0-9_]*))  # macro name
         		(?:                              # and optionally:
         		    (\()                         # an open parenthesis
@@ -251,10 +251,15 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*#\s*(include|import)\b\s+</string>
+			<string>^\s*(#)\s*(include|import)\b\s+</string>
 			<key>captures</key>
 			<dict>
-				<key>1</key>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.control.import.include.c</string>
+        </dict>
+				<key>2</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.control.import.include.c</string>
@@ -328,10 +333,15 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*#\s*(define|defined|elif|else|if|ifdef|ifndef|line|pragma|undef)\b</string>
+			<string>^\s*(#)\s*(define|defined|elif|else|if|ifdef|ifndef|line|pragma|undef)\b</string>
 			<key>captures</key>
 			<dict>
-				<key>1</key>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.control.import.c</string>
+        </dict>
+				<key>2</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.control.import.c</string>
@@ -505,7 +515,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>C99.c</string> <!-- support.function --> <!-- entity.name.C99.c --> <!-- method call -->
+							<string>support.function.C99.c</string> <!-- support.function --> <!-- entity.name.C99.c --> <!-- function/method call -->
 						</dict>
 					</dict>
 					<key>match</key>
@@ -522,7 +532,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.any-method.c</string> <!-- entity.name.any-method.c --> <!-- method call -->
+							<string>any-method.c</string> <!-- entity.name.any-method.c --> <!-- function/method call -->
 						</dict>
 						<key>3</key>
 						<dict>
