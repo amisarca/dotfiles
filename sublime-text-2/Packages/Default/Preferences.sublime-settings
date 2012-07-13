@@ -5,7 +5,7 @@
 // example, in Packages/Python/Python.sublime-settings for python files.
 {
     // Sets the colors used within the text area
-    "color_scheme": "Packages/Color Scheme - Default/Railscasts.tmTheme",
+    "color_scheme": "Packages/Color Scheme - Default/Blackboard Improved.tmTheme",
 
 
     // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)

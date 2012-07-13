@@ -459,7 +459,7 @@
     {
         "class": "sidebar_tree",
         "row_padding": [34, 3],
-        "indent": 10,
+        "indent": 12,
         "indent_offset": 2,
         "indent_top_level": false,
         "layer0.tint": [70, 74, 91],
@@ -491,6 +491,7 @@
         "color": [225, 225, 225],
         "font.bold": true,
         "shadow_color": [0, 0, 0],
+        "font.size": 12,
         "shadow_offset": [0, 1]
     },
     {
@@ -501,8 +502,10 @@
     },
     // Sidebar entry
     {
+        "font.face": "Ubuntu",
+        "font.size": 13,
         "class": "sidebar_label",
-        "color": [230, 230, 230],
+        "color": [225, 225, 255],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 1]
     },
@@ -510,14 +513,14 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [255, 255, 255],
-        // "shadow_color": [34, 94, 145],
+        "shadow_color": [34, 94, 145],
         "shadow_offset": [0, 1]
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [255, 255, 255],
+        "color": [240, 240, 240],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 1]
     },

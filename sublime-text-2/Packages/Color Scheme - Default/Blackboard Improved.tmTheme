@@ -63,7 +63,7 @@
       <key>settings</key>
       <dict>
         <key>fontStyle</key>
-        <string>underline</string>
+        <string>italic</string>
         <key>foreground</key>
         <string>#AEAEAE</string>
       </dict>
@@ -115,11 +115,24 @@
 			<key>settings</key>
 			<dict>
         <key>fontStyle</key>
-        <string>Italic</string>
+        <string></string>
         <key>foreground</key>
         <string>#FF6400</string>
       </dict>
 		</dict>
+    <dict>
+      <key>name</key>
+      <string>Superclass</string>
+      <key>scope</key>
+      <string>entity.other.inherited-class</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string>italic</string>
+        <key>foreground</key>
+        <string>#7F90AA</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Number</string>
@@ -130,7 +143,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#D8FA3C</string>
+				<string>#61CE3C</string>
 			</dict>
 		</dict>
     <dict>
@@ -170,6 +183,19 @@
         <string></string>
         <key>foreground</key>
         <string>#D8FA3C</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Support</string>
+      <key>scope</key>
+      <string>support</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#8DA6CE</string>
       </dict>
     </dict>
 		<dict>
