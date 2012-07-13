@@ -37,7 +37,7 @@
         </dict>
       </dict>
       <key>match</key>
-      <string>(?&gt;([a-zA-Z][a-zA-Z\-_]*)(?&gt;[?!])?)(:)(?!:)</string>
+      <string>(?&gt;([a-zA-Z][a-zA-Z\-_]*)(?&gt;[?!])?)(:)(?!:)\s+</string>
     </dict>
 		<dict>
 			<key>match</key>
