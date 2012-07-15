@@ -1,9 +1,0 @@
-<snippet>
-  <content><![CDATA[
-before_filter :${1:filter}${2:, ${3:only}: [:${4:action}]}
-]]></content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>bf</tabTrigger>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.ruby</scope>
-</snippet>

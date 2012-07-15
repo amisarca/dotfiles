@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_INLINE}${1:@${2:model}}.each do${3/(^.+$)|^$/(?1: |)/}${3:variable}${3/(^.+$)|^$/(?1:|)/}${TM_RAILS_TEMPLATE_END_RUBY_INLINE}
-	$4
-${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}$0]]></content>
-    <tabTrigger>each</tabTrigger>
-    <scope>text.html.ruby, text.haml</scope>
-    <description>if condition</description>
-</snippet>

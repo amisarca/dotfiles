@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[validates :${1:attribute}]]></content>
-    <tabTrigger>val</tabTrigger>
-    <scope>source.ruby.rails</scope>
-    <description>validates</description>
-</snippet>

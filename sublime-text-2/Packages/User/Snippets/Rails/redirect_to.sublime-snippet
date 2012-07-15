@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-redirect_to ${1:path}${2:, ${3:notice}: "${4:message}"}
-]]></content>
-  <tabTrigger>red</tabTrigger>
-  <scope>source.ruby</scope>
-</snippet>

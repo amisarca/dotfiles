@@ -1,5 +1,0 @@
-{
-  "cmd": ["g++ -O2 -W -Wall -static -lm -o executables/${file_base_name} ${file} && ./executables/${file_base_name}"],
-  "selector": "source.c++",
-  "shell": true
-}
