@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[case ${1:a} of
+  ${2:val} -> ${<3:instruction>
+
+  </3:instruction>}]]></content>
+    <tabTrigger>case</tabTrigger>
+    <scope>source.haskell</scope>
+    <description>Case</description>
+</snippet>

@@ -1,0 +1,19 @@
+{
+	"auto_upgrade_last_run": 1342376615,
+	"installed_packages":
+	[
+		"Alignment",
+		"ColorPicker",
+		"FileDiffs",
+		"Git",
+		"Package Control",
+		"Prolog",
+		"RSpec",
+		"SFTP",
+		"SideBarEnhancements",
+		"SublimeTODO",
+		"Terminal",
+		"Theme - Soda",
+		"ZenCoding"
+	]
+}

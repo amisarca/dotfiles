@@ -1,0 +1,13 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Railscasts.tmTheme",
+	"font_size": 11.0,
+  "todo": {
+    "folder_exclude_patterns": [
+        "coverage",
+        "tmp",
+        "vendor",
+        "log",
+        "doc"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[expect(${1:a}).${2:toEqual} ${3:2}]]></content>
+    <tabTrigger>ex</tabTrigger>
+    <scope>source.jasmine_coffee</scope>
+    <description>expect</description>
+</snippet>

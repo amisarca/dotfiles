@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:"${2:link text...}"}, ${3:link path}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}]]></content>
+    <tabTrigger>lt</tabTrigger>
+    <scope>text.html.ruby, text.haml</scope>
+    <description>link_to (path)</description>
+</snippet>
