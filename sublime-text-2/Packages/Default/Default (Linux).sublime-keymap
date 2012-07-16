@@ -218,10 +218,10 @@
   { "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
   { "keys": ["ctrl+alt+p"], "command": "prompt_select_project" },
   { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-  { "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+  { "keys": ["ctrl+i"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
   { "keys": ["ctrl+;"], "command": "show_overlay", "args": {"overlay": "goto", "text": "#"} },
 
-  { "keys": ["ctrl+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },
+  { "keys": ["ctrl+g"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },
   { "keys": ["ctrl+shift+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":true} },
   { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find"} },
   { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace"} },

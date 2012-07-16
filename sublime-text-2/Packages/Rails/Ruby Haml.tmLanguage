@@ -18,6 +18,43 @@
   <array>
     <dict>
       <key>begin</key>
+      <string>#\{</string>
+      <key>captures</key>
+      <dict>
+        <key>0</key>
+        <dict>
+          <key>name</key>
+          <string>punctuation.erb.embedded.ruby</string>
+        </dict>
+      </dict>
+      <key>end</key>
+      <string>\}</string>
+      <key>name</key>
+      <string>source.ruby.rails.embedded.html</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>captures</key>
+          <dict>
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>punctuation.definition.comment.ruby</string>
+            </dict>
+          </dict>
+          <key>match</key>
+          <string>(#).*?(?=-?%&gt;)</string>
+          <key>name</key>
+          <string>comment.line.number-sign.ruby</string>
+        </dict>
+        <dict>
+          <key>include</key>
+          <string>source.ruby.rails</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>begin</key>
       <string>^\s*==</string>
       <key>contentName</key>
       <string>string.quoted.double.ruby</string>
@@ -238,12 +275,12 @@
               <string>source.ruby.embedded.source.empty</string>
             </dict>
           </dict>
-          <key>match</key>
+          <!-- <key>match</key>
           <string>#\{(\})</string>
           <key>name</key>
-          <string>source.ruby.embedded.source</string>
+          <string>source.ruby.embedded.source</string> -->
         </dict>
-        <dict>
+        <!-- <dict>
           <key>begin</key>
           <string>#\{</string>
           <key>captures</key>
@@ -269,7 +306,7 @@
               <string>source.ruby</string>
             </dict>
           </array>
-        </dict>
+        </dict> -->
         <dict>
           <key>captures</key>
           <dict>

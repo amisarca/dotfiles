@@ -248,7 +248,7 @@
 			<key>end</key>
 			<string>(&lt;/)((?i:style))(&gt;)(?:\s*\n)?</string>
 			<key>name</key>
-			<string>source.css.embedded.html</string>
+			<string>source.sass.embedded.html</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -276,7 +276,7 @@
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>source.css</string>
+							<string>source.sass</string>
 						</dict>
 					</array>
 				</dict>

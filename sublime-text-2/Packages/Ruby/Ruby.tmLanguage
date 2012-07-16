@@ -108,15 +108,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.ruby</string>
+					<string>constant.other.ruby</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>symbols</string>
-			<key>match</key>
-			<string>(?&gt;[a-zA-Z_]\w*(?&gt;[?!])?)(:)(?!:)</string>
-			<key>name</key>
-			<string>constant.other.symbol.ruby.19syntax</string>
+			 <key>match</key>
+      <string>(?&gt;([a-zA-Z][a-zA-Z\-_]*)(?&gt;[?!])?)(:)(?!:)</string>
 		</dict>
 		<dict>
 			<key>captures</key>

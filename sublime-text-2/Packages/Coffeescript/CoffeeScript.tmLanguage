@@ -22,28 +22,96 @@
 	<string>CoffeeScript</string>
 	<key>patterns</key>
 	<array>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-          <!-- <string>variable.parameter.function.coffee</string> -->
-					<string>function.coffee</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type.function.coffee</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>match stuff like: a -&gt; … </string>
-			<key>match</key>
-			<string>(\([^()]*?\))\s*([=-]&gt;)</string>
-			<key>name</key>
-			<string>meta.inline.function.coffee</string>
-		</dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.function.coffee</string>
+        </dict>
+        <key>3</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.function.coffee</string>
+        </dict>
+        <key>4</key>
+        <dict>
+          <key>name</key>
+          <string>function.coffee</string>
+        </dict>
+        <key>5</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.operator.coffee</string>
+        </dict>
+      </dict>
+      <key>begin</key>
+      <string>(\s*)(@?)(?=[a-zA-Z\$_])([a-zA-Z\$_](\w|\$|:|\.)*)\s*((?=)[:=])\s*\(</string>
+      <key>end</key>
+      <string>(\)\s*()()()([=-]&gt;))</string>
+      <key>name</key>
+      <string>source.coffee</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>match</key>
+          <string>[_a-zA-Z][_a-zA-Z0-9]*</string>
+          <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>,</string>
+          <key>name</key>
+          <string>punctuation.separator.variable.ruby</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.function.coffee</string>
+        </dict>
+        <key>3</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.function.coffee</string>
+        </dict>
+        <key>4</key>
+        <dict>
+          <key>name</key>
+          <!-- <string>variable.paramete.function.coffee</string> -->
+          <string>function.coffee</string>
+        </dict>
+        <key>5</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.function.coffee</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>(\s*)(@?)(?=[a-zA-Z\$_])([a-zA-Z\$_](\w|\$|:|\.)*\s*(?=[:=](\s*\(.*\))?\s*((=|-)&gt;)))</string>
+      <key>name</key>
+      <string>meta.function.coffee</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>constant.other.ruby</string>
+        </dict>
+      </dict>
+      <key>comment</key>
+      <string>symbols</string>
+       <key>match</key>
+      <string>(?&gt;([a-zA-Z][a-zA-Z\-_]*)(?&gt;[?!])?)(:)(?!:)</string>
+    </dict>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -233,7 +301,7 @@
 			<key>name</key>
 			<string>keyword.operator.coffee</string>
 		</dict>
-        <dict>
+    <dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -303,36 +371,6 @@
 					<string>#numeric</string>
 				</dict>
 			</array>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.coffee</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.coffee</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-          <!-- <string>variable.paramete.function.coffee</string> -->
-					<string>function.coffee</string>
-				</dict>
-				<key>5</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type.function.coffee</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(\s*)(@?)(?=[a-zA-Z\$_])([a-zA-Z\$_](\w|\$|:|\.)*\s*(?=[:=](\s*\(.*\))?\s*((=|-)&gt;)))</string>
-			<key>name</key>
-			<string>meta.function.coffee</string>
 		</dict>
     <dict>
       <key>patterns</key>
