@@ -48,7 +48,7 @@
     "curly_style" : "solid",
     "round_style" : "solid",
     "square_style": "solid",
-    "angle_style" : "solid",
+    "angle_style" : "none",
     "tag_style"   : "outline",
 
     // Path to gutter icons (relative to Packages)

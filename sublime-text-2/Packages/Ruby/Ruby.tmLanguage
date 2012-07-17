@@ -2214,6 +2214,43 @@
           <key>name</key>
           <string>punctuation.separator.variable.ruby</string>
         </dict>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>begin</key>
+      <string>(?&lt;=-&gt;)(\()</string>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>punctuation.separator.variable.ruby</string>
+        </dict>
+      </dict>
+      <key>end</key>
+      <string>(\))</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>match</key>
+          <string>[_a-zA-Z][_a-zA-Z0-9]*</string>
+          <key>name</key>
+          <string>variable.other.block.ruby</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>,</string>
+          <key>name</key>
+          <string>punctuation.separator.variable.ruby</string>
+        </dict>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
       </array>
     </dict>
     <dict>

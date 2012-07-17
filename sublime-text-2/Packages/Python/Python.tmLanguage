@@ -53,6 +53,23 @@
         <key>1</key>
         <dict>
           <key>name</key>
+          <string>variable.other.python</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>punctuation.section.dot.python</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>\b(self)(\.)</string>
+    </dict>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
           <string>punctuation.section.dot.python</string>
         </dict>
       </dict>
