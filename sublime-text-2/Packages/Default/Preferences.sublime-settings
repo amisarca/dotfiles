@@ -130,7 +130,7 @@
     "match_tags": true,
 
     // Highlights other occurrences of the currently selected text
-    "match_selection": false,
+    "match_selection": true,
 
     // Additional spacing at the top of each line, in pixels
     "line_padding_top": 0,

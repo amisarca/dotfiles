@@ -23,7 +23,17 @@
         <string>#253B76</string>
 			</dict>
 		</dict>
-
+    <dict>
+      <key>name</key>
+      <string>Bracket Tag</string>
+      <key>scope</key>
+      <string>bracket.highlight</string>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#4A587F</string>
+      </dict>
+    </dict>
     <dict>
       <key>guide</key>
       <dict>
@@ -206,7 +216,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#7F90AA</string>
+				<string>#8DA6CE</string>
 			</dict>
 		</dict>
 		<dict>
@@ -226,7 +236,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string, string.interpolated</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>

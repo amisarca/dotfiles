@@ -47,21 +47,19 @@
 	<key>patterns</key>
 	<array>
         <dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.constant.ruby</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>symbols</string>
-			<key>match</key>
-			<string>(?&gt;[a-zA-Z_]\w*(?&gt;[?!])?)(:)(?!:)</string>
-			<key>name</key>
-			<string>constant.other.symbol.ruby.19syntax</string>
-		</dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>constant.other.ruby</string>
+        </dict>
+      </dict>
+      <key>comment</key>
+      <string>symbols</string>
+       <key>match</key>
+      <string>(?&gt;([a-zA-Z][a-zA-Z\-_]*)(?&gt;[?!])?)(:)(?!:)</string>
+    </dict>
 		<dict>
 			<key>begin</key>
 			<string>(^\s*)(?=class\s+(([.a-zA-Z0-9_:]+ControllerTest(\s*&lt;\s*[.a-zA-Z0-9_:]+)?)))</string>

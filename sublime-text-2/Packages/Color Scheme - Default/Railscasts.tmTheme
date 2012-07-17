@@ -185,7 +185,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string, string.interpolated</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>

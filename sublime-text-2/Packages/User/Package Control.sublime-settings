@@ -1,13 +1,15 @@
 {
-	"auto_upgrade_last_run": 1342433511,
+	"auto_upgrade_last_run": 1342512935,
 	"installed_packages":
 	[
 		"Alignment",
+		"BracketHighlighter",
 		"ColorPicker",
 		"FileDiffs",
 		"Git",
 		"Package Control",
 		"Prolog",
+		"Rails Partial",
 		"RSpec",
 		"SFTP",
 		"SideBarEnhancements",
