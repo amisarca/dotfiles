@@ -305,6 +305,11 @@
           <key>name</key>
           <string>constant.other.ruby</string>
         </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.coffee</string>
+        </dict>
       </dict>
       <key>comment</key>
       <string>symbols</string>
@@ -708,25 +713,25 @@
       <key>match</key>
       <string>\.</string>
       <key>name</key>
-      <string>meta.delimiter.method.period.js</string>
+      <string>punctuation.section.dot.js</string>
     </dict>
     <dict>
       <key>match</key>
       <string>\{|\}</string>
       <key>name</key>
-      <string>meta.brace.curly.js</string>
-    </dict>
-    <dict>
-      <key>match</key>
-      <string>\(|\)</string>
-      <key>name</key>
-      <string>meta.brace.round.js</string>
+      <string>punctuation.section.curly.ruby</string>
     </dict>
     <dict>
       <key>match</key>
       <string>\[|\]</string>
       <key>name</key>
-      <string>meta.brace.square.js</string>
+      <string>punctuation.section.square.ruby</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>\(|\)</string>
+      <key>name</key>
+      <string>punctuation.section.round.ruby</string>
     </dict>
   </array>
   <key>scopeName</key>

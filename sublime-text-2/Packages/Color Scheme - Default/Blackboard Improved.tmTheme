@@ -43,15 +43,27 @@
         <string>#6085E5</string>
       </dict>
     </dict>
+    <dict>
+      <key>name</key>
+      <string>Source</string>
+      <key>scope</key>
+      <string>source</string>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#0C1021</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
-			<string>Source</string>
+			<string>Separator</string>
 			<key>scope</key>
-			<string>source</string>
+      <!-- <string>punctuation.section.round, punctuation.section.curly, punctuation.section.square, punctuation.section.dot</string> -->
+			<string>punctuation.section.dot</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#0C1021</string>
+				<key>foreground</key>
+				<string>#FBDE2D</string>
 			</dict>
 		</dict>
     <dict>

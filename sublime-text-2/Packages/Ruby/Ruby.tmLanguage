@@ -110,6 +110,11 @@
           <key>name</key>
           <string>constant.other.ruby</string>
         </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.coffee</string>
+        </dict>
       </dict>
       <key>comment</key>
       <string>symbols</string>
@@ -176,7 +181,7 @@
         <key>4</key>
         <dict>
           <key>name</key>
-          <string>punctuation.separator.inheritance.ruby</string>
+          <string>punctuation.section.dot</string>
         </dict>
         <key>5</key>
         <dict>
@@ -186,7 +191,7 @@
         <key>6</key>
         <dict>
           <key>name</key>
-          <string>punctuation.separator.inheritance.ruby</string>
+          <string>punctuation.section.dot</string>
         </dict>
         <key>7</key>
         <dict>
@@ -196,7 +201,7 @@
         <key>8</key>
         <dict>
           <key>name</key>
-          <string>punctuation.separator.inheritance.ruby</string>
+          <string>punctuation.section.dot</string>
         </dict>
       </dict>
       <key>match</key>
@@ -411,7 +416,7 @@
         <key>3</key>
         <dict>
           <key>name</key>
-          <string>punctuation.definition.parameters.ruby</string>
+          <string>punctuation.section.function.round</string>
         </dict>
       </dict>
       <key>comment</key>
@@ -423,7 +428,7 @@
         <key>0</key>
         <dict>
           <key>name</key>
-          <string>punctuation.definition.parameters.ruby</string>
+          <string>punctuation.section.function.round</string>
         </dict>
       </dict>
       <key>name</key>
@@ -2215,7 +2220,7 @@
       <key>match</key>
       <string>=&gt;</string>
       <key>name</key>
-      <string>punctuation.separator.key-value</string>
+      <string>keyword.operator.key-value</string>
     </dict>
     <dict>
       <key>match</key>
@@ -2273,27 +2278,27 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>\.|::</string>
+      <string>\.</string>
       <key>name</key>
-      <string>punctuation.separator.method.ruby</string>
+      <string>punctuation.section.dot.ruby</string>
     </dict>
     <dict>
       <key>match</key>
       <string>\{|\}</string>
       <key>name</key>
-      <string>punctuation.section.scope.ruby</string>
+      <string>punctuation.section.curly.ruby</string>
     </dict>
     <dict>
       <key>match</key>
       <string>\[|\]</string>
       <key>name</key>
-      <string>punctuation.section.array.ruby</string>
+      <string>punctuation.section.square.ruby</string>
     </dict>
     <dict>
       <key>match</key>
       <string>\(|\)</string>
       <key>name</key>
-      <string>punctuation.section.function.ruby</string>
+      <string>punctuation.section.round.ruby</string>
     </dict>
   </array>
   <key>repository</key>

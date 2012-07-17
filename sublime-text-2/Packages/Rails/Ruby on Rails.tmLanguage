@@ -54,6 +54,11 @@
           <key>name</key>
           <string>constant.other.ruby</string>
         </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.coffee</string>
+        </dict>
       </dict>
       <key>comment</key>
       <string>symbols</string>
