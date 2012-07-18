@@ -361,7 +361,7 @@
       <key>name</key>
       <string>Embedded code markers</string>
       <key>scope</key>
-      <string>punctuation.section.embedded.ruby</string>
+      <string>punctuation.section.embedded</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>
