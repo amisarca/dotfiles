@@ -303,12 +303,12 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>constant.other.ruby</string>
+          <string>constant.other.js</string>
         </dict>
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>keyword.coffee</string>
+          <string>constant.other.js</string>
         </dict>
       </dict>
       <key>comment</key>

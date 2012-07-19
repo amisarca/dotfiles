@@ -57,7 +57,7 @@
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>keyword.coffee</string>
+          <string>constant.other.ruby</string>
         </dict>
       </dict>
       <key>comment</key>
