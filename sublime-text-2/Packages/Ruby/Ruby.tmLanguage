@@ -196,7 +196,7 @@
         </dict>
       </dict>
       <key>match</key>
-      <string>^\s*(class)\s+(([.a-zA-Z0-9_:]+(\s*(&lt;)\s*((::)?[.a-zA-Z0-9_]+)((::)?[.a-zA-Z0-9_]+)((::)?[.a-zA-Z0-9_]+)((::)?[.a-zA-Z0-9_]+))?)|((&lt;&lt;)\s*[.a-zA-Z0-9_:]+))</string>
+      <string>^\s*(class)\s+(([.a-zA-Z0-9_:]+(\s*(&lt;)\s*((::)?[.a-zA-Z0-9_]+)((::)?[.a-zA-Z0-9_]+)?((::)?[.a-zA-Z0-9_]+)?((::)?[.a-zA-Z0-9_]+)?)?)|((&lt;&lt;)\s*[.a-zA-Z0-9_:]+))</string>
       <key>name</key>
       <string>meta.class.ruby</string>
     </dict>
