@@ -147,16 +147,56 @@
         <key>6</key>
         <dict>
           <key>name</key>
-          <string>variable.other.object.ruby</string>
+          <string>entity.other.inherited-class.ruby</string>
         </dict>
         <key>7</key>
         <dict>
           <key>name</key>
           <string>keyword.ruby</string>
         </dict>
+        <key>8</key>
+        <dict>
+          <key>name</key>
+          <string>entity.other.inherited-class.ruby</string>
+        </dict>
+        <key>9</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.ruby</string>
+        </dict>
+        <key>10</key>
+        <dict>
+          <key>name</key>
+          <string>entity.other.inherited-class.ruby</string>
+        </dict>
+        <key>11</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.ruby</string>
+        </dict>
+        <key>12</key>
+        <dict>
+          <key>name</key>
+          <string>entity.other.inherited-class.ruby</string>
+        </dict>
+        <key>13</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.ruby</string>
+        </dict>
+        <key>14</key>
+        <dict>
+          <key>name</key>
+          <string>variable.other.ruby</string>
+        </dict>
+        <key>15</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.ruby</string>
+        </dict>
       </dict>
       <key>match</key>
-      <string>^\s*(class)\s+(([.a-zA-Z0-9_:]+(\s*(&lt;)\s*[.a-zA-Z0-9_:]+)?)|((&lt;&lt;)\s*[.a-zA-Z0-9_:]+))</string>
+      <string>^\s*(class)\s+(([.a-zA-Z0-9_:]+(\s*(&lt;)\s*((::)?[.a-zA-Z0-9_]+)((::)?[.a-zA-Z0-9_]+)((::)?[.a-zA-Z0-9_]+)((::)?[.a-zA-Z0-9_]+))?)|((&lt;&lt;)\s*[.a-zA-Z0-9_:]+))</string>
       <key>name</key>
       <string>meta.class.ruby</string>
     </dict>
@@ -181,7 +221,7 @@
         <key>4</key>
         <dict>
           <key>name</key>
-          <string>punctuation.section.dot</string>
+          <string>keyword.ruby</string>
         </dict>
         <key>5</key>
         <dict>
@@ -191,7 +231,7 @@
         <key>6</key>
         <dict>
           <key>name</key>
-          <string>punctuation.section.dot</string>
+          <string>keyword.ruby</string>
         </dict>
         <key>7</key>
         <dict>
@@ -201,7 +241,7 @@
         <key>8</key>
         <dict>
           <key>name</key>
-          <string>punctuation.section.dot</string>
+          <string>keyword.ruby</string>
         </dict>
       </dict>
       <key>match</key>
