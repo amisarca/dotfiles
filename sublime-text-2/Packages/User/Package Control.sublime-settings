@@ -1,10 +1,10 @@
 {
-	"auto_upgrade_last_run": 1342613831,
+	"auto_upgrade_last_run": 1342692161,
 	"installed_packages":
 	[
 		"Alignment",
 		"BracketHighlighter",
-		"CoffeeScript",
+		"CoffeeScript Improved",
 		"ColorPicker",
 		"FileDiffs",
 		"Git",
