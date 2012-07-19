@@ -90,34 +90,64 @@
           <key>name</key>
           <string>punctuation.section.round</string>
         </dict>
-        <key>2</key>
+        <key>3</key>
         <dict>
           <key>name</key>
           <string>variable.parameter.coffee</string>
         </dict>
-        <key>3</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.section.round</string>
-        </dict>
         <key>4</key>
         <dict>
           <key>name</key>
-          <string>keyword.operator.coffee</string>
-        </dict>
-        <key>5</key>
-        <dict>
-          <key>name</key>
-          <string>keyword.operator.coffee</string>
+          <string>punctuation.section.round</string>
         </dict>
         <key>6</key>
         <dict>
           <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
+        <key>7</key>
+        <dict>
+          <key>name</key>
           <string>punctuation.section.round</string>
+        </dict>
+        <key>9</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
+        <key>10</key>
+        <dict>
+          <key>name</key>
+          <string>punctuation.section.round</string>
+        </dict>
+        <key>12</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
+        <key>13</key>
+        <dict>
+          <key>name</key>
+          <string>punctuation.section.round</string>
+        </dict>
+        <key>15</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
+        <key>16</key>
+        <dict>
+          <key>name</key>
+          <string>punctuation.section.round</string>
+        </dict>
+        <key>18</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.coffee</string>
         </dict>
       </dict>
       <key>match</key>
-      <string>\s*(\()([,\w\s=]*)(\))\s*(-&gt;)</string>
+      <string>\s*(\()(([\w\s=]*)(,))?(([\w\s=]*)(,))?(([\w\s=]*)(,))?(([\w\s=]*)(,))?(([\w\s=]*)(,)?)(\))\s*(-|=&gt;)</string>
     </dict>
     <dict>
       <key>captures</key>
