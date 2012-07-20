@@ -482,6 +482,10 @@
       <key>patterns</key>
       <array>
         <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+        <dict>
           <key>match</key>
           <string>[_a-zA-Z][_a-zA-Z0-9]*</string>
           <key>name</key>
@@ -492,10 +496,6 @@
           <string>,</string>
           <key>name</key>
           <string>punctuation.separator.variable.ruby</string>
-        </dict>
-        <dict>
-          <key>include</key>
-          <string>$self</string>
         </dict>
       </array>
     </dict>
@@ -2282,6 +2282,10 @@
       <key>patterns</key>
       <array>
         <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+        <dict>
           <key>match</key>
           <string>[_a-zA-Z][_a-zA-Z0-9]*</string>
           <key>name</key>
@@ -2292,10 +2296,6 @@
           <string>,</string>
           <key>name</key>
           <string>punctuation.separator.variable.ruby</string>
-        </dict>
-        <dict>
-          <key>include</key>
-          <string>$self</string>
         </dict>
       </array>
     </dict>

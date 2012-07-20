@@ -55,15 +55,36 @@
       </dict>
     </dict>
 		<dict>
+      <key>name</key>
+      <string>Separator</string>
+      <key>scope</key>
+      <string>punctuation.section.dot</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#FBDE2D</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Separator</string>
+      <key>scope</key>
+      <string>punctuation.section.coma</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#F8F8F8</string>
+      </dict>
+    </dict>
+    <dict>
 			<key>name</key>
 			<string>Separator</string>
 			<key>scope</key>
-      <!-- <string>punctuation.section.round, punctuation.section.curly, punctuation.section.square, punctuation.section.dot</string> -->
-			<string>punctuation.section.dot</string>
+			<string>punctuation.section.round, punctuation.section.curly, punctuation.section.square</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FBDE2D</string>
+				<string>#F8F8F8</string>
 			</dict>
 		</dict>
     <dict>
@@ -191,7 +212,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#D0D0FF</string>
+        <string>#CECEFF</string>
       </dict>
     </dict>
 		<dict>

@@ -197,69 +197,59 @@
           <key>name</key>
           <string>keyword.operator.js</string>
         </dict>
-        <key>3</key>
-        <dict>
-          <key>name</key>
-          <string>storage.type.function.js</string>
-        </dict>
-        <key>4</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.begin.js</string>
-        </dict>
-        <key>5</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>6</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
       </dict>
       <key>comment</key>
-      <string>match stuff like: play = function() { … }</string>
+      <string>match stuff like: play :|= function() { … }</string>
       <key>match</key>
-      <string>([a-zA-Z_?$][\w?$]*)\s*(:|=)\s*(function)\s*(\()(.*?)(\))</string>
+      <string>([a-zA-Z_?$][\w?$]*)\s*(:|=)\s*(?=function)</string>
       <key>name</key>
       <string>meta.function.js</string>
     </dict>
-    <dict>
+   <dict>
       <key>captures</key>
       <dict>
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>storage.type.function.js</string>
+          <string>punctuation.section.round</string>
         </dict>
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>entity.name.function.js</string>
+          <string>keyword.function.coffee</string>
         </dict>
         <key>3</key>
         <dict>
           <key>name</key>
-          <string>punctuation.definition.parameters.begin.js</string>
+          <string>entity.name.function.coffee</string>
         </dict>
         <key>4</key>
         <dict>
           <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>5</key>
-        <dict>
-          <key>name</key>
-          <string>entity.name.function.js</string>
+          <string>punctuation.section.round</string>
         </dict>
       </dict>
-      <key>comment</key>
-      <string>match regular function like: function myFunc(arg) { … }</string>
-      <key>match</key>
-      <string>\b(function)\s+([a-zA-Z_$]\w*)?\s*(\()(((\w*)(,\s*)?)*)(\))</string>
+      <key>begin</key>
+      <string>(\s*)(function)\s*(\w*)\s*(\()</string>
+      <key>end</key>
+      <string>(\))</string>
       <key>name</key>
-      <string>meta.function.js</string>
+      <string>source.coffee</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>match</key>
+          <string>[_a-zA-Z][_a-zA-Z0-9]*</string>
+          <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>,</string>
+          <key>name</key>
+          <string>punctuation.separator.variable.ruby</string>
+        </dict>
+      </array>
     </dict>
     <dict>
       <key>captures</key>
