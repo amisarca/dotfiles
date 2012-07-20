@@ -89,52 +89,12 @@
           <key>name</key>
           <string>punctuation.definition.parameters.begin.js</string>
         </dict>
+        <key>7</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.function.js</string>
+        </dict>
         <key>8</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>9</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>11</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>12</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>14</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>15</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>17</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>18</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>20</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>21</key>
         <dict>
           <key>name</key>
           <string>punctuation.definition.parameters.end.js</string>
@@ -143,7 +103,7 @@
       <key>comment</key>
       <string>match stuff like: Sound.prototype.play = function() { … }</string>
       <key>match</key>
-      <string>([a-zA-Z_?.$][\w?.$]*)\.(prototype)\.([a-zA-Z_?.$][\w?.$]*)\s*(=)\s*(function)?\s*(\()((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)?)(\))</string>
+      <string>([a-zA-Z_?.$][\w?.$]*)\.(prototype)\.([a-zA-Z_?.$][\w?.$]*)\s*(=)\s*(function)?\s*(\()(.*?)(\))</string>
       <key>name</key>
       <string>meta.function.prototype.js</string>
     </dict>
@@ -206,52 +166,12 @@
           <key>name</key>
           <string>punctuation.definition.parameters.begin.js</string>
         </dict>
+        <key>6</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.function.js</string>
+        </dict>
         <key>7</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>8</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>10</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>11</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>13</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>14</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>16</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>17</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>19</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>20</key>
         <dict>
           <key>name</key>
           <string>punctuation.definition.parameters.end.js</string>
@@ -260,7 +180,7 @@
       <key>comment</key>
       <string>match stuff like: Sound.play = function() { … }</string>
       <key>match</key>
-      <string>([a-zA-Z_?.$][\w?.$]*)\.([a-zA-Z_?.$][\w?.$]*)\s*(=)\s*(function)\s*(\()((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)?)(\))</string>
+      <string>([a-zA-Z_?.$][\w?.$]*)\.([a-zA-Z_?.$][\w?.$]*)\s*(=)\s*(function)\s*(\()(.*?)(\))</string>
       <key>name</key>
       <string>meta.function.js</string>
     </dict>
@@ -287,52 +207,12 @@
           <key>name</key>
           <string>punctuation.definition.parameters.begin.js</string>
         </dict>
+        <key>5</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.function.js</string>
+        </dict>
         <key>6</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>7</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>9</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>10</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>12</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>13</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>15</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>16</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>18</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>19</key>
         <dict>
           <key>name</key>
           <string>punctuation.definition.parameters.end.js</string>
@@ -341,7 +221,7 @@
       <key>comment</key>
       <string>match stuff like: play = function() { … }</string>
       <key>match</key>
-      <string>([a-zA-Z_?$][\w?$]*)\s*(=)\s*(function)\s*(\()((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)?)(\))</string>
+      <string>([a-zA-Z_?$][\w?$]*)\s*(:|=)\s*(function)\s*(\()(.*?)(\))</string>
       <key>name</key>
       <string>meta.function.js</string>
     </dict>
@@ -363,61 +243,21 @@
           <key>name</key>
           <string>punctuation.definition.parameters.begin.js</string>
         </dict>
+        <key>4</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.function.js</string>
+        </dict>
         <key>5</key>
         <dict>
           <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>6</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>8</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>9</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>11</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>12</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>14</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>15</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>17</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>18</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
+          <string>entity.name.function.js</string>
         </dict>
       </dict>
       <key>comment</key>
       <string>match regular function like: function myFunc(arg) { … }</string>
       <key>match</key>
-      <string>\b(function)\s+([a-zA-Z_$]\w*)?\s*(\()((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)?)(\))</string>
+      <string>\b(function)\s+([a-zA-Z_$]\w*)?\s*(\()(((\w*)(,\s*)?)*)(\))</string>
       <key>name</key>
       <string>meta.function.js</string>
     </dict>
@@ -427,88 +267,12 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>entity.name.function.js</string>
+          <string>constant.other.javascript</string>
         </dict>
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>storage.type.function.js</string>
-        </dict>
-        <key>3</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.begin.js</string>
-        </dict>
-        <key>5</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>6</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>8</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>9</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>11</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>12</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>14</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>15</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-        <key>17</key>
-        <dict>
-          <key>name</key>
-          <string>variable.parameter.function.js</string>
-        </dict>
-        <key>18</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.definition.parameters.end.js</string>
-        </dict>
-      </dict>
-      <key>comment</key>
-      <string>match stuff like: foobar: function() { … }</string>
-      <key>match</key>
-      <string>\b([a-zA-Z_?.$][\w?.$]*)\s*:\s*\b(function)?\s*(\()((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)\s*)?((\w*)(,)?)(\))</string>
-      <key>name</key>
-      <string>meta.function.json.js</string>
-    </dict>
-    <dict>
-      <key>captures</key>
-      <dict>
-        <key>1</key>
-        <dict>
-          <key>name</key>
-          <string>constant.other.js</string>
-        </dict>
-        <key>2</key>
-        <dict>
-          <key>name</key>
-          <string>constant.other.js</string>
+          <string>constant.other.javascript</string>
         </dict>
       </dict>
       <key>comment</key>
@@ -615,7 +379,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>\.(warn|info|log|error|time|timeEnd|assert)\b</string>
+      <string>(warn|info|log|error|time|timeEnd|assert)\b</string>
       <key>name</key>
       <string>support.function.js.firebug</string>
     </dict>
@@ -913,7 +677,7 @@
       <key>match</key>
       <string>\.</string>
       <key>name</key>
-      <string>punctuation.section.dot.js</string>
+      <string>punctuation.section.dot.ruby</string>
     </dict>
     <dict>
       <key>match</key>

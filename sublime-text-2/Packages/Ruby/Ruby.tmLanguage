@@ -142,7 +142,7 @@
         <key>5</key>
         <dict>
           <key>name</key>
-          <string>keyword.ruby</string>
+          <string>keyword.italic.ruby</string>
         </dict>
         <key>6</key>
         <dict>
@@ -152,7 +152,7 @@
         <key>7</key>
         <dict>
           <key>name</key>
-          <string>keyword.ruby</string>
+          <string>keyword.italic.ruby</string>
         </dict>
         <key>8</key>
         <dict>
@@ -162,7 +162,7 @@
         <key>9</key>
         <dict>
           <key>name</key>
-          <string>keyword.ruby</string>
+          <string>keyword.italic.ruby</string>
         </dict>
         <key>10</key>
         <dict>
@@ -172,7 +172,7 @@
         <key>11</key>
         <dict>
           <key>name</key>
-          <string>keyword.ruby</string>
+          <string>keyword.italic.ruby</string>
         </dict>
         <key>12</key>
         <dict>
@@ -182,7 +182,7 @@
         <key>13</key>
         <dict>
           <key>name</key>
-          <string>keyword.ruby</string>
+          <string>keyword.italic.ruby</string>
         </dict>
         <key>14</key>
         <dict>
@@ -192,7 +192,7 @@
         <key>15</key>
         <dict>
           <key>name</key>
-          <string>keyword.ruby</string>
+          <string>keyword.italic.ruby</string>
         </dict>
       </dict>
       <key>match</key>
@@ -418,6 +418,12 @@
           <string>$self</string>
         </dict>
       </array>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>::</string>
+      <key>name</key>
+      <string>keyword</string>
     </dict>
     <dict>
       <key>match</key>

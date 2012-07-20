@@ -90,15 +90,28 @@
         <string>#AEAEAE</string>
       </dict>
     </dict>
+    <dict>
+      <key>name</key>
+      <string>Keyword</string>
+      <key>scope</key>
+      <string>keyword, storage</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#FBDE2D</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword, storage</string>
+			<string>keyword.italic</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#FBDE2D</string>
 			</dict>
@@ -217,7 +230,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#8DA6CE</string>
+        <string>#F8F8F8</string>
       </dict>
     </dict>
 		<dict>
