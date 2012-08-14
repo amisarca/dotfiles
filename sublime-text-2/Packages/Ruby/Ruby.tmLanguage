@@ -142,7 +142,7 @@
         <key>5</key>
         <dict>
           <key>name</key>
-          <string>keyword.italic.ruby</string>
+          <string>keyword.ruby</string>
         </dict>
         <key>6</key>
         <dict>

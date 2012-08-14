@@ -5,7 +5,7 @@
         "args": {"lines": true}
     },
     {
-        "keys": ["alt+up"],
+        "keys": ["alt+shift+]"],
         "command": "bracket_highlighter_key",
         "args":
         {
@@ -19,7 +19,7 @@
         }
     },
     {
-        "keys": ["alt+down"],
+        "keys": ["alt+shift+["],
         "command": "bracket_highlighter_key",
         "args":
         {

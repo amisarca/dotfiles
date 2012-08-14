@@ -1,9 +1,10 @@
 {
-	"auto_upgrade_last_run": 1342793092,
+	"auto_upgrade_last_run": 1344967665,
 	"installed_packages":
 	[
 		"Alignment",
 		"BracketHighlighter",
+		"Capybara Snippets",
 		"CoffeeScript Improved",
 		"ColorPicker",
 		"FileDiffs",
@@ -11,7 +12,7 @@
 		"Package Control",
 		"Prolog",
 		"Rails Partial",
-		"RSpec",
+		"RSpec Improved",
 		"SFTP",
 		"SideBarEnhancements",
 		"SublimeTODO",

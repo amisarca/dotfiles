@@ -279,14 +279,14 @@
   { "keys": ["ctrl+alt+shift+p"], "command": "show_scope_name" },
 
   { "keys": ["f7"], "command": "build" },
-  { "keys": ["ctrl+b"], "command": "build" },
-  { "keys": ["ctrl+shift+b"], "command": "build", "args": {"variant": "Run"} },
+  { "keys": ["f9"], "command": "build" },
+  { "keys": ["ctrl+f9"], "command": "build", "args": {"variant": "Run"} },
   { "keys": ["ctrl+break"], "command": "exec", "args": {"kill": true} },
 
   { "keys": ["ctrl+t"], "command": "transpose" },
 
-  { "keys": ["f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
-  { "keys": ["ctrl+f9"], "command": "sort_lines", "args": {"case_sensitive": true} },
+  { "keys": ["f10"], "command": "sort_lines", "args": {"case_sensitive": false} },
+  { "keys": ["ctrl+f10"], "command": "sort_lines", "args": {"case_sensitive": true} },
 
   // Auto-pair quotes
   { "keys": ["\""], "command": "insert_snippet", "args": {"contents": "\"$0\""}, "context":

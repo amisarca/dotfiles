@@ -13,9 +13,9 @@ class DetectFileTypeCommand(sublime_plugin.EventListener):
 
     name = os.path.basename(filename.lower())
     if name[-8:] == "_spec.rb":
-      set_syntax(view, "RSpec", "RSpec")
+      set_syntax(view, "RSpec", "RSpec Improved")
     elif name == "factories.rb":
-      set_syntax(view, "RSpec", "RSpec")
+      set_syntax(view, "RSpec", "RSpec Improved")
     elif name[-9:] == "_steps.rb":
       set_syntax(view, "Cucumber Steps", "Cucumber")
     elif name == "gemfile" or name == "guardfile":

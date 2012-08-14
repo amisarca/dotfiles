@@ -232,7 +232,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.html</string>
+					<string>meta.tag.html</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -242,7 +242,7 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.html</string>
+					<string>meta.tag.html</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -263,7 +263,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.tag.html</string>
+							<string>meta.tag.html</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -290,7 +290,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.html</string>
+					<string>meta.tag.html</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -305,7 +305,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.html</string>
+					<string>meta.tag.html</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -324,7 +324,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.tag.html</string>
+							<string>meta.tag.tag.html</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -654,7 +654,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.embedded.ruby</string>
+							<string>punctuation.erb.embedded.ruby</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -691,7 +691,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.embedded.ruby.nitro</string>
+							<string>punctuation.erb.embedded.ruby.nitro</string>
 						</dict>
 					</dict>
 					<key>end</key>

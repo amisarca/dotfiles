@@ -74,7 +74,7 @@
     // Threshold distance to search
     "search_threshold"     : 2000,
     "tag_search_threshold" : 2000,
-    "use_search_threshold"     : true,
+    "use_search_threshold"     : false,
     "tag_use_search_threshold" : true,
 
     // Selection threshold; max multi-selection allowed for auto-highlight
