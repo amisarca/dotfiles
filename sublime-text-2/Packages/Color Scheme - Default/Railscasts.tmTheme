@@ -23,7 +23,17 @@
         <string>#5A647E</string>
 			</dict>
 		</dict>
-
+    <dict>
+      <key>name</key>
+      <string>Bracket Tag</string>
+      <key>scope</key>
+      <string>bracket.highlight</string>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#4A587F</string>
+      </dict>
+    </dict>
     <dict>
       <key>guide</key>
       <dict>
