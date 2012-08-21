@@ -5,13 +5,16 @@
 	<key>name</key>
 	<string>Symbol List: Method</string>
 	<key>scope</key>
-	<string>source.ruby meta.function</string>
+	<string>source.ruby meta.function, source.ruby meta.class</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
 		<integer>1</integer>
 		<key>symbolTransformation</key>
-		<string>s/^\s*def\s+//</string>
+		<string>
+      s/(\s*)def\s+/$1$1def /g/;
+      s/(\s*)class\s+/$1$1class /g/;
+    </string>
 	</dict>
 	<key>uuid</key>
 	<string>92E190C9-A861-4025-92D4-D6B5A24C22D4</string>

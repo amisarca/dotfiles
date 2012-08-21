@@ -439,7 +439,7 @@
     </dict>
     <dict>
       <key>begin</key>
-      <string>(?x)
+      <string>(?x)\s*
                (?=def\b)                                                      # an optimization to help Oniguruma fail fast
                (?&lt;=^|\s)(def)\s+                                              # the def keyword
                ( (?&gt;[a-zA-Z_]\w*(?&gt;\.|::))?                                   # a method name prefix
@@ -478,7 +478,7 @@
         </dict>
       </dict>
       <key>name</key>
-      <string>meta.function.method.with-arguments.ruby</string>
+      <string>meta.function.ruby.method.with-arguments.ruby</string>
       <key>patterns</key>
       <array>
         <dict>
@@ -501,7 +501,7 @@
     </dict>
     <dict>
       <key>begin</key>
-      <string>(?x)
+      <string>(?x)\s*
                (?=def\b)                                                      # an optimization to help Oniguruma fail fast
                (?&lt;=^|\s)(def)\s+                                              # the def keyword
                ( (?&gt;[a-zA-Z_]\w*(?&gt;\.|::))?                                   # a method name prefix
@@ -528,7 +528,7 @@
       <key>end</key>
       <string>$</string>
       <key>name</key>
-      <string>meta.function.method.with-arguments.ruby</string>
+      <string>meta.function.ruby.method.with-arguments.ruby</string>
       <key>patterns</key>
       <array>
         <dict>
@@ -554,7 +554,7 @@
       <key>comment</key>
       <string> the optional name is just to catch the def also without a method-name</string>
       <key>match</key>
-      <string>(?x)
+      <string>(?x)\s*
                (?=def\b)                                                           # an optimization to help Oniguruma fail fast
                (?&lt;=^|\s)(def)\b                                                    # the def keyword
                ( \s+                                                               # an optional group of whitespace followed by…
@@ -563,7 +563,7 @@
                    |===?|&gt;[&gt;=]?|&lt;=&gt;|&lt;[&lt;=]?|[%&amp;`/\|]|\*\*?|=?~|[-+]@?|\[\]=?) ) )?  # …or an operator method
               </string>
       <key>name</key>
-      <string>meta.function.method.without-arguments.ruby</string>
+      <string>meta.function.ruby.method.without-arguments.ruby</string>
     </dict>
     <dict>
       <key>match</key>
