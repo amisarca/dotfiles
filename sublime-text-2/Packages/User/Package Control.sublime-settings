@@ -1,8 +1,9 @@
 {
-	"auto_upgrade_last_run": 1345283396,
+	"auto_upgrade_last_run": 1345526091,
 	"installed_packages":
 	[
 		"Alignment",
+		"All Autocomplete",
 		"BracketHighlighter",
 		"Capybara Snippets",
 		"CoffeeScript Improved",

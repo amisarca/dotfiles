@@ -46,6 +46,7 @@
   { "keys": ["ctrl+c"], "command": "copy" },
   { "keys": ["ctrl+v"], "command": "paste" },
   { "keys": ["ctrl+shift+v"], "command": "paste_and_indent" },
+  { "keys": ["f12"], "command": "reindent"},
 
   { "keys": ["left"], "command": "move", "args": {"by": "characters", "forward": false} },
   { "keys": ["right"], "command": "move", "args": {"by": "characters", "forward": true} },
