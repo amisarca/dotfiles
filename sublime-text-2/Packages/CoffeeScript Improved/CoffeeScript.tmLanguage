@@ -87,7 +87,7 @@
         </dict>
       </dict>
       <key>begin</key>
-      <string>(:|=|\s)\(([_a-zA-Z][_a-zA-Z0-9]*)\s*(,|(=))</string>
+      <string>(:|=|\s)\(([_a-zA-Z][_a-zA-Z0-9]*)\s*(,|(=))(?!=)</string>
       <key>end</key>
       <string>\)\s*([=-]&gt;)</string>
       <key>endCaptures</key>
