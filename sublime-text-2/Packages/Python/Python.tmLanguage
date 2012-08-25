@@ -76,6 +76,14 @@
       <key>match</key>
       <string>[a-z][a-zA-Z0-9_]*(\.)</string>
     </dict>
+    <dict>
+      <key>match</key>
+      <string>(\s*)(?x)@(
+        staticmethod|classmethod
+      )\b</string>
+      <key>name</key>
+      <string>variable.language.python</string>
+    </dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:(0x\h*)L)</string>
@@ -1195,9 +1203,9 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)\b(
-				basestring|bool|buffer|classmethod|complex|dict|enumerate|file|
+				basestring|bool|buffer|complex|dict|enumerate|file|
 				float|frozenset|int|list|long|object|open|property|reversed|set|
-				slice|staticmethod|str|super|tuple|type|unicode|xrange
+				slice|str|super|tuple|type|unicode|xrange
 			)\b</string>
 			<key>name</key>
 			<string>support.type.python</string>
