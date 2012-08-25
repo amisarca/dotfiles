@@ -41,46 +41,84 @@
        <key>match</key>
       <string>(?&gt;([a-zA-Z_][a-zA-Z\-_]*)(?&gt;[?!])?)(:)(?!:)</string>
     </dict>
+
+    <!-- Methods with single parameter -->
     <dict>
       <key>captures</key>
       <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>variable.parameter.function.coffee</string>
+          <string>keyword.operator.coffee</string>
+        </dict>
+      </dict>
+      <key>match</key>
+      <string>\(([_a-zA-Z][_a-zA-Z0-9]*)\)\s*([=-]&gt;)</string>
+    </dict>
+
+    <!-- Methods with multiple paramteres -->
+    <dict>
+      <key>beginCaptures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.operator.coffee</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
+        <key>3</key>
+        <dict>
+          <key>name</key>
+          <string>punctuation.separator.variable.ruby</string>
         </dict>
         <key>4</key>
         <dict>
           <key>name</key>
-          <string>punctuation.section.coma</string>
-        </dict>
-        <key>6</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.section.coma</string>
-        </dict>
-        <key>8</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.section.coma</string>
-        </dict>
-        <key>10</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.section.coma</string>
-        </dict>
-        <key>12</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.section.coma</string>
+          <string>keyword.operator.coffee</string>
         </dict>
       </dict>
-      <key>comment</key>
-      <string>match stuff like: a -&gt; … </string>
-      <key>match</key>
-      <string>(\()(([^(),]+(,))?([^(),]+(,))?([^(),]+(,))?([^(),]+(,))?([^(),]+(,))?[^(),]+)(\))\s*(?=[=-]&gt;)</string>
+      <key>begin</key>
+      <string>(:|=|\s)\(([_a-zA-Z][_a-zA-Z0-9]*)\s*(,|(=))</string>
+      <key>end</key>
+      <string>\)\s*([=-]&gt;)</string>
+      <key>endCaptures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.operator.coffee</string>
+        </dict>
+      </dict>
       <key>name</key>
-      <string>meta.inline.function.coffee</string>
+      <string>source.coffee</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>[_a-zA-Z][_a-zA-Z0-9]*</string>
+          <key>name</key>
+          <string>variable.parameter.coffee</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>,</string>
+          <key>name</key>
+          <string>punctuation.separator.variable.ruby</string>
+        </dict>
+      </array>
     </dict>
     <dict>
       <key>captures</key>
@@ -281,30 +319,6 @@
       <string>keyword.operator.coffee</string>
     </dict>
     <dict>
-      <key>captures</key>
-      <dict>
-        <key>1</key>
-        <dict>
-          <key>name</key>
-          <string>variable.assignment.coffee</string>
-        </dict>
-        <key>4</key>
-        <dict>
-          <key>name</key>
-          <string>punctuation.separator.key-value</string>
-        </dict>
-        <key>5</key>
-        <dict>
-          <key>name</key>
-          <string>keyword.operator.coffee</string>
-        </dict>
-      </dict>
-      <key>match</key>
-      <string>([a-zA-Z\$_](\w|\$|\.)*\s*(?!\::)((:)|(=))(?!(\s*\(.*\))?\s*((=|-)&gt;)))</string>
-      <key>name</key>
-      <string>variable.assignment.coffee</string>
-    </dict>
-    <dict>
       <key>begin</key>
       <string>(?&lt;=\s|^)([\[\{])(?=.*?[\]\}]\s+[:=])</string>
       <key>beginCaptures</key>
@@ -467,7 +481,7 @@
       <key>name</key>
       <string>support.function.coffee</string>
     </dict>
-    <dict>
+    <!-- <dict>
       <key>match</key>
       <string>(?x)((?&lt;=\.)(
         apply|call|concat|every|filter|forEach|from|hasOwnProperty|indexOf|
@@ -477,7 +491,7 @@
       ))\b</string>
       <key>name</key>
       <string>support.function.method.array.coffee</string>
-    </dict>
+    </dict> -->
     <dict>
       <key>match</key>
       <string>(?x)((?&lt;=Array\.)(
@@ -671,6 +685,18 @@
           <string>source.coffee.embedded.source</string>
           <key>patterns</key>
           <array>
+            <dict>
+              <key>match</key>
+              <string>\"((?!").)*\"</string>
+              <key>name</key>
+              <string>string.interpolated.coffee</string>
+            </dict>
+            <dict>
+              <key>match</key>
+              <string>\'((?!').)*\'</string>
+              <key>name</key>
+              <string>string.interpolated.coffee</string>
+            </dict>
             <dict>
               <key>include</key>
               <string>$self</string>

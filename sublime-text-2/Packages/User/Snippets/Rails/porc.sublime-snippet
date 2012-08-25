@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+${1} = ${1/(a$)|(b$)|(c$)|.*/?1:Apple:?2:Bannana:?3:Carrot/}
+]]></content>
+    <tabTrigger>wobble</tabTrigger>
+    <scope>source.ruby</scope>
+</snippet>
