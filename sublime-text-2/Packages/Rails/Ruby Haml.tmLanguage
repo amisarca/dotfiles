@@ -168,11 +168,11 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>\{(?=.*\}|.*\|\s*$)</string>
+          <string>\{</string>
           <key>end</key>
-          <string>\}|$|^(?!.*\|\s*$)</string>
+          <string>\}</string>
           <key>name</key>
-          <string>meta.section.attributes.haml</string>
+          <string>source.ruby.rails.embedded.html</string>
           <key>patterns</key>
           <array>
             <dict>
@@ -389,22 +389,17 @@
       <key>contentName</key>
       <string>source.ruby.embedded.haml</string>
       <key>end</key>
-      <string>((doppurcelush|\{purcel)( \|[^|]+\|)?)$|$|^(?!.*\|\s*$)</string>
+      <string>(do|else)$|$</string>
       <key>endCaptures</key>
       <dict>
         <key>1</key>
-        <dict>
-          <key>name</key>
-          <string>source.ruby.embedded.html</string>
-        </dict>
-        <key>2</key>
         <dict>
           <key>name</key>
           <string>keyword.control.ruby.start-block</string>
         </dict>
       </dict>
       <key>name</key>
-      <string>meta.line.ruby.haml</string>
+      <string>source.ruby.rails</string>
       <key>patterns</key>
       <array>
         <dict>

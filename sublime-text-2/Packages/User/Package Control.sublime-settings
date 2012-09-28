@@ -1,13 +1,15 @@
 {
-	"auto_upgrade_last_run": 1345908794,
+	"auto_upgrade_last_run": 1348827640,
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"Alignment",
 		"All Autocomplete",
 		"BracketHighlighter",
 		"Capybara Snippets",
 		"CoffeeScript Improved",
 		"ColorPicker",
+		"ERB Insert and Toggle Commands",
 		"FileDiffs",
 		"Git",
 		"Package Control",
@@ -17,6 +19,8 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"SublimeTODO",
+		"Table Cleaner",
+		"Table Editor",
 		"Terminal",
 		"Theme - Soda",
 		"Theme - Soda Improved",

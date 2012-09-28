@@ -9,7 +9,7 @@
 		<dict>
 			<key>settings</key>
 			<dict>
-				<key>background</key> <!-- #232323 -->
+				<key>background</key>
 				<string>#232323</string>
 				<key>caret</key>
 				<string>#FFFFFF</string>
@@ -20,7 +20,7 @@
 				<key>lineHighlight</key>
 				<string>#333435</string>
         <key>selection</key>
-        <string>#5A647E</string>
+        <string>#404962</string>
 			</dict>
 		</dict>
     <dict>
@@ -31,7 +31,7 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#4A587F</string>
+        <string>#888888</string>
       </dict>
     </dict>
     <dict>
@@ -62,7 +62,7 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#191919</string>
+        <string>#181818</string>
       </dict>
     </dict>
 		<dict>
@@ -91,6 +91,19 @@
 				<string>#CC7833</string>
 			</dict>
 		</dict>
+    <dict>
+      <key>name</key>
+      <string>Keyword Italic</string>
+      <key>scope</key>
+      <string>keyword.italic</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string>italic</string>
+        <key>foreground</key>
+        <string>#CC7833</string>
+      </dict>
+    </dict>
     <dict>
       <key>name</key>
       <string>Special function call (SASS)</string>
@@ -128,6 +141,19 @@
 				<string>#E6E1DC</string>
 			</dict>
 		</dict>
+    <dict>
+      <key>name</key>
+      <string>Superclass</string>
+      <key>scope</key>
+      <string>entity.other.inherited-class</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string>italic</string>
+        <key>foreground</key>
+        <string>#E6E1DC</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Number</string>
@@ -154,6 +180,19 @@
 				<string>#D0D0FF</string>
 			</dict>
 		</dict>
+    <dict>
+      <key>name</key>
+      <string>Parameter</string>
+      <key>scope</key>
+      <string>variable.parameter, variable.other.block.ruby</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#D0D0FF</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Constant</string>
@@ -217,6 +256,19 @@
 				<string>#DA4939</string>
 			</dict>
 		</dict>
+    <dict>
+      <key>name</key>
+      <string>Library class</string>
+      <key>scope</key>
+      <string>support.class</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#E6E1DC</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Library type</string>
@@ -239,19 +291,56 @@
 				<string>#A5C261</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markup tag</string>
-			<key>scope</key>
-			<string>meta.tag, declaration.tag, entity.name.tag, entity.other.attribute-name</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#E8BF6A</string>
-			</dict>
-		</dict>
+    <dict>
+      <key>name</key>
+      <string>Separator</string>
+      <key>scope</key>
+      <string>punctuation.section.dot</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#E6E1DC</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Markup tag</string>
+      <key>scope</key>
+      <string>meta.tag, declaration.tag, entity.name.tag</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#E8BF6A</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>HTML attriblute</string>
+      <key>scope</key>
+      <string>entity.other.attribute-name</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#E8BF6A</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Angle bracket tag</string>
+      <key>scope</key>
+      <string>meta.tag</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#E8BF6A</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Invalid</string>

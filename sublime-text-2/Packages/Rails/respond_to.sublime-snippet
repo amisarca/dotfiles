@@ -1,6 +1,6 @@
 <snippet>
-    <content><![CDATA[respond_to do |wants|
-	wants.${1:html}${2: { $0 \}}
+    <content><![CDATA[respond_to do |${1:format}|
+	$1.${2:html}
 end]]></content>
     <tabTrigger>rest</tabTrigger>
     <scope>meta.rails.controller</scope>

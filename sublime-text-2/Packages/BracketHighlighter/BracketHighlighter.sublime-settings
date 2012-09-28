@@ -44,10 +44,10 @@
     "tag_scope"   : "bracket.highlight",
 
     // Outline? (solid|outline|underline|none)
-    "quote_style" : "solid",
-    "curly_style" : "solid",
-    "round_style" : "solid",
-    "square_style": "solid",
+    "quote_style" : "outline",
+    "curly_style" : "outline",
+    "round_style" : "outline",
+    "square_style": "outline",
     "angle_style" : "none",
     "tag_style"   : "outline",
 

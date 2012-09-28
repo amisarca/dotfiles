@@ -122,7 +122,7 @@
             <key>0</key>
             <dict>
               <key>name</key>
-              <string>punctuation.section.embedded.begin.php</string>
+              <string>punctuation.embedded.begin.php</string>
             </dict>
           </dict>
           <key>end</key>
@@ -132,7 +132,7 @@
             <key>0</key>
             <dict>
               <key>name</key>
-              <string>punctuation.section.embedded.end.php</string>
+              <string>punctuation.embedded.end.php</string>
             </dict>
             <key>1</key>
             <dict>

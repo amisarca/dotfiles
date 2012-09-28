@@ -2303,7 +2303,7 @@
       <key>match</key>
       <string>=&gt;</string>
       <key>name</key>
-      <string>keyword.operator.key-value</string>
+      <string>punctuation.section.rocket.ruby</string>
     </dict>
     <dict>
       <key>match</key>

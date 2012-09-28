@@ -201,9 +201,7 @@
       <key>comment</key>
       <string>match stuff like: play :|= function() { … }</string>
       <key>match</key>
-      <string>([a-zA-Z_?$][\w?$]*)\s*(:|=)\s*(?=function)</string>
-      <key>name</key>
-      <string>meta.function.js</string>
+      <string>(\s*[a-zA-Z_?$][\w?$]*)\s*(:|=)\s*(?=function)</string>
     </dict>
    <dict>
       <key>captures</key>
@@ -230,7 +228,7 @@
         </dict>
       </dict>
       <key>begin</key>
-      <string>(\s*)(function)\s*(\w*)\s*(\()</string>
+      <string>(\s*)(function)(\s*\w*)\s*(\()</string>
       <key>end</key>
       <string>(\))</string>
       <key>name</key>
@@ -369,7 +367,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>(warn|info|log|error|time|timeEnd|assert)\b</string>
+      <string>\b(warn|info|log|error|time|timeEnd|assert)\b</string>
       <key>name</key>
       <string>support.function.js.firebug</string>
     </dict>
