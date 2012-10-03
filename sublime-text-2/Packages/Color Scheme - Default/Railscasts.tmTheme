@@ -10,7 +10,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#232323</string>
+				<string>#1A1A1A</string>
 				<key>caret</key>
 				<string>#FFFFFF</string>
 				<key>foreground</key>
@@ -51,18 +51,18 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#232323</string>
+				<string>#1A1A1A</string>
 			</dict>
 		</dict>
     <dict>
       <key>name</key>
       <string>Embedded source</string>
       <key>scope</key>
-      <string>text source, string.unquoted</string>
+      <string>text source.ruby, string.unquoted</string>
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#181818</string>
+        <string>#2B2B2B</string>
       </dict>
     </dict>
 		<dict>
@@ -182,15 +182,26 @@
 		</dict>
     <dict>
       <key>name</key>
-      <string>Parameter</string>
+      <string>Block Parameter</string>
       <key>scope</key>
-      <string>variable.parameter, variable.other.block.ruby</string>
+      <string>variable.other.block.ruby</string>
       <key>settings</key>
       <dict>
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
         <string>#D0D0FF</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Parameter</string>
+      <key>scope</key>
+      <string>variable.parameter</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
       </dict>
     </dict>
 		<dict>

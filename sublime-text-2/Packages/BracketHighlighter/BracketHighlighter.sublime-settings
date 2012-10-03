@@ -5,6 +5,7 @@
     "round_enable" : true,
     "square_enable": true,
     "angle_enable" : true,
+
     // Higlight tags if tag is selected. angle_enable must be true for tags to work
     // if you would like to ignore non tags then set ignore_non_tags to true
     "tag_enable"   : true,
@@ -26,13 +27,13 @@
     "round_language_list" : ["Plain text"],
     "square_language_list": ["Plain text"],
 
-    //filter type (whitelist|blacklist)
-    "angle_language_filter" : "whitelist",
-    "tag_language_filter"   : "whitelist",
-    "quote_language_filter" : "blacklist",
-    "curly_language_filter" : "blacklist",
-    "round_language_filter" : "blacklist",
-    "square_language_filter": "blacklist",
+     //filter type (whitelist|blacklist)
+     "angle_language_filter" : "whitelist",
+     "tag_language_filter"   : "whitelist",
+     "quote_language_filter" : "blacklist",
+     "curly_language_filter" : "blacklist",
+     "round_language_filter" : "blacklist",
+     "square_language_filter": "blacklist",
 
     // Scope? (Defined in theme files.)
     // Examples: (keyword|string|number)
@@ -43,13 +44,13 @@
     "angle_scope" : "bracket.highlight",
     "tag_scope"   : "bracket.highlight",
 
-    // Outline? (solid|outline|underline|none)
-    "quote_style" : "outline",
-    "curly_style" : "outline",
-    "round_style" : "outline",
-    "square_style": "outline",
-    "angle_style" : "none",
-    "tag_style"   : "outline",
+     // Outline? (solid|outline|underline|none)
+     "quote_style" : "outline",
+     "curly_style" : "outline",
+     "round_style" : "outline",
+     "square_style": "outline",
+     "angle_style" : "none",
+     "tag_style"   : "outline",
 
     // Path to gutter icons (relative to Packages)
     // "icon_path" : "BracketHighlighter/icons",
@@ -68,7 +69,10 @@
     // Higlight brackets of tag only instead of entire tag
     "tag_brackets_only" : false,
 
-    // Type of tag selection? (html/xhtml)
+    // Detect self closing tags (experimental)
+    "detect_self_closing_tags": true,
+
+    // Type of tag selection? (html|xhtml|cfml) (experimental:cfml)
     "tag_type" : "html",
 
     // Threshold distance to search
@@ -96,5 +100,5 @@
     // Default string escape mode for string brackets (string|regex)
     // string escape: \\{
     // regex escape: \{
-    "default_bracket_string_escape_mode": "regex"
-}
+      "default_bracket_string_escape_mode": "regex"
+    }
