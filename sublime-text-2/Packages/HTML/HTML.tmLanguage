@@ -226,7 +226,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?:^\s+)?(&lt;)((?i:style))\b(?![^&gt;]*/&gt;)</string>
+			<string>(&lt;)((?i:style))\b(?![^&gt;]*/&gt;)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -246,7 +246,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(&lt;/)((?i:style))(&gt;)(?:\s*\n)?</string>
+			<string>(&lt;/)((?i:style))(&gt;)?</string>
 			<key>name</key>
 			<string>source.sass.embedded.html</string>
 			<key>patterns</key>
@@ -284,7 +284,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?:^\s+)?(&lt;)((?i:script))\b(?![^&gt;]*/&gt;)</string>
+			<string>(&lt;)((?i:script))\b(?![^&gt;]*/&gt;)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -299,7 +299,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?&lt;=&lt;/(script|SCRIPT))(&gt;)(?:\s*\n)?</string>
+			<string>(?&lt;=&lt;/(script|SCRIPT))(&gt;)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>2</key>
