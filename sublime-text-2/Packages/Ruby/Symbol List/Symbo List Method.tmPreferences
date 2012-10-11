@@ -13,7 +13,7 @@
 		<key>symbolTransformation</key>
 		<string>
       s/(\s*)def\s+/$1$1def /g/;
-      s/(\s*)class\s+/$1$1class /g/;
+      s/(\s*)class\s+/$1$1/g/;
     </string>
 	</dict>
 	<key>uuid</key>

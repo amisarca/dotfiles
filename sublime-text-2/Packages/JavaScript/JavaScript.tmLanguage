@@ -228,7 +228,7 @@
         </dict>
       </dict>
       <key>begin</key>
-      <string>(\s*)(function)(\s*\w*)\s*(\()</string>
+      <string>(\s*)(function)\s*(\w*)\s*(\()</string>
       <key>end</key>
       <string>(\))</string>
       <key>name</key>
