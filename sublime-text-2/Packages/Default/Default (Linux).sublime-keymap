@@ -12,7 +12,17 @@
   { "keys": ["ctrl+f4"], "command": "close_file" },
   { "keys": ["ctrl+w"], "command": "close" },
 
+  {"keys": ["ctrl+shift+r"], "command": "reindent" , "args": {"single_line": false}},
+
+  { "keys": ["ctrl+shift+."], "command": "erb", "context":
+      [
+        { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
+      ]
+  },
+
   { "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },
+  { "keys": ["ctrl+k", "ctrl+s"], "command": "toggle_status_bar" },
+  { "keys": ["ctrl+k", "ctrl+t"], "command": "toggle_tabs" },
   { "keys": ["f11"], "command": "toggle_full_screen" },
   { "keys": ["shift+f11"], "command": "toggle_distraction_free" },
 
@@ -194,7 +204,7 @@
 
   { "keys": ["ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
   { "keys": ["alt+w"], "command": "find_under_expand" },
-  { "keys": ["ctrl+k", "alt+w"], "command": "find_under_expand_skip" },
+  { "keys": ["alt+e", "alt+w"], "command": "find_under_expand_skip" },
   { "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
   { "keys": ["ctrl+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },
   { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "brackets"} },
@@ -597,7 +607,7 @@
   { "keys": ["ctrl+k", "ctrl+9"], "command": "fold_by_level", "args": {"level": 9} },
   { "keys": ["ctrl+k", "ctrl+0"], "command": "unfold_all" },
   { "keys": ["ctrl+k", "ctrl+j"], "command": "unfold_all" },
-  { "keys": ["ctrl+k", "ctrl+t"], "command": "fold_tag_attributes" },
+  { "keys": ["ctrl+k", "ctrl+p"], "command": "fold_tag_attributes" },
 
   { "keys": ["context_menu"], "command": "context_menu" },
 
