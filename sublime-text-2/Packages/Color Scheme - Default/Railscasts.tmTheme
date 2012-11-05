@@ -10,7 +10,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#1A1A1A</string>
+				<string>#101010</string>
 				<key>caret</key>
 				<string>#FFFFFF</string>
 				<key>foreground</key>
@@ -20,7 +20,7 @@
 				<key>lineHighlight</key>
 				<string>#333435</string>
         <key>selection</key>
-        <string>#404962</string>
+        <string>#3B445D</string>
 			</dict>
 		</dict>
     <dict>
@@ -51,7 +51,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#1A1A1A</string>
+				<string>#101010</string>
 			</dict>
 		</dict>
     <dict>
@@ -62,7 +62,7 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#252525</string>
+        <string>#1E1E1E</string>
       </dict>
     </dict>
 		<dict>
