@@ -180,10 +180,11 @@ class TodoExtractor(object):
                             yield {'filepath': filepath, 'linenum': linenum + 1, 'match': match}
             except IOError:
                 ## Probably a broken symlink
-                pass
+                f = None
             finally:
                 self.file_counter.increment()
-                f.close()
+                if f is not None:
+                    f.close()
 
 
 class TodoRenderer(object):
@@ -201,7 +202,7 @@ class TodoRenderer(object):
     def header(self):
         hr = u'+ {0} +'.format('-' * 76)
         return u'{hr}\n| TODOS @ {0:<68} |\n| {1:<76} |\n{hr}\n'.format(
-            datetime.utcnow().strftime('%A %d %B %Y %H:%M').decode("utf-8"),
+            datetime.now().strftime('%A %d %B %Y %H:%M').decode("utf-8"),
             u'{0} files scanned'.format(self.file_counter),
             hr=hr)
 
