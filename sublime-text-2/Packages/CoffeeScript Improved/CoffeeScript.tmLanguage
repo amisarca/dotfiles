@@ -73,21 +73,26 @@
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>variable.parameter.coffee</string>
+          <string>punctuation.section.comma.ruby</string>
         </dict>
         <key>3</key>
         <dict>
           <key>name</key>
-          <string>punctuation.separator.variable.ruby</string>
+          <string>variable.parameter.coffee</string>
         </dict>
         <key>4</key>
+        <dict>
+          <key>name</key>
+          <string>punctuation.separator.variable.ruby</string>
+        </dict>
+        <key>5</key>
         <dict>
           <key>name</key>
           <string>keyword.operator.coffee</string>
         </dict>
       </dict>
       <key>begin</key>
-      <string>(:|=|\s)\(([_a-zA-Z][_a-zA-Z0-9]*)\s*(,|(=))(?!=)</string>
+      <string>(:|=|\s|(,\s))\(([_a-zA-Z][_a-zA-Z0-9]*)\s*(,|(=))(?!=)</string>
       <key>end</key>
       <string>\)\s*([=-]&gt;)</string>
       <key>endCaptures</key>
@@ -119,25 +124,6 @@
           <string>punctuation.separator.variable.ruby</string>
         </dict>
       </array>
-    </dict>
-    <dict>
-      <key>captures</key>
-      <dict>
-        <key>1</key>
-        <dict>
-          <key>name</key>
-          <string>keyword.operator.new.coffee</string>
-        </dict>
-        <key>2</key>
-        <dict>
-          <key>name</key>
-          <string>entity.name.type.instance.coffee</string>
-        </dict>
-      </dict>
-      <key>match</key>
-      <string>(new)\s+(\w+(?:\.\w*)*)</string>
-      <key>name</key>
-      <string>meta.class.instance.constructor</string>
     </dict>
     <dict>
       <key>begin</key>

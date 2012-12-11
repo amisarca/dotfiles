@@ -5,7 +5,8 @@
 	<key>fileTypes</key>
 	<array>
 		<!-- Actually, it's generally .m, but that's taken by Objective-C. It needs an entry to show up in the syntax list. -->
-		<string>matlab</string>
+    <string>matlab</string>
+		<string>m</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>^\s*(function|if|switch|while|for|try)\b(?!.*\bend\b).*$</string>

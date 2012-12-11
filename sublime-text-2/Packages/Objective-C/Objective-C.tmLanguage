@@ -4,7 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>m</string>
+		<!-- <string>m</string> -->
 		<string>h</string>
 	</array>
 	<key>foldingStartMarker</key>
@@ -713,7 +713,7 @@
 					</dict>
 					<key>match</key>
 					<string>(?x) (?: (?= \s )  (?:(?&lt;=else|new|return) | (?&lt;!\w)) (\s+))?
-            			(\b 
+            			(\b
             				(?!(while|for|do|if|else|switch|catch|enumerate|return|r?iterate)\s*\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\b | :: )++                  # actual name
             			)
             			 \s*(\()</string>
