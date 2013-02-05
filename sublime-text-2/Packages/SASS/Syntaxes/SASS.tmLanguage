@@ -72,7 +72,7 @@
 			<key>match</key>
 			<string>\b(all|linear|absolute|all-scroll|always|auto|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|col-resize|collapse|crosshair|dashed|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|groove|hand|help|hidden|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|outset|outside|overline|pointer|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|super|sw-resize|table-footer-group|table-header-group|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-roman|uppercase|vertical-ideographic|vertical-text|visible|w-resize|wait|whitespace)\b</string>
 			<key>name</key>
-			<string>support.constant.property-value.sass</string>
+			<string>string.sass</string>
 		</dict>
         <dict>
 			<key>match</key>
@@ -203,6 +203,23 @@
 				</dict>
 			</array>
 		</dict>
+    <dict>
+      <key>begin</key>
+      <string>'</string>
+      <key>end</key>
+      <string>'</string>
+      <key>name</key>
+      <string>string.quoted.double.sass</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>match</key>
+          <string>\\.</string>
+          <key>name</key>
+          <string>constant.character.escaped.sass</string>
+        </dict>
+      </array>
+    </dict>
 		<dict>
 			<key>match</key>
 			<string>\.[a-zA-Z0-9_-]+</string>
@@ -287,7 +304,7 @@
 			<key>match</key>
 			<string>(\b(?i:arial|century|comic|courier|garamond|georgia|helvetica|impact|lucida|symbol|system|tahoma|times|trebuchet|utopia|verdana|webdings|sans-serif|serif|monospace)\b)</string>
 			<key>name</key>
-			<string>support.constant.font-name.sass</string>
+			<string>string.sass</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

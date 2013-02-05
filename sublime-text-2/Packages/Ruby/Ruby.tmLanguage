@@ -425,18 +425,25 @@
       <key>name</key>
       <string>keyword</string>
     </dict>
-    <dict>
+    <!-- <dict>
       <key>match</key>
       <string>\b[A-Z]\w*(?=((\.|::)[A-Za-z]|\[))</string>
       <key>name</key>
       <string>support.class.ruby</string>
+    </dict> -->
+    <dict>
+      <key>match</key>
+      <string>\b[A-Z_]+\b</string>
+      <key>name</key>
+      <string>variable.other.constant.ruby</string>
     </dict>
     <dict>
       <key>match</key>
       <string>\b[A-Z]\w*\b</string>
       <key>name</key>
-      <string>variable.other.constant.ruby</string>
+      <string>support.class.ruby</string>
     </dict>
+
     <dict>
       <key>begin</key>
       <string>(?x)\s*

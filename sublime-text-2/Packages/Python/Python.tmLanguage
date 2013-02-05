@@ -476,12 +476,12 @@
 								<key>1</key>
                 <dict>
                   <key>name</key>
-                  <string>variable.parameter.function.python</string>
+                  <string>variable.language.python</string>
                 </dict>
                 <key>2</key>
 								<dict>
 									<key>name</key>
-									<string>variable.language.python</string>
+									<string>variable.parameter.function.python</string>
 								</dict>
 								<key>3</key>
 								<dict>
@@ -490,8 +490,12 @@
 								</dict>
 							</dict>
 							<key>match</key>
-							<string>\b((self)|([a-zA-Z_][a-zA-Z_0-9]*))\s*(?:(,)|(?=[\n\)]))</string>
+							<string>\b(self)|([a-zA-Z_][a-zA-Z_0-9]*)</string>
 						</dict>
+            <dict>
+              <key>include</key>
+              <string>$self</string>
+            </dict>
 					</array>
 				</dict>
 			</array>
@@ -1490,41 +1494,6 @@
 			<string>\b(and|as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|not|or|pass|print|raise|return|try|while|with|yield)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.name.python</string>
-		</dict>
-		<key>keyword_arguments</key>
-		<dict>
-			<key>begin</key>
-			<string>\b([a-zA-Z_][a-zA-Z_0-9]*)\s*(=)(?!=)</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.python</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.operator.assignment.python</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\s*(?:(,)|(?=$\n?|[\)\:]))</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.separator.parameters.python</string>
-				</dict>
-			</dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-			</array>
 		</dict>
 		<key>language_variables</key>
 		<dict>
