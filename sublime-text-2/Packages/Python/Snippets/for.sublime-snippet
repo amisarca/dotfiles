@@ -5,7 +5,5 @@
     <description>For Loop</description>
 
 	<content><![CDATA[
-for ${1:x} in ${2:xrange(1,10)}:
-	${0:pass}
-]]></content>
+for ${1:x} in $0]]></content>
 </snippet>

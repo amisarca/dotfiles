@@ -58,7 +58,7 @@
       <key>name</key>
       <string>Embedded source</string>
       <key>scope</key>
-      <string>text source.ruby, source.js.embedded, source.sass.embedded, string.unquoted</string>
+      <string>text source.ruby, source.js.embedded, source.sass.embedded, string.unquoted, source.django.embedded</string>
       <key>settings</key>
       <dict>
         <key>background</key>

@@ -1,0 +1,12 @@
+<!-- See http://www.sublimetext.com/docs/snippets for more information -->
+<snippet>
+    <tabTrigger>ife</tabTrigger>
+    <scope>source.python</scope>
+    <description>If Else Condition</description>
+    <content><![CDATA[
+if ${1:$SELECTION}:
+    ${2:pass}
+else:
+    ${3:pass}
+]]></content>
+</snippet>
