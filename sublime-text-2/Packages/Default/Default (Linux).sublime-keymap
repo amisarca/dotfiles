@@ -101,7 +101,7 @@
   { "keys": ["ctrl+pagedown"], "command": "next_view" },
   { "keys": ["ctrl+pageup"], "command": "prev_view" },
 
-  { "keys": ["ctrl+tab"], "command": "next_view_in_stack" },
+  { "keys": ["complementary_dealab"], "command": "next_view_in_stack" },
   { "keys": ["ctrl+shift+tab"], "command": "prev_view_in_stack" },
 
   { "keys": ["ctrl+a"], "command": "select_all" },
@@ -295,7 +295,7 @@
   { "keys": ["ctrl+f9"], "command": "build", "args": {"variant": "Run"} },
   { "keys": ["ctrl+break"], "command": "exec", "args": {"kill": true} },
 
-  { "keys": ["ctrl+t"], "command": "transpose" },
+  { "keys": ["ctrl+q", "ctrl+t"], "command": "transpose" },
 
   { "keys": ["f10"], "command": "sort_lines", "args": {"case_sensitive": false} },
   { "keys": ["ctrl+f10"], "command": "sort_lines", "args": {"case_sensitive": true} },

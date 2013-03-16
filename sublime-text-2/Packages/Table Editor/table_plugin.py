@@ -34,17 +34,17 @@ class AbstractTableCommand(sublime_plugin.TextCommand):
     def syntax(self):
         syntax_name = self.view.settings().get("table_editor_syntax")
         if syntax_name == "Simple":
-            syntax = tablelib.simple_syntax
+            syntax = tablelib.simple_syntax()
         elif syntax_name == "EmacsOrgMode":
-            syntax = tablelib.emacs_org_mode_syntax
+            syntax = tablelib.emacs_org_mode_syntax()
         elif syntax_name == "Pandoc":
-            syntax = tablelib.pandoc_syntax
+            syntax = tablelib.pandoc_syntax()
         elif syntax_name == "MultiMarkdown":
-            syntax = tablelib.multi_markdown_syntax
+            syntax = tablelib.multi_markdown_syntax()
         elif syntax_name == "reStructuredText":
-            syntax = tablelib.re_structured_text_syntax
+            syntax = tablelib.re_structured_text_syntax()
         elif syntax_name == "Textile":
-            syntax = tablelib.textile_syntax
+            syntax = tablelib.textile_syntax()
         else:
             syntax = self.auto_detect_syntax()
         border_style = (self.view.settings().get("table_editor_border_style",
@@ -61,30 +61,33 @@ class AbstractTableCommand(sublime_plugin.TextCommand):
             syntax.hline_out_border = '|'
             syntax.hline_in_border = '|'
 
-        if self.view.settings().get("table_editor_custom_column_alignment",
-                                    False):
-            syntax.custom_column_alignment = True
-        if self.view.settings().get(
-                               "table_editor_multi_markdown_column_alignment",
-                               False):
-            syntax.multi_markdown_column_alignment = True
-        if self.view.settings().get("table_editor_textile_cell_alignment",
-                                    False):
-            syntax.textile_cell_alignment = True
+        if self.view.settings().has("table_editor_custom_column_alignment"):
+            syntax.custom_column_alignment = self.view.settings().get("table_editor_custom_column_alignment")
+
+        if self.view.settings().has("table_editor_keep_space_left"):
+            syntax.keep_space_left = self.view.settings().get("table_editor_keep_space_left")
+
+        if self.view.settings().has("table_editor_align_number_right"):
+            syntax.align_number_right = self.view.settings().get("table_editor_align_number_right")
+
+        if self.view.settings().has("table_editor_detect_header"):
+            syntax.detect_header = self.view.settings().get("table_editor_detect_header")
+
         return syntax
+
 
     def auto_detect_syntax(self):
         view_syntax = self.view.settings().get('syntax')
         if (view_syntax == 'Packages/Markdown/MultiMarkdown.tmLanguage' or
             view_syntax == 'Packages/Markdown/Markdown.tmLanguage'):
-            return tablelib.multi_markdown_syntax
+            return tablelib.multi_markdown_syntax()
         elif view_syntax == 'Packages/Textile/Textile.tmLanguage':
-            return tablelib.textile_syntax
+            return tablelib.textile_syntax()
         elif (view_syntax ==
                      'Packages/RestructuredText/reStructuredText.tmLanguage'):
-            return tablelib.re_structured_text_syntax
+            return tablelib.re_structured_text_syntax()
         else:
-            return tablelib.simple_syntax
+            return tablelib.simple_syntax()
         #'Packages/Text/Plain text.tmLanguage':
         #
 
@@ -814,14 +817,14 @@ class TableEditorCsvToTable(AbstractTableCommand):
 
 class TableEditorDisableForCurrentView(sublime_plugin.TextCommand):
 
-    def run(self, args):
-        self.view.settings().set("enable_table_editor", False)
+    def run(self, args, prop):
+        self.view.settings().set(prop, False)
 
 
 class TableEditorEnableForCurrentView(sublime_plugin.TextCommand):
 
-    def run(self, args):
-        self.view.settings().set("enable_table_editor", True)
+    def run(self, args, prop):
+        self.view.settings().set(prop, True)
 
 
 class TableEditorDisableForCurrentSyntax(sublime_plugin.TextCommand):

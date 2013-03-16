@@ -21,24 +21,51 @@
 # You should have received a copy of the GNU General Public License
 # along with SublimeTableEditor.  If not, see <http://www.gnu.org/licenses/>.
 
+
 import re
 
-
 class TableSyntax:
+    MUTLI_MARKDOWN_SYTAX = 'Multi Markdown'
+    TEXTILE_SYNTAX = "Textile"
+    EMACS_ORG_MODE_SYNTAX = "Emacs Org Mode"
+    RE_STRUCTURED_TEXT_SYNTAX = "Re Structured Text Syntax"
+    PANDOC_SYNTAX = "Pandoc Syntax"
+    SIMPLE_SYNTAX = "Simple Syntax"
 
-    def __init__(self, hline_out_border='|',
+    def __init__(self, syntax,
+                       hline_out_border='|',
                        hline_in_border='|',
-                       custom_column_alignment=False,
-                       multi_markdown_column_alignment=False,
-                       textile_cell_alignment=False):
+                       custom_column_alignment=False):
+        self.syntax = syntax
         self.vline = '|'
         self.hline_out_border = hline_out_border
         self.hline_in_border = hline_in_border
         #characters from all styles correct switch from one style to other
         self.hline_borders = ['+', '|']
+
         self.custom_column_alignment = custom_column_alignment
-        self.multi_markdown_column_alignment = multi_markdown_column_alignment
-        self.textile_cell_alignment = textile_cell_alignment
+        self.keep_space_left = False
+        self.align_number_right = True
+        self.detect_header = True
+
+    def multi_markdown_syntax(self):
+        return self.syntax == TableSyntax.MUTLI_MARKDOWN_SYTAX
+
+    def textile_syntax(self):
+        return self.syntax == TableSyntax.TEXTILE_SYNTAX
+
+    def emacs_org_mode_syntax(self):
+        return self.syntax == TableSyntax.EMACS_ORG_MODE_SYNTAX
+
+    def re_structured_text_syntax(self):
+        return self.syntax == TableSyntax.RE_STRUCTURED_TEXT_SYNTAX
+
+    def pandoc_syntax(self):
+        return self.syntax == TableSyntax.PANDOC_SYNTAX
+
+    def simple_syntax(self):
+        return self.syntax == TableSyntax.SIMPLE_SYNTAX
+
 
     def __str__(self):
         return """
@@ -78,247 +105,425 @@ class TableSyntax:
         return self.is_single_hline(text) or self.is_double_hline(text)
 
 
-simple_syntax = TableSyntax(hline_out_border='|',
-                          hline_in_border='|',
-                          custom_column_alignment=True,
-                          multi_markdown_column_alignment=False,
-                          textile_cell_alignment=False)
 
-emacs_org_mode_syntax = TableSyntax(hline_out_border='|',
-                          hline_in_border='+',
-                          custom_column_alignment=False,
-                          multi_markdown_column_alignment=False,
-                          textile_cell_alignment=False)
-
-pandoc_syntax = TableSyntax(hline_out_border='+',
-                          hline_in_border='+',
-                          custom_column_alignment=False,
-                          multi_markdown_column_alignment=False,
-                          textile_cell_alignment=False)
-
-re_structured_text_syntax = TableSyntax(hline_out_border='+',
-                                      hline_in_border='+',
-                                      custom_column_alignment=False,
-                                      multi_markdown_column_alignment=False,
-                                      textile_cell_alignment=False)
-
-multi_markdown_syntax = TableSyntax(hline_out_border='|',
-                                  hline_in_border='|',
-                                  custom_column_alignment=False,
-                                  multi_markdown_column_alignment=True,
-                                  textile_cell_alignment=False)
+def simple_syntax():
+    return TableSyntax(syntax = TableSyntax.SIMPLE_SYNTAX,
+                       hline_out_border='|',
+                       hline_in_border='|',
+                       custom_column_alignment=True)
 
 
-textile_syntax = TableSyntax(hline_out_border='|',
-                           hline_in_border='|',
-                           custom_column_alignment=False,
-                           multi_markdown_column_alignment=False,
-                           textile_cell_alignment=True)
+def emacs_org_mode_syntax():
+    return TableSyntax(syntax = TableSyntax.EMACS_ORG_MODE_SYNTAX,
+                       hline_out_border='|',
+                       hline_in_border='+')
+
+def pandoc_syntax():
+    return TableSyntax(syntax = TableSyntax.PANDOC_SYNTAX,
+                       hline_out_border='+',
+                       hline_in_border='+')
+
+def re_structured_text_syntax():
+    return TableSyntax(syntax = TableSyntax.RE_STRUCTURED_TEXT_SYNTAX,
+                       hline_out_border='+',
+                       hline_in_border='+')
+
+def multi_markdown_syntax():
+    return TableSyntax(syntax = TableSyntax.MUTLI_MARKDOWN_SYTAX,
+                       hline_out_border='|',
+                       hline_in_border='|')
 
 
-class TextTable:
+def textile_syntax():
+    return TableSyntax(syntax = TableSyntax.TEXTILE_SYNTAX,
+                       hline_out_border='|',
+                       hline_in_border='|')
+
+class Column(object):
     ALIGN_LEFT = 'left'
     ALIGN_RIGHT = 'right'
     ALIGN_CENTER = 'center'
 
+    def __init__(self, row):
+        self.row = row
+        self.table = row.table
+        self.syntax = row.table.syntax
+        self.col_len = 0
+        self.align = None
+        self.header = None
+
+    def min_len(self):
+        raise NotImplementedError
+
+    def render(self):
+        raise NotImplementedError
+
+    def align_follow(self):
+        return None
+
+    def new_empty_column(self):
+        raise NotImplementedError
+
+
+class DataColumn(Column):
+
+    def __init__(self, row, data):
+        Column.__init__(self, row)
+        self.data = data
+        self.left_space = ' '
+        self.right_space = ' '
+
+    def _norm(self):
+        if self.syntax.keep_space_left:
+            if self.header:
+                norm = self.data.strip()
+            else:
+                norm = self.data.rstrip()
+                if norm[:1] == ' ':
+                     norm = norm[1:]
+        else:
+            norm = self.data.strip()
+        return norm
+
+
+    def min_len(self):
+        # min of '   ' or ' xxxx '
+        space_len = len(self.left_space) + len(self.right_space)
+        return max(space_len + 1, len(self._norm()) + space_len)
+
+    def new_empty_column(self):
+        return DataColumn(self.row,'')
+
+    def render(self):
+        norm = self._norm()
+        space_len = len(self.left_space) + len(self.right_space)
+
+        if self.header and self.syntax.detect_header:
+            align_value =  norm.center(self.col_len - space_len, ' ')
+        elif self.align == Column.ALIGN_RIGHT:
+            align_value = norm.rjust(self.col_len - space_len, ' ')
+        elif self.align == Column.ALIGN_CENTER:
+            align_value = norm.center(self.col_len - space_len, ' ')
+        else:
+            align_value = norm.ljust(self.col_len - space_len, ' ')
+        return self.left_space + align_value + self.right_space
+
+
+class SeparatorColumn(Column):
+    def __init__(self, row, separator):
+        Column.__init__(self, row)
+        self.separator = separator
+
+    def new_empty_column(self):
+        return SeparatorColumn(self.row,self.separator)
+
+    def min_len(self):
+        # '---' or '==='
+        return 3
+
+    def render(self):
+        return self.separator * self.col_len
+
+
+class CustomAlignColumn(Column):
+    ALIGN_MAP = {'<': Column.ALIGN_LEFT,
+                 '>': Column.ALIGN_RIGHT,
+                 '#': Column.ALIGN_CENTER}
+
+    def __init__(self, row, data):
+        Column.__init__(self, row)
+        self.align_char = re.search(r"[\<]|[\>]|[\#]", data).group(0)
+
+    def align_follow(self):
+        return CustomAlignColumn.ALIGN_MAP[self.align_char]
+
+    def min_len(self):
+        # ' < ' or ' > ' or ' # '
+        return 3
+
+    def new_empty_column(self):
+        return CustomAlignColumn(self.row,'#')
+
+    def render(self):
+        return ' ' + self.align_char * (self.col_len - 2) + ' '
+
+
+class MultiMarkdownAlignColumn(Column):
+    def __init__(self, row, data):
+        Column.__init__(self, row)
+        col = data.strip()
+        if col.count(':') == 2:
+            self._align_follow = Column.ALIGN_CENTER
+        elif col[0] == ':':
+            self._align_follow = Column.ALIGN_LEFT
+        elif col[-1] == ':':
+            self._align_follow = Column.ALIGN_RIGHT
+        else:
+            self._align_follow = None
+
+    def min_len(self):
+        # ' :-: ' or ' :-- ' or ' --: ' or ' --- '
+        return 5
+
+    def new_empty_column(self):
+        return MultiMarkdownAlignColumn(self.row,'-')
+
+    def render(self):
+        if self._align_follow == Column.ALIGN_CENTER:
+            return ' :' + '-' * (self.col_len - 4) + ': '
+        elif self._align_follow == Column.ALIGN_LEFT:
+            return ' :' + '-' * (self.col_len - 4) + '- '
+        elif self._align_follow == Column.ALIGN_RIGHT:
+            return ' -' + '-' * (self.col_len - 4) + ': '
+        else:
+            return ' -' + '-' * (self.col_len - 4) + '- '
+
+    def align_follow(self):
+        return self._align_follow
+
+class TextileCellColumn(Column):
+    PATTERN = r"\s*((?:\_\.)|(?:\<\.)|(?:\>\.)|(?:\=\.)|(?:\<\>\.)|(?:\^\.)|(?:\~\.))(.*)$"
+
+    def __init__(self, row, data):
+        Column.__init__(self, row)
+        mo = re.match(TextileCellColumn.PATTERN, data)
+        self.attr = mo.group(1)
+        self.data = mo.group(2).strip()
+
+    def new_empty_column(self):
+        return DataColumn(self.row,"")
+
+    def min_len(self):
+        # '<. data '
+        return len(self.attr) + len(self.data) + 2
+
+    def render(self):
+        if self.attr == '>.':
+            return self.attr + ' ' + self.data.rjust(self.col_len - len(self.attr) - 2, ' ') + ' '
+        elif self.attr in ['_.','=.']:
+            return self.attr + ' ' + self.data.center(self.col_len - len(self.attr) - 2, ' ') + ' '
+        else:
+            return self.attr + ' ' + self.data.ljust(self.col_len - len(self.attr) - 2, ' ') + ' '
+
+    @staticmethod
+    def is_textile_cell(str_col):
+        return re.match(TextileCellColumn.PATTERN, str_col)
+
+class TextileHeaderColumn(TextileCellColumn):
+    def new_empty_column(self):
+        return TextileHeaderColumn(self.row,"_. ")
+
+
+
+
+class Row:
     ROW_DATA = 'd'
     ROW_SINGLE_SEPARATOR = '-'
     ROW_DOUBLE_SEPARATOR = '='
-    ROW_HEADER = 'h'
     ROW_CUSTOM_ALIGN = '<>#'
     ROW_MULTI_MARKDOWN_ALIGN = ':-:'
+    ROW_TEXTILE_HEADER_syntax = "._"
+
+
+    def __init__(self, table, str_cols):
+        self.table = table
+        self._row_type = None
+
+        if self._is_single_row_separator(str_cols):
+            self._row_type = Row.ROW_SINGLE_SEPARATOR
+            self.columns = [SeparatorColumn(self,'-') for col in str_cols]
+        elif self._is_double_row_separator(str_cols):
+            self._row_type = Row.ROW_DOUBLE_SEPARATOR
+            self.columns = [SeparatorColumn(self,'=') for col in str_cols]
+        elif (self.table.syntax.custom_column_alignment and
+              self._is_custom_align_row(str_cols)):
+            self._row_type = Row.ROW_CUSTOM_ALIGN
+            self.columns = [CustomAlignColumn(self,col) for col in str_cols]
+        elif (self.table.syntax.multi_markdown_syntax()
+              and self._is_multi_markdown_align_row(str_cols)):
+            self._row_type = Row.ROW_MULTI_MARKDOWN_ALIGN
+            self.columns = [MultiMarkdownAlignColumn(self,col) for col in str_cols]
+        elif (self.table.syntax.textile_syntax() and
+              self._is_textile_header_syntax(str_cols)):
+              self._row_type = Row.ROW_TEXTILE_HEADER_syntax
+              self.columns = [TextileHeaderColumn(self,col) for col in str_cols]
+        else:
+            self._row_type = Row.ROW_DATA
+            self.columns = []
+            for col in str_cols:
+                if (self.table.syntax.textile_syntax() and
+                   TextileCellColumn.is_textile_cell(col)):
+                    column = TextileCellColumn(self, col)
+                else:
+                    column = DataColumn(self,col)
+                self.columns.append(column)
+
+
+    @property
+    def row_type(self):
+        return self._row_type
+
+    def is_header_separator(self):
+        return self._row_type in (Row.ROW_SINGLE_SEPARATOR,
+                                  Row.ROW_DOUBLE_SEPARATOR,
+                                  Row.ROW_MULTI_MARKDOWN_ALIGN)
+
+
+    def _is_single_row_separator(self, str_cols):
+        for col in str_cols:
+            if not re.match(r"^\s*[\-]+\s*$", col):
+                return False
+        return True
+
+
+    def _is_double_row_separator(self, str_cols):
+        for col in str_cols:
+            if not re.match(r"^\s*[\=]+\s*$", col):
+                return False
+        return True
+
+    def _is_custom_align_row(self, str_cols):
+        for col in str_cols:
+            if not re.match(r"^\s*([\<]+|[\>]+|[\#]+)\s*$", col):
+                return False
+        return True
+
+    def _is_multi_markdown_align_row(self, str_cols):
+        for col in str_cols:
+            if not re.match(r"^\s*([\:]?[\-]+[\:]?)\s*$", col):
+                return False
+        return True
+
+    def _is_textile_header_syntax(self, str_cols):
+        for col in str_cols:
+            if not re.match(r"^\s*\_\..*$", col):
+                return False
+        return True
+
+
+
+    @property
+    def str_cols(self):
+        return [column.render() for column in self.columns]
+
+    def render(self):
+        syntax = self.table.syntax
+        if (self.row_type == Row.ROW_SINGLE_SEPARATOR or
+            self.row_type == Row.ROW_DOUBLE_SEPARATOR):
+            return (syntax.hline_out_border
+                + syntax.hline_in_border.join(self.str_cols)
+                + syntax.hline_out_border)
+        else:
+            vline = syntax.vline
+            return vline + vline.join(self.str_cols) + vline
+
+
+class TextTable:
+
 
     def __init__(self, text, syntax):
         self.text = text
         self.syntax = syntax
         self._rows = []
-        self._row_types = []
-        self._col_types = []
-        self._col_lens = []
 
-        self._header_found = False
 
-    def _extend_list(self, list, size, fill_value):
-        assert len(list) < size
-        return list + [fill_value for x in range(size - len(list))]
+    def add_row(self, row):
+        self._rows.append(row)
 
-    def _adjust_col(self, col, size, fillchar):
-        assert len(col) < size
-        return col.ljust(size, fillchar)
+    def pack(self):
+        column_count = max([len(row.columns) for row in self._rows])
+        #adjust/extend column count
+        for row in self._rows:
+            column = row.columns[0]
+            diff_count = column_count - len(row.columns)
+            for i in range(diff_count):
+                row.columns.append(column.new_empty_column())
 
-    def _norm_data(self, col):
-        col = col.strip()
-        if len(col) == 0:
-            return '   '
-        if col[0] != ' ':
-            col = ' ' + col
-        if (col[-1] != ' '):
-            col = col + ' '
-        return col
+        if self.syntax.textile_syntax():
+            textile_sizes = [0] * column_count
+            for row in self._rows:
+                for col_ind, column in enumerate(row.columns):
+                    if isinstance(column, TextileCellColumn):
+                        textile_sizes[col_ind] = max(textile_sizes[col_ind], len(column.attr))
+            for row in self._rows:
+                for left_size, column in zip(textile_sizes, row.columns):
+                    if isinstance(column, DataColumn):
+                        column.left_space = ' ' * (left_size + 1)
 
-    def _norm_multi_markdown(self, col):
-        col = col.strip()
-        if col.count(':') == 2:
-            return ':-:'
-        elif col[0] == ':':
-            return ':-'
-        elif col[-1] == ':':
-            return '-:'
-        else:
-            return '-'
+        #calculate column lens
+        col_lens = [0] * column_count
+        for row in self._rows:
+            new_col_lens = [column.min_len() for column in row.columns]
+            col_lens = [max(x, y) for x, y in zip(col_lens, new_col_lens)]
 
-    def _is_single_row_separator(self, row):
-        for col in row:
-            if not re.match(r"^\s*[\-]+\s*$", col):
+        #set column len
+        for row in self._rows:
+            for column, col_len in zip(row.columns, col_lens):
+                column.col_len = col_len
+
+        #header
+        header_separator_index = -1
+        first_data_index = -1
+        if self.syntax.detect_header:
+            for row_ind,row in enumerate(self._rows):
+                if first_data_index == -1 and row.row_type == Row.ROW_DATA:
+                    first_data_index = row_ind
+                if (first_data_index != -1 and header_separator_index == -1 and
+                    row.is_header_separator()):
+                    header_separator_index = row_ind
+                    for header_index in range(first_data_index, header_separator_index):
+                        if self._rows[header_index].row_type == Row.ROW_DATA:
+                            for column in self._rows[header_index].columns:
+                                column.header = True
+
+
+        #set column alignment
+        data_alignment = [None] * len(col_lens)
+        for row_ind,row in enumerate(self._rows):
+            if row_ind < header_separator_index:
+                if row.row_type in (Row.ROW_CUSTOM_ALIGN, Row.ROW_MULTI_MARKDOWN_ALIGN):
+                    for col_ind,column in enumerate(row.columns):
+                        data_alignment[col_ind] = column.align_follow()
+                continue
+            elif row.row_type in (Row.ROW_CUSTOM_ALIGN, Row.ROW_MULTI_MARKDOWN_ALIGN):
+                for col_ind,column in enumerate(row.columns):
+                    data_alignment[col_ind] = column.align_follow()
+            elif row.row_type == Row.ROW_DATA:
+                for col_ind,column in enumerate(row.columns):
+                    if data_alignment[col_ind] is None:
+                        if self.syntax.align_number_right and self._is_number_column(row_ind, col_ind):
+                            data_alignment[col_ind] = Column.ALIGN_RIGHT
+                        else:
+                            data_alignment[col_ind] = Column.ALIGN_LEFT
+                    column.align = data_alignment[col_ind]
+
+
+
+    def _is_number_column(self, start_row_ind, col_ind):
+        assert self._rows[start_row_ind].row_type == Row.ROW_DATA
+        for row in self._rows[start_row_ind:]:
+            if (row.row_type == Row.ROW_DATA
+                and len(row.columns[col_ind].data.strip()) > 0
+                and not re.match("^\s*[0-9]*[.,]?[0-9]+\s*$", row.columns[col_ind].data)):
                 return False
         return True
 
-    def _is_double_row_separator(self, row):
-        for col in row:
-            if not re.match(r"^\s*[\=]+\s*$", col):
-                return False
-        return True
 
-    def is_custom_align_row(self, row):
-        for col in row:
-            if not re.match(r"^\s*([\<]+|[\>]+|[\#]+)\s*$", col):
-                return False
-        return True
-
-    def is_multi_markdown_align_row(self, row):
-        for col in row:
-            if not re.match(r"^\s*([\:]?[\-]+[\:]?)\s*$", col):
-                return False
-        return True
-
-    def _merge(self, new_row):
-        if (self._is_single_row_separator(new_row) or
-            self._is_double_row_separator(new_row)):
-            if self._is_single_row_separator(new_row):
-                new_row = ['---' for col in new_row]
-                self._row_types.append(TextTable.ROW_SINGLE_SEPARATOR)
-            else:
-                new_row = ['===' for col in new_row]
-                self._row_types.append(TextTable.ROW_DOUBLE_SEPARATOR)
-            if (not self._header_found and
-                TextTable.ROW_DATA in self._row_types):
-                for i, x in enumerate(self._row_types):
-                    if x == TextTable.ROW_DATA:
-                        self._row_types[i] = TextTable.ROW_HEADER
-                    self._header_found = True
-        elif (self.syntax.custom_column_alignment and
-              self.is_custom_align_row(new_row)):
-            new_row = [' ' + re.search(r"[\<]|[\>]|[\#]", col).group(0) + ' '
-                                                        for col in new_row]
-            self._row_types.append(TextTable.ROW_CUSTOM_ALIGN)
-        elif (self.syntax.multi_markdown_column_alignment
-              and self.is_multi_markdown_align_row(new_row)):
-            new_row = [' ' + self._norm_multi_markdown(col) + ' '
-                                                        for col in new_row]
-            self._row_types.append(TextTable.ROW_MULTI_MARKDOWN_ALIGN)
-        else:
-            new_row = [self._norm_data(col) for col in new_row]
-            self._row_types.append(TextTable.ROW_DATA)
-        self._rows.append(new_row)
-        new_col_lens = [len(col) for col in new_row]
-        if len(new_col_lens) < len(self._col_lens):
-            new_col_lens.extend([0] * (len(self._col_lens) - len(new_col_lens)))
-        elif len(self._col_lens) < len(new_col_lens):
-            self._col_lens.extend([0] * (len(new_col_lens) - len(self._col_lens)))
-        self._col_lens = [max(x, y) for x, y in zip(self._col_lens, new_col_lens)]
-
-    def _split_line(self, line):
+    def parse_row(self, line):
         line = line.strip()
-
-        #remove first '|' character
         assert line[0] in self.syntax.hline_borders
-
+        #remove first '|' character
         line = line[1:]
-
         #remove last '|' character
         if len(line) > 0 and line[-1] in self.syntax.hline_borders:
-
             line = line[:-1]
-
         if self.syntax.is_hline(line):
-            return re.split(self.syntax.hline_border_pattern(), line)
+            cols = re.split(self.syntax.hline_border_pattern(), line)
         else:
-            return line.split(self.syntax.vline)
+            cols = line.split(self.syntax.vline)
+        row = Row(self, cols)
+        return row
 
-    def _adjust_column_count(self):
-        column_count = len(self._col_lens)
-        for row in self._rows:
-            row.extend(['   '] * (column_count - len(row)))
-
-    def _auto_detect_column(self, start_row_ind, col_ind):
-        for row, row_type in zip(self._rows[start_row_ind:],
-                                self._row_types[start_row_ind:]):
-            if row_type == TextTable.ROW_CUSTOM_ALIGN:
-                break
-            elif row_type == TextTable.ROW_SINGLE_SEPARATOR:
-                continue
-            elif row_type == TextTable.ROW_DOUBLE_SEPARATOR:
-                continue
-            elif row_type == TextTable.ROW_HEADER:
-                continue
-            if len(row[col_ind].strip()) > 0 and not re.match("^\s*[0-9]*[.,]?[0-9]+\s*$", row[col_ind]):
-                return TextTable.ALIGN_LEFT
-        return TextTable.ALIGN_RIGHT
-
-    def _adjust_column_width(self):
-        out = []
-        column_count = len(self._col_lens)
-        row_count = len(self._rows)
-        data_alignment = [None] * len(self._col_lens)
-        for row_ind in range(row_count):
-            row = self._rows[row_ind]
-            row_type = self._row_types[row_ind]
-            out_row = []
-            for col_ind in range(column_count):
-                col = row[col_ind]
-                col_len = self._col_lens[col_ind]
-
-                if row_type == TextTable.ROW_SINGLE_SEPARATOR:
-                    col = '-' * col_len
-                elif row_type == TextTable.ROW_DOUBLE_SEPARATOR:
-                    col = '=' * col_len
-                elif row_type == TextTable.ROW_HEADER:
-                    col = col.center(col_len, ' ')
-                elif row_type == TextTable.ROW_CUSTOM_ALIGN:
-                    if '<' in col:
-                        data_alignment[col_ind] = TextTable.ALIGN_LEFT
-                        col = ' ' + '<' * (col_len - 2) + ' '
-                    elif '>' in col:
-                        data_alignment[col_ind] = TextTable.ALIGN_RIGHT
-                        col = ' ' + '>' * (col_len - 2) + ' '
-                    elif '#' in col:
-                        data_alignment[col_ind] = TextTable.ALIGN_CENTER
-                        col = ' ' + '#' * (col_len - 2) + ' '
-                elif row_type == TextTable.ROW_MULTI_MARKDOWN_ALIGN:
-                    if col.count(':') == 2:
-                        data_alignment[col_ind] = TextTable.ALIGN_CENTER
-                        col = ' :' + '-' * (col_len - 4) + ': '
-                    elif col[1] == ':':
-                        data_alignment[col_ind] = TextTable.ALIGN_LEFT
-                        col = ' :' + '-' * (col_len - 3) + ' '
-                    elif col[-2] == ':':
-                        data_alignment[col_ind] = TextTable.ALIGN_RIGHT
-                        col = ' ' + '-' * (col_len - 3) + ': '
-                    else:
-                        col = ' ' + '-' * (col_len - 2) + ' '
-
-                elif row_type == TextTable.ROW_DATA:
-                    if (data_alignment[col_ind] is None):
-                        data_alignment[col_ind] = self._auto_detect_column(row_ind, col_ind)
-                    if data_alignment[col_ind] == TextTable.ALIGN_RIGHT:
-                        col = col.rjust(col_len, ' ')
-                    elif data_alignment[col_ind] == TextTable.ALIGN_LEFT:
-                        col = col.ljust(col_len, ' ')
-                    elif data_alignment[col_ind] == TextTable.ALIGN_CENTER:
-                        col = col.center(col_len, ' ')
-                out_row.append(col)
-            out.append(out_row)
-        self._rows = out
 
     def format_to_lines(self):
         lines = self.text.splitlines()
@@ -329,21 +534,10 @@ class TextTable:
         else:
             prefix = ""
         for line in lines:
-            cols = self._split_line(line.strip())
-            self._merge(cols)
-        self._adjust_column_count()
-        self._adjust_column_width()
-
-        def join_row(row):
-            if (self._is_single_row_separator(row) or
-                self._is_double_row_separator(row)):
-                return (self.syntax.hline_out_border
-                    + self.syntax.hline_in_border.join(row)
-                    + self.syntax.hline_out_border)
-            else:
-                vline = self.syntax.vline
-                return vline + vline.join(row) + vline
-        return [prefix + join_row(row) for row in self._rows]
+            row = self.parse_row(line)
+            self.add_row(row)
+        self.pack()
+        return [prefix + row.render() for row in self._rows]
 
     def format_to_text(self):
         return "\n".join(self.format_to_lines())
@@ -361,14 +555,15 @@ def format_to_lines(text, syntax):
 
 if __name__ == '__main__':
     # each line begin from '|'
-
-    raw_text = """      |-
-                | header 1 | header 2 |header 3 | header 4 |
-                | ------------ | ----------- | ---------- | ----- |
-                | :----------- | ----------: | :--------: | ----- |
-              |=
-              |a  |   b   | c |1 |
-              |a  |   b   | c |2 |
-              |-"""
-    syntax = multi_markdown_syntax
+    raw_text = """\
+    |_. attribute list |
+|<. align left |
+| cell|
+|>. align right|
+|=. center |
+|<>. justify |
+|^. valign top |
+|~. bottom |"""
+    syntax = textile_syntax()
+    syntax.detect_header = False
     print "Table:\n", format_to_text(raw_text, syntax)

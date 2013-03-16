@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$this->${1:variable}]]></content>
+    <tabTrigger>.</tabTrigger>
+    <scope>source.php</scope>
+    <description>$this-></description>
+</snippet>

@@ -1,0 +1,16 @@
+-primes(12)
+-import primes
+-from euler10 import primes
+-primes(12)
+-primes(42)
+-1+1
+-divisors(2)
+-require 'euler21'
+-require_local 'euler21'
+-require 'euler21.rb'
+-require './euler21.rb'
+-sum_of_divisors(1184)
+-sum_of_divisors(1210)
+-divisors(1184)
+-divisors(1210)
+-exit

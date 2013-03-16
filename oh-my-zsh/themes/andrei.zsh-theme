@@ -6,5 +6,5 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}] %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}]"
 
 function virtualenv_info {
-    [ $VIRTUAL_ENV ] && echo "%{${fg[blue]}%}[%{${fg[white]}%}env: %{${fg[green]}%}`basename \"$VIRTUAL_ENV\"`%{${fg[blue]}%}] "
+    [ $VIRTUAL_ENV ] && echo "%{${fg[white]}%}(%{${fg[white]}%}env: %{${fg[green]}%}`basename \"$VIRTUAL_ENV\"`%{${fg[white]}%}) "
 }

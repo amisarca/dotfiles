@@ -10,7 +10,8 @@
 		"CoffeeScript Improved",
 		"ColorPicker",
 		"CTags",
-		"Djaneiro",
+		"Djaneiro Improved",
+		"Emmet Improved",
 		"ERB Insert and Toggle Commands",
 		"FileDiffs",
 		"Git",
@@ -20,12 +21,13 @@
 		"RSpec Improved",
 		"SFTP",
 		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeREPL",
 		"SublimeTODO",
 		"Table Cleaner",
 		"Table Editor",
 		"Terminal",
 		"Theme - Soda",
-		"Theme - Soda Improved",
-		"ZenCoding"
+		"Theme - Soda Improved"
 	]
 }

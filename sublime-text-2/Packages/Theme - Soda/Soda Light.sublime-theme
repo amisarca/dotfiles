@@ -110,7 +110,7 @@
 //
 // TAB BUTTONS
 //
-    
+
     // Tab close button
     {
         "class": "tab_close_button",
@@ -189,7 +189,7 @@
 //
 // TAB LABELS
 //
-    
+
     {
         "class": "tab_label",
         "fade": true,
@@ -582,38 +582,38 @@
     // Sidebar group closed
     {
         "class": "disclosure_button_control",
-        "content_margin": [8, 8],
-        "layer0.texture": "Theme - Soda/Soda Light/group-closed.png",
+        "content_margin": [17, 8, 17, 7],
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_closed.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/group-closed-hover.png"
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_closed.png"
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/group-closed-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_closed_selected.png"
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Soda/Soda Light/group-open.png"
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/group-open-hover.png"
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Light/group-open-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Light/custom_folder_open_selected.png"
     },
 
 //
