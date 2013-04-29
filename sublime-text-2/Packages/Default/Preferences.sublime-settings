@@ -9,7 +9,8 @@
 
 
     // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)
-    "theme": "Soda Dark Improved.sublime-theme",
+    "theme": "Soda Ubuntu.sublime-theme",
+    // "theme": "Soda Ubuntu Blue.sublime-theme",
 
     // Note that the font_face and font_size are overriden in the platform
     // specific settings file, for example, "Preferences (Linux).sublime-settings".
@@ -105,7 +106,7 @@
     "highlight_line": false,
 
     // Valid values are "smooth", "phase", "blink", "wide" and "solid".
-    "caret_style": "smooth",
+    "caret_style": "solid",
 
     // Set to false to disable underlining the brackets surrounding the caret
     "match_brackets": true,
@@ -173,7 +174,7 @@
 
     // Set to true to automatically save files when switching to a different file
     // or application
-    "save_on_focus_lost": false,
+    "save_on_focus_lost": true,
 
     // The encoding to use when the encoding can't be determined automatically.
     // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.

@@ -27,9 +27,11 @@
       <key>name</key>
       <string>Bracket Tag</string>
       <key>scope</key>
-      <string>bracket.highlight</string>
+      <string>brackethighlighter.default</string>
       <key>settings</key>
       <dict>
+        <key>foreground</key>
+        <string>#B1B1B1</string>
         <key>background</key>
         <string>#888888</string>
       </dict>

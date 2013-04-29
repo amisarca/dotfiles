@@ -4,7 +4,8 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>xml</string>
+    <string>xml</string>
+		<string>rdf</string>
 		<string>tld</string>
 		<string>jsp</string>
 		<string>pt</string>

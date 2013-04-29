@@ -1,6 +1,6 @@
 [
 	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file"},
-	{ "keys": ["ctrl+alt+shift+n"], "command": "advanced_new_file", "args": {"is_python": true}},
+	{ "keys": ["shift+ctrl+alt+n"], "command": "advanced_new_file", "args": {"is_python": true}},
 	{
 		"keys": ["tab"],
 		"command": "insert_best_completion",

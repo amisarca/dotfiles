@@ -17,6 +17,8 @@
 		"Git",
 		"Package Control",
 		"Prolog",
+		"Python Auto-Complete",
+		"Python PEP8 Autoformat",
 		"Rails Partial",
 		"RSpec Improved",
 		"SFTP",
@@ -24,8 +26,6 @@
 		"SublimeLinter",
 		"SublimeREPL",
 		"SublimeTODO",
-		"Table Cleaner",
-		"Table Editor",
 		"Terminal",
 		"Theme - Soda",
 		"Theme - Soda Improved"
