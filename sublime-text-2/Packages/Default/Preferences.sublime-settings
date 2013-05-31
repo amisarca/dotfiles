@@ -9,8 +9,8 @@
 
 
     // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)
-    "theme": "Soda Ubuntu.sublime-theme",
-    // "theme": "Soda Ubuntu Blue.sublime-theme",
+    // "theme": "Soda Ubuntu.sublime-theme",
+    "theme": "Soda Ubuntu Blue.sublime-theme",
 
     // Note that the font_face and font_size are overriden in the platform
     // specific settings file, for example, "Preferences (Linux).sublime-settings".
@@ -106,7 +106,7 @@
     "highlight_line": false,
 
     // Valid values are "smooth", "phase", "blink", "wide" and "solid".
-    "caret_style": "solid",
+    "caret_style": "phase",
 
     // Set to false to disable underlining the brackets surrounding the caret
     "match_brackets": true,

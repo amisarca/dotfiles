@@ -55,8 +55,8 @@
 
   { "keys": ["ctrl+x"], "command": "cut" },
   { "keys": ["ctrl+c"], "command": "copy" },
-  { "keys": ["ctrl+v"], "command": "paste_and_indent" },
-  { "keys": ["ctrl+shift+v"], "command": "paste" },
+  { "keys": ["ctrl+shift+v"], "command": "paste_and_indent" },
+  { "keys": ["ctrl+v"], "command": "paste" },
   { "keys": ["f12"], "command": "reindent"},
 
   { "keys": ["left"], "command": "move", "args": {"by": "characters", "forward": false} },
