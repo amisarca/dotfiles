@@ -1,0 +1,17 @@
+{
+	"licensed": true,
+	"packages":
+	[
+		"AdvancedNewFile",
+		"ColorPicker",
+		"Emmet"
+	],
+	"startup_sec": 0.452648,
+	"syntax":
+	{
+		"JSON": 39,
+		"RSpec": 4,
+		"Ruby": 7
+	},
+	"time": 1370430000
+}
