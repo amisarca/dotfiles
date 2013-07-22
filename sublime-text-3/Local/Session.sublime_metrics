@@ -4,14 +4,9 @@
 	[
 		"AdvancedNewFile",
 		"ColorPicker",
-		"Emmet"
+		"Emmet",
+		"Theme - Flatland"
 	],
-	"startup_sec": 0.452648,
-	"syntax":
-	{
-		"JSON": 39,
-		"RSpec": 4,
-		"Ruby": 7
-	},
-	"time": 1370430000
+	"startup_sec": 0.244245,
+	"time": 1374461174
 }

@@ -473,24 +473,27 @@
 // LABELS
 //
 
-    // General labels
+   // General labels
     {
         "class": "label_control",
-        "color": [0, 0, 0]
+        "color": [201, 202, 203],
+        "shadow_color": [201, 202, 203],
+        "shadow_offset": [0, 0],
+        "font.bold" : true,
     },
     // Text field labels
     {
         "class": "label_control",
         "parents": [{"class": "panel_control"}],
-        "shadow_color": [250, 250, 250],
-        "shadow_offset": [0, 1]
+        "shadow_color": [201, 202, 203],
+        "shadow_offset": [0, 0]
     },
     // Button labels
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
-        "shadow_color": [245, 245, 245],
-        "shadow_offset": [0, 1]
+        "shadow_color": [201, 202, 203],
+        "shadow_offset": [0, 0]
     },
 
 //
@@ -518,23 +521,28 @@
     // Status bar container
     {
         "class": "status_bar",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/status-bar-background.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/status-bar-background.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
-        "content_margin": [8, 4, 8, 4]
+        "content_margin": [14, 4, 4, 4]
+    },
+    {
+        "class": "status_button",
+        "min_size": [100, 0]
     },
     // Status bar button
     {
         "class": "status_button",
         "min_size": [100, 0]
     },
-    // Status bar label
+   // Status bar label
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [47, 47, 47],
-        "shadow_color": [220, 220, 220],
-        "shadow_offset": [0, 1]
+        "color": [148, 149, 151],
+        "shadow_color": [200, 200, 200],
+        "shadow_offset": [0, 0],
+        "font.bold" : false
     },
 
 //
@@ -544,88 +552,92 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        "layer0.tint": [200, 200, 200],
+        "layer0.tint": [49, 52 ,55],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
-        "layer0.inner_margin": [0, 1, 1, 0],
-        "content_margin": [0, 1, 1, 0]
+        "layer0.inner_margin": [0, 0, 0, 0],
+        "content_margin": [0, 0, 0, 0]
     },
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [34, 3],
-        "indent": 12,
-        "indent_offset": 2,
+        "row_padding": [8, 4],
+        "indent": 14,
+        "indent_offset": 20,
         "indent_top_level": false,
-        "layer0.tint": [232, 232, 232],
-        "layer0.opacity": 1.0
+        "layer0.tint": [49, 52, 55],
+        "layer0.opacity": 1.0,
+        "dark_content": false
     },
     // Sidebar rows
     {
         "class": "tree_row",
-        // "layer0.texture": "Theme - Soda Improved/Soda Light/sidebar-row-selected.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/sidebar-row-selected.png",
         "layer0.opacity": 0.0,
-        "layer0.inner_margin": [1, 1]
+        "layer0.inner_margin": [1,1]
     },
     {
         "class": "tree_row",
         "attributes": ["hover"],
         "layer0.opacity": 0.1,
-        "layer0.tint": [77, 140, 255]
     },
     // Sidebar row selected
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 0.2,
-        "layer0.tint": [77, 140, 255]
+        "layer0.opacity": 1.0
     },
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [110, 126, 141],
+        "color": [148, 149, 151],
         "font.bold": true,
-        "shadow_color": [249, 250, 252],
+        "shadow_color": [148, 149, 151],
         "font.size": 12,
-        "shadow_offset": [0, 1]
-    },
-    {
-        "class": "sidebar_heading",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255],
-        "shadow_color": [34, 94, 145]
+        "shadow_offset": [0, 0]
     },
     // Sidebar entry
     {
-        "font.face": "Ubuntu",
-        "font.size": 13,
+        // "font.face": "Ubuntu",
+        "font.size": 12,
         "class": "sidebar_label",
-        "color": [55, 55, 55],
-        "shadow_color": [210, 221, 231],
-        "shadow_offset": [0, 1]
-    },
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [55, 55, 55],
-        "shadow_color": [210, 221, 231],
-        "shadow_offset": [0, 1]
+        "color": [212, 212, 213],
+        "shadow_offset": [0, 0]
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [70, 86, 102],
-        "shadow_color": [210, 221, 231],
-        "shadow_offset": [0, 1]
+        "color": [212, 212, 213],
+        "shadow_color": [0, 0, 0],
+        "shadow_offset": [0, 0]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+        "color": [255, 255, 255]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "settings": ["bold_folder_labels"],
+        "font.bold": true
+    },
+    // Sidebar entry selected
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255],
+        "shadow_color": [0, 0, 0],
+        "shadow_offset": [0, 0]
     },
     // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/file-close.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/file-close.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Soda Improved/Soda Light/file-close-selected.png",
+        "layer1.texture": "Theme - Flatland/Flatland Dark/file-close-selected.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
         "content_margin": [8, 8]
@@ -646,71 +658,87 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/file-dirty.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/file-dirty.png",
         "layer0.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/file-dirty-selected.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/file-dirty-selected.png"
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/file-close.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/file-close.png"
     },
     // Sidebar file close hover
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/file-close-hover.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/file-close-hover.png"
     },
     // Sidebar group closed
     {
         "class": "disclosure_button_control",
-        "content_margin": [17, 8, 17, 7],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/custom_folder_closed.png",
+        "content_margin": [0, 6, 18, 7],
+        "layer0.texture": "Theme - Flatland/Flatland Dark/group-closed.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "Theme - Flatland/Flatland Dark/group-closed.png"
+    },
+    {
+        "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/custom_folder_closed.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/group-closed-selected.png"
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/custom_folder_open.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/group-open.png"
+    },
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "Theme - Flatland/Flatland Dark/group-open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/custom_folder_open.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/group-open-selected.png"
     },
 
 //
 // STANDARD TEXT BUTTONS
 //
 
-    // Default button state
+    // Standard buttons (used for Find / Replace panel)
     {
         "class": "button_control",
-        "content_margin": [6, 5, 6, 6],
-        "min_size": [75, 0],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-large.png",
+        "content_margin": [4, 6, 4, 5],
+        "min_size": [69, 0],
+        // Default button state
+        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-large.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [6, 6]
+        "layer0.inner_margin": [6, 6],
+        // Pressed button setup
+        "layer1.texture": "Theme - Flatland/Flatland Dark/btn-large-on.png",
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": [6, 6]
     },
-    // Pressed button state
     {
+        // Pressed button state
         "class": "button_control",
-        "attributes": ["pressed"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-large-on.png"
+        "attributes": ["pressed", "hover"],
+        "layer1.opacity": 1.0
     },
 
 //
@@ -730,13 +758,12 @@
 // PANEL BACKGROUNDS
 //
 
-    // Bottom panel background
+   // Bottom panel background
     {
         "class": "panel_control",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/panel-background.png",
-        "layer0.inner_margin": [2, 2, 2, 2],
-        "layer0.opacity": 1.0,
-        "content_margin": [2, 3, 2, 1]
+        "layer0.texture": "Theme - Flatland/Flatland Dark/panel-background.png",
+        "layer0.inner_margin": [2, 2, 2, 5],
+        "layer0.opacity": 1.0
     },
     // Quick panel background
     {
@@ -853,51 +880,33 @@
     // Button group middle
     {
         "class": "icon_button_control",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-group-middle.png",
-        "layer0.inner_margin": [6, 6],
+        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-group-middle.png",
         "layer0.opacity": 1.0,
-        "content_margin": [3, 3]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["selected"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-group-middle-on.png"
+        "content_margin": [4, 4,4,5]
     },
     // Button group left
     {
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-group-left.png",
-        "content_margin": [4, 3, 3, 3]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "selected"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-group-left-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-group-left.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8,4,5,5]
     },
     // Button group right
     {
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-group-right.png",
-        "content_margin": [3, 3, 4, 3]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["right", "selected"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-group-right-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-group-right.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [4,4,8,5]
     },
     // Button single
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-small.png",
-        "content_margin": [4, 3]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "right", "selected"],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/btn-small-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-single.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8,4,8,5]
     },
 
 //
@@ -907,38 +916,38 @@
     // Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-regex-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-regex-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-regex-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-regex-on.png"
     },
     // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-case-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-case-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-case-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-case-on.png"
     },
     // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-word-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-word-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-word-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-word-on.png"
     },
 
 //
@@ -948,26 +957,26 @@
     // Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-context-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-context-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-context-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-context-on.png"
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-buffer-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-buffer-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-buffer-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-buffer-on.png"
     },
 
 //
@@ -977,38 +986,38 @@
     // Reverse search direction button
     {
         "class": "icon_reverse",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-reverse-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-reverse-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-reverse-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-reverse-on.png"
     },
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-wrap-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-wrap-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-wrap-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-wrap-on.png"
     },
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-selection-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-selection-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-selection-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-selection-on.png"
     },
 
 //
@@ -1018,14 +1027,14 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-preserve-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-preserve-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-preserve-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-preserve-on.png"
     },
 
 //
@@ -1035,14 +1044,14 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-highlight-off.png",
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-highlight-off.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [8, 8]
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda Improved/Soda Light/icon-highlight-on.png"
+        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-highlight-on.png"
     }
 
 ]
