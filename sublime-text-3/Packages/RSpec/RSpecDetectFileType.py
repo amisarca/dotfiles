@@ -20,7 +20,7 @@ class RSpecDetectFileTypeCommand(sublime_plugin.EventListener):
           set_syntax(view, "Ruby on Rails", "Rails")
         elif name == "guardfile":
           set_syntax(view, "Ruby on Rails", "Rails")
-        elif name[-3:] == ".rb":
+        elif name[-2:] == "rb":
           set_syntax(view, "Ruby on Rails", "Rails")
 
 

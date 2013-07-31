@@ -271,7 +271,7 @@
       <key>match</key>
       <string>(?&lt;!\.)\bdo\b\s*</string>
       <key>name</key>
-      <string>storage.type.ruby.ruby</string>
+      <string>storage.type.start-block.ruby</string>
     </dict>
     <dict>
       <key>comment</key>

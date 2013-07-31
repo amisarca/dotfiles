@@ -2,15 +2,22 @@
 	"folder_history":
 	[
 		"/Users/andrei/code/rails/noteables",
-		"/Users/andrei/code/python/bloodhound/source",
-		"/Users/andrei/.oh-my-zsh",
-		"/Users/andrei/code/bloodhound/source",
-		"/Users/andrei/code/bloodhound/source/trac/trac",
-		"/home/andrei/code/rails/razdeals",
-		"/home/andrei/code/rails/noteables"
+		"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca",
+		"/usr/local/google/home/amisarca/stuff",
+		"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/sync",
+		"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync",
+		"/google/src/cloud/amisarca/corpdb/google3/codelab/unittesting/python",
+		"/usr/local/google/home/amisarca/code/git_codelab/google3/experimental/users/amisarca/git_codelab",
+		"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/git_codelab",
+		"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca",
+		"/usr/local/google/home/amisarca/.oh-my-zsh",
+		"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve",
+		"/google/obj/workspace/4c91ebe6bc39758aa22d343119849522/b30bff2e-5b25-4b1c-bdea-5753028985f9/blaze-out/gcc-4.X.Y-crosstool-v16-hybrid-grtev3-k8-fastbuild/genfiles/codelab/protocolbuffers/python",
+		"/google/src/cloud/amisarca/protocolbuffers/google3/codelab/protocolbuffers",
+		"/google/src/cloud/amisarca/protocolbuffers/google3"
 	],
 	"last_version": 3047,
-	"last_window_id": 45,
+	"last_window_id": 41,
 	"log_indexing": false,
 	"settings":
 	{
@@ -21,9 +28,109 @@
 			{
 				"selected_items":
 				[
+					[
+						"pro",
+						"corpdb_prop"
+					],
+					[
+						"def",
+						"defs	def self .. end"
+					],
+					[
+						"cl",
+						"cla	class .. end"
+					],
+					[
+						"testDi",
+						"testDiffPropertyForSameString"
+					],
+					[
+						"or",
+						"orgstore_prop"
+					],
+					[
+						"_",
+						"_DiffPropertyBool"
+					],
+					[
+						"te",
+						"testDiffPropertyForSameFloat"
+					],
+					[
+						"bui",
+						"building_corpdb_prop"
+					],
+					[
+						"Di",
+						"DiffProperty"
+					],
+					[
+						"org",
+						"orgstore_building"
+					],
+					[
+						"not",
+						"not_cond"
+					],
+					[
+						"co",
+						"corpdb_prop"
+					],
+					[
+						"cdb",
+						"corpdb_prop_name"
+					],
+					[
+						"_D",
+						"_DiffPropertyFloat"
+					],
+					[
+						"cdbpr",
+						"corpdb_prop_name"
+					],
+					[
+						"orgpo",
+						"orgstore_prop_list"
+					],
+					[
+						"str",
+						"street"
+					],
+					[
+						"cor",
+						"corpdb_prop"
+					],
+					[
+						"corp",
+						"corpdb_building"
+					],
+					[
+						"if",
+						"if	If Condition"
+					],
+					[
+						"in",
+						"individual_mapping"
+					],
+					[
+						"ma",
+						"mapping"
+					],
+					[
+						"prop",
+						"property"
+					],
+					[
+						"fi",
+						"first_building"
+					],
+					[
+						"buil",
+						"building_pb2"
+					]
 				]
 			},
-			"build_system": "",
+			"build_system": "Packages/User/Build/Blaze.sublime-build",
 			"command_palette":
 			{
 				"height": 375.0,
@@ -34,108 +141,52 @@
 						"Preferences: Browse Packages"
 					],
 					[
-						"gitst",
-						"Git: Status"
+						"brow",
+						"Preferences: Browse Packages"
 					],
 					[
 						"bash",
 						"Set Syntax: Shell Script (Bash)"
 					],
 					[
-						"brow",
-						"Preferences: Browse Packages"
-					],
-					[
-						"c+",
-						"Set Syntax: C++"
-					],
-					[
-						"htmlra",
-						"Set Syntax: HTML (Rails)"
-					],
-					[
-						"prege",
-						"Preferences: Settings - User"
-					],
-					[
-						"bros",
-						"Preferences: Browse Packages"
-					],
-					[
-						"packains",
-						"Package Control: Install Package"
-					],
-					[
-						"packare",
-						"Package Control: Remove Package"
-					],
-					[
-						"packins",
-						"Package Control: Install Package"
+						"git",
+						"Git: Add..."
 					],
 					[
 						"packa",
-						"Package Control: Upgrade/Overwrite All Packages"
-					],
-					[
-						"book",
-						"Bookmarks: Toggle"
-					],
-					[
-						"f",
-						"FileDiffs: Menu"
-					],
-					[
-						"file",
-						"FileDiffs: Menu"
-					],
-					[
-						"fiel",
-						"FileDiffs: Menu"
-					],
-					[
-						"filed",
-						"FileDiffs: Menu"
-					],
-					[
-						"filedif",
-						"FileDiffs: Menu"
-					],
-					[
-						"rspec",
-						"Set Syntax: RSpec"
-					],
-					[
-						"filedi",
-						"FileDiffs: Menu"
-					],
-					[
-						"git",
-						"Git: Graph All"
-					],
-					[
-						"githis",
-						"Git: Commit history"
-					],
-					[
-						"gitlog",
-						"Git: Log All"
-					],
-					[
-						"packain",
 						"Package Control: Install Package"
 					],
 					[
-						"packadd",
-						"Package Control: Add Repository"
+						"gcom",
+						"Git: Commit"
 					],
 					[
-						"pac",
-						"Package Control: Install Package"
+						"gad",
+						"Git: Add..."
+					],
+					[
+						"gitad",
+						"Git: Add..."
+					],
+					[
+						"python",
+						"Set Syntax: Python"
 					],
 					[
 						"pyth",
 						"Set Syntax: Python"
+					],
+					[
+						"py",
+						"Set Syntax: Python"
+					],
+					[
+						"pyt",
+						"Set Syntax: Python"
+					],
+					[
+						"c+",
+						"Set Syntax: C++"
 					]
 				],
 				"width": 516.0
@@ -145,10 +196,6 @@
 				"height": 141.0,
 				"history":
 				[
-					"from urllib.request import urlopen; import os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')",
-					"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')",
-					"import urllib3,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')",
-					"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
 				]
 			},
 			"distraction_free":
@@ -162,51 +209,26 @@
 			},
 			"file_history":
 			[
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Ruby/Symbol List Hide Decorator.tmPreferences",
-				"/Users/andrei/Applications/Test.app/Contents/MacOS/Test",
-				"/Applications/Google Keep.app/Contents/MacOS/Keep",
-				"/Users/andrei/.zshrc",
-				"/Users/andrei/code/rails/noteables/app/models/user_tag.rb",
-				"/Users/andrei/code/rails/noteables/app/models/user.rb",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-				"/Users/andrei/code/rails/noteables/app/mailers/user_mailer.rb",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
-				"/Users/andrei/code/rails/noteables/coverage/assets/0.7.1/application.js",
-				"/Users/andrei/code/rails/noteables/app/admin/users.rb",
-				"/Users/andrei/code/rails/noteables/db/migrate/20120727173815_create_followings.rb",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/CoffeeScript Improved/CoffeeScript.tmLanguage",
-				"/Users/andrei/code/rails/noteables/app/views/users/show.js.coffee",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-				"/Users/andrei/code/bloodhound/source/trac/trac/ticket/tests/model.py",
-				"/Users/andrei/code/bloodhound/source/trac/trac/ticket/web_ui.py",
-				"/Users/andrei/code/bloodhound/source/trac/trac/ticket/templates/query_results.html",
-				"/Users/andrei/code/bloodhound/source/trac/trac/ticket/templates/query.html",
-				"/Users/andrei/Downloads/sublime-text-3/Packages/All Autocomplete/all_views_completions.py",
-				"/home/andrei/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-				"/home/andrei/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
-				"/home/andrei/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
-				"/home/andrei/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-				"/home/andrei/code/rails/razdeals/app/admin/users.rb",
-				"/home/andrei/code/rails/razdeals/app/models/users/user.rb",
-				"/home/andrei/code/rails/razdeals/spec/requests/coverage/assets/0.5.3/highlight.css",
-				"/home/andrei/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
-				"/home/andrei/code/rails/razdeals/spec/models/user_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/models/order_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/models/vouchers_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/requests/password_resets_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/requests/user_sessions_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/requests/orders_spec.rb",
-				"/home/andrei/code/rails/noteables/spec/models/memory_spec.rb",
-				"/home/andrei/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap",
-				"/home/andrei/code/rails/razdeals/coverage/index.html",
-				"/home/andrei/code/rails/razdeals/spec/support/auth_macros.rb",
-				"/home/andrei/code/rails/razdeals/app/models/deal.rb",
-				"/home/andrei/.config/sublime-text-3/Packages/AdvancedNewFile/Default (Linux).sublime-keymap",
-				"/home/andrei/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
-				"/home/andrei/code/rails/razdeals/app/controllers/application_controller.rb"
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Flatland/Flatland Dark.sublime-theme",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/sync/building_mapping.py",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/git_codelab/hello_world.cc",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/test.py",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/individual_mapping.py",
+				"/usr/local/google/home/amisarca/.zshrc.orig",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/BUILD",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/BUILD",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Build/blaze.sublime-build",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/BUILD",
+				"/usr/local/google/home/amisarca/.Xmodmap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap"
 			],
 			"find":
 			{
@@ -214,7 +236,7 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 95.0,
 				"where_history":
 				[
 				]
@@ -224,33 +246,48 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"python",
-					"porc",
-					"ctrl+shift",
-					"alt+down",
-					"headless",
-					"@",
-					"if|",
-					"do",
-					"do|",
-					"ubun",
-					"  \n",
-					"changes = []",
-					"self",
-					"face",
-					"comments",
-					"sa",
-					"ctrl+shift+r",
-					"	\n",
-					"f",
-					"ctrl+shift+down",
-					"require",
-					"keys",
-					"ctrl+shift+r",
-					"Au",
-					"super",
-					"urlop",
-					"THEME"
+					"ruby",
+					"ubuntu",
+					"init",
+					"hover",
+					"keyword",
+					"class",
+					"meta.",
+					"class",
+					"def",
+					"keyword",
+					"C4E2F2",
+					"cons",
+					">string",
+					"\"",
+					"not_cond",
+					"not",
+					"corpdb_prop_name",
+					"orgstore_prop_obj",
+					"corpdb_prop_name",
+					"corpdb_prop",
+					"orgstore_prop",
+					"orgstore_prop_desc",
+					"orgstore_prop_name",
+					"orgstore_prop",
+					"orgstore_prop_iterator",
+					"building",
+					"orgstore_building",
+					"corpdb_building",
+					"corpdb_prop",
+					"\"",
+					"individual_test",
+					"individual",
+					"synonymdict",
+					"building_retrieve",
+					"true",
+					"main",
+					"first_building",
+					"trim",
+					"building_retrieve",
+					"open",
+					"shift",
+					"ctrl+alt+["
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -258,6 +295,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"'"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -274,9 +312,17 @@
 				"height": 35.0
 			},
 			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 321.0
+			},
+			"output.git":
+			{
+				"height": 114.0
+			},
 			"replace":
 			{
-				"height": 50.0
+				"height": 66.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -285,100 +331,16 @@
 				"selected_items":
 				[
 					[
-						"modus",
+						"appmoduser",
 						"app/models/user.rb"
 					],
 					[
 						"user",
-						"app/admin/users.rb"
-					],
-					[
-						"road",
-						"trac/trac/ticket/roadmap.py"
-					],
-					[
-						"and",
-						"themes/andrei.zsh-theme"
-					],
-					[
-						"user.",
 						"app/models/user.rb"
 					],
 					[
-						"dbsche",
-						"db/schema.rb"
-					],
-					[
-						"gem",
-						"Gemfile"
-					],
-					[
-						"index",
-						"app/views/cultural_chapters/index.html.erb"
-					],
-					[
-						"inde",
-						"app/views/cultural_chapters/index.html.erb"
-					],
-					[
-						"moduser",
-						"app/models/user.rb"
-					],
-					[
-						"coff",
-						"app/assets/javascripts/timeline.js.coffee"
-					],
-					[
-						"htm",
-						"public/404.html"
-					],
-					[
-						"htmler",
-						"app/views/cultural_chapters/index.html.erb"
-					],
-					[
-						"html",
-						"public/404.html"
-					],
-					[
-						"ht",
-						"app/helpers/timelines_helper.rb"
-					],
-					[
-						"ticketweb",
-						"ticket/web_ui.py"
-					],
-					[
-						"ticketmode",
-						"ticket/tests/model.py"
-					],
-					[
-						"spec",
-						"spec/models/user_spec.rb"
-					],
-					[
-						"pspe",
-						"spec/requests/password_resets_spec.rb"
-					],
-					[
-						"sspec",
-						"spec/requests/user_sessions_spec.rb"
-					],
-					[
-						"evspec",
-						"spec/requests/events_spec.rb"
-					],
-					[
-						"rps",
-						"spec/requests/password_resets_spec.rb"
-					],
-					[
-						"spe",
-						"spec/models/user_spec.rb"
-					],
-					[
-						"rspec",
-						"spec/requests/password_resets_spec.rb"
+						"bui",
+						"corpdb_retrieve/BUILD"
 					]
 				],
 				"width": 0.0
@@ -393,41 +355,24 @@
 			},
 			"select_symbol":
 			{
-				"height": 309.0,
+				"height": 240.0,
 				"selected_items":
 				[
 					[
-						"admin",
-						"admin?"
-					],
-					[
-						"hask",
-						"haskell"
-					],
-					[
-						"current",
-						"current_user"
-					],
-					[
-						"appcon",
-						"ApplicationController"
-					],
-					[
-						"app",
-						"create_complementary_package"
+						"",
+						"main"
 					]
 				],
-				"width": 399.0
+				"width": 378.0
 			},
-			"show_minimap": false,
+			"show_minimap": true,
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 209.0,
+			"side_bar_width": 185.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
-				"max_columns": 2
 			}
 		},
 		"new_window_width": 1440.0
@@ -439,9 +384,109 @@
 			{
 				"selected_items":
 				[
+					[
+						"pro",
+						"corpdb_prop"
+					],
+					[
+						"def",
+						"defs	def self .. end"
+					],
+					[
+						"cl",
+						"cla	class .. end"
+					],
+					[
+						"testDi",
+						"testDiffPropertyForSameString"
+					],
+					[
+						"or",
+						"orgstore_prop"
+					],
+					[
+						"_",
+						"_DiffPropertyBool"
+					],
+					[
+						"te",
+						"testDiffPropertyForSameFloat"
+					],
+					[
+						"bui",
+						"building_corpdb_prop"
+					],
+					[
+						"Di",
+						"DiffProperty"
+					],
+					[
+						"org",
+						"orgstore_building"
+					],
+					[
+						"not",
+						"not_cond"
+					],
+					[
+						"co",
+						"corpdb_prop"
+					],
+					[
+						"cdb",
+						"corpdb_prop_name"
+					],
+					[
+						"_D",
+						"_DiffPropertyFloat"
+					],
+					[
+						"cdbpr",
+						"corpdb_prop_name"
+					],
+					[
+						"orgpo",
+						"orgstore_prop_list"
+					],
+					[
+						"str",
+						"street"
+					],
+					[
+						"cor",
+						"corpdb_prop"
+					],
+					[
+						"corp",
+						"corpdb_building"
+					],
+					[
+						"if",
+						"if	If Condition"
+					],
+					[
+						"in",
+						"individual_mapping"
+					],
+					[
+						"ma",
+						"mapping"
+					],
+					[
+						"prop",
+						"property"
+					],
+					[
+						"fi",
+						"first_building"
+					],
+					[
+						"buil",
+						"building_pb2"
+					]
 				]
 			},
-			"build_system": "",
+			"build_system": "Packages/User/Build/Blaze.sublime-build",
 			"command_palette":
 			{
 				"height": 375.0,
@@ -452,108 +497,52 @@
 						"Preferences: Browse Packages"
 					],
 					[
-						"gitst",
-						"Git: Status"
+						"brow",
+						"Preferences: Browse Packages"
 					],
 					[
 						"bash",
 						"Set Syntax: Shell Script (Bash)"
 					],
 					[
-						"brow",
-						"Preferences: Browse Packages"
-					],
-					[
-						"c+",
-						"Set Syntax: C++"
-					],
-					[
-						"htmlra",
-						"Set Syntax: HTML (Rails)"
-					],
-					[
-						"prege",
-						"Preferences: Settings - User"
-					],
-					[
-						"bros",
-						"Preferences: Browse Packages"
-					],
-					[
-						"packains",
-						"Package Control: Install Package"
-					],
-					[
-						"packare",
-						"Package Control: Remove Package"
-					],
-					[
-						"packins",
-						"Package Control: Install Package"
+						"git",
+						"Git: Add..."
 					],
 					[
 						"packa",
-						"Package Control: Upgrade/Overwrite All Packages"
-					],
-					[
-						"book",
-						"Bookmarks: Toggle"
-					],
-					[
-						"f",
-						"FileDiffs: Menu"
-					],
-					[
-						"file",
-						"FileDiffs: Menu"
-					],
-					[
-						"fiel",
-						"FileDiffs: Menu"
-					],
-					[
-						"filed",
-						"FileDiffs: Menu"
-					],
-					[
-						"filedif",
-						"FileDiffs: Menu"
-					],
-					[
-						"rspec",
-						"Set Syntax: RSpec"
-					],
-					[
-						"filedi",
-						"FileDiffs: Menu"
-					],
-					[
-						"git",
-						"Git: Graph All"
-					],
-					[
-						"githis",
-						"Git: Commit history"
-					],
-					[
-						"gitlog",
-						"Git: Log All"
-					],
-					[
-						"packain",
 						"Package Control: Install Package"
 					],
 					[
-						"packadd",
-						"Package Control: Add Repository"
+						"gcom",
+						"Git: Commit"
 					],
 					[
-						"pac",
-						"Package Control: Install Package"
+						"gad",
+						"Git: Add..."
+					],
+					[
+						"gitad",
+						"Git: Add..."
+					],
+					[
+						"python",
+						"Set Syntax: Python"
 					],
 					[
 						"pyth",
 						"Set Syntax: Python"
+					],
+					[
+						"py",
+						"Set Syntax: Python"
+					],
+					[
+						"pyt",
+						"Set Syntax: Python"
+					],
+					[
+						"c+",
+						"Set Syntax: C++"
 					]
 				],
 				"width": 516.0
@@ -563,10 +552,6 @@
 				"height": 141.0,
 				"history":
 				[
-					"from urllib.request import urlopen; import os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')",
-					"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')",
-					"import urllib3,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')",
-					"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
 				]
 			},
 			"distraction_free":
@@ -580,51 +565,26 @@
 			},
 			"file_history":
 			[
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Ruby/Symbol List Hide Decorator.tmPreferences",
-				"/Users/andrei/Applications/Test.app/Contents/MacOS/Test",
-				"/Applications/Google Keep.app/Contents/MacOS/Keep",
-				"/Users/andrei/.zshrc",
-				"/Users/andrei/code/rails/noteables/app/models/user_tag.rb",
-				"/Users/andrei/code/rails/noteables/app/models/user.rb",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-				"/Users/andrei/code/rails/noteables/app/mailers/user_mailer.rb",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
-				"/Users/andrei/code/rails/noteables/coverage/assets/0.7.1/application.js",
-				"/Users/andrei/code/rails/noteables/app/admin/users.rb",
-				"/Users/andrei/code/rails/noteables/db/migrate/20120727173815_create_followings.rb",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/CoffeeScript Improved/CoffeeScript.tmLanguage",
-				"/Users/andrei/code/rails/noteables/app/views/users/show.js.coffee",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-				"/Users/andrei/code/bloodhound/source/trac/trac/ticket/tests/model.py",
-				"/Users/andrei/code/bloodhound/source/trac/trac/ticket/web_ui.py",
-				"/Users/andrei/code/bloodhound/source/trac/trac/ticket/templates/query_results.html",
-				"/Users/andrei/code/bloodhound/source/trac/trac/ticket/templates/query.html",
-				"/Users/andrei/Downloads/sublime-text-3/Packages/All Autocomplete/all_views_completions.py",
-				"/home/andrei/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-				"/home/andrei/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
-				"/home/andrei/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
-				"/home/andrei/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-				"/home/andrei/code/rails/razdeals/app/admin/users.rb",
-				"/home/andrei/code/rails/razdeals/app/models/users/user.rb",
-				"/home/andrei/code/rails/razdeals/spec/requests/coverage/assets/0.5.3/highlight.css",
-				"/home/andrei/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
-				"/home/andrei/code/rails/razdeals/spec/models/user_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/models/order_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/models/vouchers_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/requests/password_resets_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/requests/user_sessions_spec.rb",
-				"/home/andrei/code/rails/razdeals/spec/requests/orders_spec.rb",
-				"/home/andrei/code/rails/noteables/spec/models/memory_spec.rb",
-				"/home/andrei/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap",
-				"/home/andrei/code/rails/razdeals/coverage/index.html",
-				"/home/andrei/code/rails/razdeals/spec/support/auth_macros.rb",
-				"/home/andrei/code/rails/razdeals/app/models/deal.rb",
-				"/home/andrei/.config/sublime-text-3/Packages/AdvancedNewFile/Default (Linux).sublime-keymap",
-				"/home/andrei/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
-				"/home/andrei/code/rails/razdeals/app/controllers/application_controller.rb"
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Flatland/Flatland Dark.sublime-theme",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/sync/building_mapping.py",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/git_codelab/hello_world.cc",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/test.py",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/individual_mapping.py",
+				"/usr/local/google/home/amisarca/.zshrc.orig",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/BUILD",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/BUILD",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Build/blaze.sublime-build",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/BUILD",
+				"/usr/local/google/home/amisarca/.Xmodmap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap"
 			],
 			"find":
 			{
@@ -632,7 +592,7 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 95.0,
 				"where_history":
 				[
 				]
@@ -642,33 +602,48 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"python",
-					"porc",
-					"ctrl+shift",
-					"alt+down",
-					"headless",
-					"@",
-					"if|",
-					"do",
-					"do|",
-					"ubun",
-					"  \n",
-					"changes = []",
-					"self",
-					"face",
-					"comments",
-					"sa",
-					"ctrl+shift+r",
-					"	\n",
-					"f",
-					"ctrl+shift+down",
-					"require",
-					"keys",
-					"ctrl+shift+r",
-					"Au",
-					"super",
-					"urlop",
-					"THEME"
+					"ruby",
+					"ubuntu",
+					"init",
+					"hover",
+					"keyword",
+					"class",
+					"meta.",
+					"class",
+					"def",
+					"keyword",
+					"C4E2F2",
+					"cons",
+					">string",
+					"\"",
+					"not_cond",
+					"not",
+					"corpdb_prop_name",
+					"orgstore_prop_obj",
+					"corpdb_prop_name",
+					"corpdb_prop",
+					"orgstore_prop",
+					"orgstore_prop_desc",
+					"orgstore_prop_name",
+					"orgstore_prop",
+					"orgstore_prop_iterator",
+					"building",
+					"orgstore_building",
+					"corpdb_building",
+					"corpdb_prop",
+					"\"",
+					"individual_test",
+					"individual",
+					"synonymdict",
+					"building_retrieve",
+					"true",
+					"main",
+					"first_building",
+					"trim",
+					"building_retrieve",
+					"open",
+					"shift",
+					"ctrl+alt+["
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -676,6 +651,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"'"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -714,10 +690,18 @@
 				]
 			},
 			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 321.0
+			},
+			"output.git":
+			{
+				"height": 114.0
+			},
 			"position": "0 4 1440 874 0 0 1440 878 ",
 			"replace":
 			{
-				"height": 50.0
+				"height": 66.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -726,100 +710,16 @@
 				"selected_items":
 				[
 					[
-						"modus",
+						"appmoduser",
 						"app/models/user.rb"
 					],
 					[
 						"user",
-						"app/admin/users.rb"
-					],
-					[
-						"road",
-						"trac/trac/ticket/roadmap.py"
-					],
-					[
-						"and",
-						"themes/andrei.zsh-theme"
-					],
-					[
-						"user.",
 						"app/models/user.rb"
 					],
 					[
-						"dbsche",
-						"db/schema.rb"
-					],
-					[
-						"gem",
-						"Gemfile"
-					],
-					[
-						"index",
-						"app/views/cultural_chapters/index.html.erb"
-					],
-					[
-						"inde",
-						"app/views/cultural_chapters/index.html.erb"
-					],
-					[
-						"moduser",
-						"app/models/user.rb"
-					],
-					[
-						"coff",
-						"app/assets/javascripts/timeline.js.coffee"
-					],
-					[
-						"htm",
-						"public/404.html"
-					],
-					[
-						"htmler",
-						"app/views/cultural_chapters/index.html.erb"
-					],
-					[
-						"html",
-						"public/404.html"
-					],
-					[
-						"ht",
-						"app/helpers/timelines_helper.rb"
-					],
-					[
-						"ticketweb",
-						"ticket/web_ui.py"
-					],
-					[
-						"ticketmode",
-						"ticket/tests/model.py"
-					],
-					[
-						"spec",
-						"spec/models/user_spec.rb"
-					],
-					[
-						"pspe",
-						"spec/requests/password_resets_spec.rb"
-					],
-					[
-						"sspec",
-						"spec/requests/user_sessions_spec.rb"
-					],
-					[
-						"evspec",
-						"spec/requests/events_spec.rb"
-					],
-					[
-						"rps",
-						"spec/requests/password_resets_spec.rb"
-					],
-					[
-						"spe",
-						"spec/models/user_spec.rb"
-					],
-					[
-						"rspec",
-						"spec/requests/password_resets_spec.rb"
+						"bui",
+						"corpdb_retrieve/BUILD"
 					]
 				],
 				"width": 0.0
@@ -834,52 +734,36 @@
 			},
 			"select_symbol":
 			{
-				"height": 309.0,
+				"height": 240.0,
 				"selected_items":
 				[
 					[
-						"admin",
-						"admin?"
-					],
-					[
-						"hask",
-						"haskell"
-					],
-					[
-						"current",
-						"current_user"
-					],
-					[
-						"appcon",
-						"ApplicationController"
-					],
-					[
-						"app",
-						"create_complementary_package"
+						"",
+						"main"
 					]
 				],
-				"width": 399.0
+				"width": 378.0
 			},
 			"settings":
 			{
 			},
-			"show_minimap": false,
+			"show_minimap": true,
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 209.0,
+			"side_bar_width": 185.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
-				"max_columns": 2
 			},
-			"window_id": 43
+			"window_id": 41
 		}
 	],
 	"workspaces":
 	{
 		"recent_workspaces":
 		[
+			"/Users/andrei/code/sublime/projects/noteables.sublime-workspace"
 		]
 	}
 }

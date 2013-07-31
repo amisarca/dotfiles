@@ -480,6 +480,8 @@
         "shadow_color": [201, 202, 203],
         "shadow_offset": [0, 0],
         "font.bold" : true,
+        "font.face" : "Ubuntu",
+        "font.size" : 12
     },
     // Text field labels
     {

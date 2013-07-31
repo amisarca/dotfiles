@@ -253,6 +253,19 @@
 			</dict>
 		</dict>
 		<dict>
+      <key>name</key>
+      <string>Library class</string>
+      <key>scope</key>
+      <string>support.class</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#F8F8F8</string>
+      </dict>
+    </dict>
+		<dict>
 			<key>name</key>
 			<string>Support.function</string>
 			<key>scope</key>
@@ -262,7 +275,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FFB454</string>
+				<string>#72AACA</string>
 			</dict>
 		</dict>
 		<dict>

@@ -1,12 +1,3 @@
 {
-	"licensed": true,
-	"packages":
-	[
-		"AdvancedNewFile",
-		"ColorPicker",
-		"Emmet",
-		"Theme - Flatland"
-	],
-	"startup_sec": 0.244245,
-	"time": 1374461174
+	"time": 1375221236
 }
