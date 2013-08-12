@@ -5,16 +5,20 @@
 		"AdvancedNewFile",
 		"ColorPicker",
 		"Emmet",
+		"AdvancedNewFile",
+		"ColorPicker",
+		"Emmet",
 		"Theme - Flatland",
 		"AdvancedNewFile",
 		"ColorPicker",
 		"Emmet"
 	],
-	"startup_sec": 0.3041,
+	"startup_sec": 0.296191,
 	"syntax":
 	{
 		"JSON": 18,
-		"XML": 27
+		"Plain text": 5,
+		"XML": 29
 	},
 	"time": 1376189395
 }

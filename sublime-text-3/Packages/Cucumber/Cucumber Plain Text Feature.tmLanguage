@@ -99,7 +99,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.language.gherkin.feature</string>
+					<string>storage.type.gherkin.feature</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -117,7 +117,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.language.gherkin.feature.step</string>
+					<string>storage.type.gherkin.feature.step</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -130,7 +130,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.language.gherkin.feature.scenario</string>
+					<string>storage.type.gherkin.feature.scenario</string>
 				</dict>
 				<key>2</key>
 				<dict>

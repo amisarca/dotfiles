@@ -1,8 +1,9 @@
 {
 	"folder_history":
 	[
-		"/Users/andrei/code/rails/noteables",
+		"/Users/andrei/.dotfiles/.git",
 		"/Users/andrei/code/rails/pgabunkerclub",
+		"/Users/andrei/code/rails/noteables",
 		"/Users/andrei/code/python/bep_0007_embeddable_objects",
 		"/Users/andrei/code/python/bep_0007_embeddable_objects/trac/trac",
 		"/Users/andrei/code/python/bep_0007_embeddable_objects/bloodhound_theme/bhtheme/templates",
@@ -21,7 +22,7 @@
 		"/google/src/cloud/amisarca/protocolbuffers/google3"
 	],
 	"last_version": 3047,
-	"last_window_id": 48,
+	"last_window_id": 49,
 	"log_indexing": false,
 	"settings":
 	{
@@ -241,6 +242,7 @@
 			},
 			"file_history":
 			[
+				"/Users/andrei/.dotfiles/.gitignore",
 				"/Users/andrei/code/rails/noteables/app/assets/stylesheets/scaffolds.css.scss",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (Linux).sublime-keymap",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
@@ -288,6 +290,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"support",
+					"keyword.language",
 					":",
 					"storage.type.function.coffee",
 					"=",
@@ -390,6 +394,10 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"fea",
+						"features/manage_courses.feature"
+					],
 					[
 						"moduser",
 						"app/models/user.rb"
@@ -661,6 +669,7 @@
 			},
 			"file_history":
 			[
+				"/Users/andrei/.dotfiles/.gitignore",
 				"/Users/andrei/code/rails/noteables/app/assets/stylesheets/scaffolds.css.scss",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (Linux).sublime-keymap",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
@@ -708,6 +717,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"support",
+					"keyword.language",
 					":",
 					"storage.type.function.coffee",
 					"=",
@@ -833,6 +844,10 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"fea",
+						"features/manage_courses.feature"
+					],
 					[
 						"moduser",
 						"app/models/user.rb"
