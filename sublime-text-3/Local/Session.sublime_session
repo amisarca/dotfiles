@@ -1,8 +1,8 @@
 {
 	"folder_history":
 	[
-		"/Users/andrei/code/rails/pgabunkerclub",
 		"/Users/andrei/code/rails/noteables",
+		"/Users/andrei/code/rails/pgabunkerclub",
 		"/Users/andrei/code/python/bep_0007_embeddable_objects",
 		"/Users/andrei/code/python/bep_0007_embeddable_objects/trac/trac",
 		"/Users/andrei/code/python/bep_0007_embeddable_objects/bloodhound_theme/bhtheme/templates",
@@ -21,7 +21,7 @@
 		"/google/src/cloud/amisarca/protocolbuffers/google3"
 	],
 	"last_version": 3047,
-	"last_window_id": 46,
+	"last_window_id": 48,
 	"log_indexing": false,
 	"settings":
 	{
@@ -137,9 +137,25 @@
 			"build_system": "Packages/User/Build/Blaze.sublime-build",
 			"command_palette":
 			{
-				"height": 93.0,
+				"height": 375.0,
 				"selected_items":
 				[
+					[
+						"broe",
+						"Preferences: Browse Packages"
+					],
+					[
+						"sass",
+						"Set Syntax: SASS"
+					],
+					[
+						"scss",
+						"Set Syntax: CSS"
+					],
+					[
+						"css",
+						"Set Syntax: CSS"
+					],
 					[
 						"brow",
 						"Preferences: Browse Packages"
@@ -225,12 +241,17 @@
 			},
 			"file_history":
 			[
+				"/Users/andrei/code/rails/noteables/app/assets/stylesheets/scaffolds.css.scss",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (Linux).sublime-keymap",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Twilight Improved.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/SASS/Syntaxes/SASS.tmLanguage",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 				"/Users/andrei/code/rails/noteables/app/controllers/events_controller.rb",
 				"/Users/andrei/code/rails/noteables/Gemfile",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Flatland/Flatland Dark.tmTheme",
 				"/Users/andrei/code/rails/noteables/logfile",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Flatland/Flatland Dark.sublime-theme",
@@ -267,6 +288,14 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					":",
+					"storage.type.function.coffee",
+					"=",
+					"class",
+					"=",
+					"@",
+					"FFB454",
+					"#",
 					"auto_complete",
 					"auto",
 					"\"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false}",
@@ -528,9 +557,25 @@
 			"build_system": "Packages/User/Build/Blaze.sublime-build",
 			"command_palette":
 			{
-				"height": 93.0,
+				"height": 375.0,
 				"selected_items":
 				[
+					[
+						"broe",
+						"Preferences: Browse Packages"
+					],
+					[
+						"sass",
+						"Set Syntax: SASS"
+					],
+					[
+						"scss",
+						"Set Syntax: CSS"
+					],
+					[
+						"css",
+						"Set Syntax: CSS"
+					],
 					[
 						"brow",
 						"Preferences: Browse Packages"
@@ -616,12 +661,17 @@
 			},
 			"file_history":
 			[
+				"/Users/andrei/code/rails/noteables/app/assets/stylesheets/scaffolds.css.scss",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (Linux).sublime-keymap",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Twilight Improved.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/SASS/Syntaxes/SASS.tmLanguage",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 				"/Users/andrei/code/rails/noteables/app/controllers/events_controller.rb",
 				"/Users/andrei/code/rails/noteables/Gemfile",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Flatland/Flatland Dark.tmTheme",
 				"/Users/andrei/code/rails/noteables/logfile",
-				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Flatland/Flatland Dark.sublime-theme",
@@ -658,6 +708,14 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					":",
+					"storage.type.function.coffee",
+					"=",
+					"class",
+					"=",
+					"@",
+					"FFB454",
+					"#",
 					"auto_complete",
 					"auto",
 					"\"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false}",
@@ -742,18 +800,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.5,
 					1.0
 				],
 				"rows":
@@ -833,12 +884,6 @@
 						0,
 						0,
 						1,
-						1
-					],
-					[
-						1,
-						0,
-						2,
 						1
 					]
 				]

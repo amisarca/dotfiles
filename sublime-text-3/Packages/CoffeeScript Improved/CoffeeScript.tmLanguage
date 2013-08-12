@@ -54,7 +54,7 @@
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>keyword.operator.coffee</string>
+          <string>storage.type.function.coffee</string>
         </dict>
       </dict>
       <key>match</key>
@@ -100,7 +100,7 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>keyword.operator.coffee</string>
+          <string>storage.type.function.coffee</string>
         </dict>
       </dict>
       <key>name</key>
@@ -297,12 +297,20 @@
     <dict>
       <key>match</key>
       <string>(?x)
-        \$|and=|or=|!|%|&amp;|\^|\*|\/|(\-)?\-(?!&gt;)|\+\+|\+|~|==|=(?!&gt;)|!=|&lt;=|&gt;=|&lt;&lt;=|&gt;&gt;=|
-        &gt;&gt;&gt;=|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\.\.(\.)?|\?|\||\|\||\:|\*=|(?&lt;!\()/=|%=|\+=|\-=|&amp;=|
+        \$|and=|or=|!|%|&amp;|\^|\*|\/|(\-)?\-(?!&gt;)|\+\+|\+|~|==|!=|&lt;=|&gt;=|&lt;&lt;=|&gt;&gt;=|
+        &gt;&gt;&gt;=|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\.\.(\.)?|\?|\||\|\||\*=|(?&lt;!\()/=|%=|\+=|\-=|&amp;=|
         \^=|\b(?&lt;![\.\$])(instanceof|new|delete|typeof|and|or|is|isnt|not)\b
       </string>
       <key>name</key>
       <string>keyword.operator.coffee</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>(?x)
+        =|\:
+      </string>
+      <key>name</key>
+      <string>storage.type.function.coffee</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -646,7 +654,7 @@
           <key>match</key>
           <string>(@)([a-zA-Z_\$]\w*)?</string>
           <key>name</key>
-          <string>variable.other.readwrite.instance.coffee</string>
+          <string>variable.language.coffee</string>
         </dict>
       </array>
     </dict>
