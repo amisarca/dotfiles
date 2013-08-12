@@ -523,7 +523,7 @@
     // Status bar container
     {
         "class": "status_bar",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/status-bar-background.png",
+        "layer0.texture": "Flatland/Flatland Dark/status-bar-background.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
         "content_margin": [14, 4, 4, 4]
@@ -574,7 +574,7 @@
     // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/sidebar-row-selected.png",
+        "layer0.texture": "Flatland/Flatland Dark/sidebar-row-selected.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1,1]
     },
@@ -636,10 +636,10 @@
     // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/file-close.png",
+        "layer0.texture": "Flatland/Flatland Dark/file-close.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Flatland/Flatland Dark/file-close-selected.png",
+        "layer1.texture": "Flatland/Flatland Dark/file-close-selected.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
         "content_margin": [8, 8]
@@ -660,62 +660,62 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/file-dirty.png",
+        "layer0.texture": "Flatland/Flatland Dark/file-dirty.png",
         "layer0.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/file-dirty-selected.png"
+        "layer0.texture": "Flatland/Flatland Dark/file-dirty-selected.png"
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/file-close.png"
+        "layer0.texture": "Flatland/Flatland Dark/file-close.png"
     },
     // Sidebar file close hover
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/file-close-hover.png"
+        "layer0.texture": "Flatland/Flatland Dark/file-close-hover.png"
     },
     // Sidebar group closed
     {
         "class": "disclosure_button_control",
         "content_margin": [0, 6, 18, 7],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/group-closed.png",
+        "layer0.texture": "Flatland/Flatland Dark/group-closed.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/group-closed.png"
+        "layer0.texture": "Flatland/Flatland Dark/group-closed.png"
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/group-closed-selected.png"
+        "layer0.texture": "Flatland/Flatland Dark/group-closed-selected.png"
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/group-open.png"
+        "layer0.texture": "Flatland/Flatland Dark/group-open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/group-open.png"
+        "layer0.texture": "Flatland/Flatland Dark/group-open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/group-open-selected.png"
+        "layer0.texture": "Flatland/Flatland Dark/group-open-selected.png"
     },
 
 //
@@ -728,11 +728,11 @@
         "content_margin": [4, 6, 4, 5],
         "min_size": [69, 0],
         // Default button state
-        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-large.png",
+        "layer0.texture": "Flatland/Flatland Dark/btn-large.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [6, 6],
         // Pressed button setup
-        "layer1.texture": "Theme - Flatland/Flatland Dark/btn-large-on.png",
+        "layer1.texture": "Flatland/Flatland Dark/btn-large-on.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": [6, 6]
     },
@@ -763,7 +763,7 @@
    // Bottom panel background
     {
         "class": "panel_control",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/panel-background.png",
+        "layer0.texture": "Flatland/Flatland Dark/panel-background.png",
         "layer0.inner_margin": [2, 2, 2, 5],
         "layer0.opacity": 1.0
     },
@@ -882,7 +882,7 @@
     // Button group middle
     {
         "class": "icon_button_control",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-group-middle.png",
+        "layer0.texture": "Flatland/Flatland Dark/btn-group-middle.png",
         "layer0.opacity": 1.0,
         "content_margin": [4, 4,4,5]
     },
@@ -890,7 +890,7 @@
     {
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-group-left.png",
+        "layer0.texture": "Flatland/Flatland Dark/btn-group-left.png",
         "layer0.opacity": 1.0,
         "content_margin": [8,4,5,5]
     },
@@ -898,7 +898,7 @@
     {
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-group-right.png",
+        "layer0.texture": "Flatland/Flatland Dark/btn-group-right.png",
         "layer0.opacity": 1.0,
         "content_margin": [4,4,8,5]
     },
@@ -906,7 +906,7 @@
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/btn-single.png",
+        "layer0.texture": "Flatland/Flatland Dark/btn-single.png",
         "layer0.opacity": 1.0,
         "content_margin": [8,4,8,5]
     },
@@ -918,38 +918,38 @@
     // Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-regex-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-regex-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-regex-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-regex-on.png"
     },
     // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-case-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-case-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-case-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-case-on.png"
     },
     // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-word-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-word-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-word-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-word-on.png"
     },
 
 //
@@ -959,26 +959,26 @@
     // Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-context-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-context-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-context-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-context-on.png"
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-buffer-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-buffer-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-buffer-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-buffer-on.png"
     },
 
 //
@@ -988,38 +988,38 @@
     // Reverse search direction button
     {
         "class": "icon_reverse",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-reverse-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-reverse-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-reverse-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-reverse-on.png"
     },
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-wrap-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-wrap-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-wrap-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-wrap-on.png"
     },
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-selection-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-selection-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-selection-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-selection-on.png"
     },
 
 //
@@ -1029,14 +1029,14 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-preserve-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-preserve-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-preserve-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-preserve-on.png"
     },
 
 //
@@ -1046,14 +1046,14 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-highlight-off.png",
+        "layer0.texture": "Flatland/Flatland Dark/icon-highlight-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Flatland/Flatland Dark/icon-highlight-on.png"
+        "layer0.texture": "Flatland/Flatland Dark/icon-highlight-on.png"
     }
 
 ]
