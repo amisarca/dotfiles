@@ -1,3 +1,16 @@
 {
-	"time": 1375221236
+	"licensed": true,
+	"packages":
+	[
+		"AdvancedNewFile",
+		"ColorPicker",
+		"Emmet",
+		"Theme - Flatland"
+	],
+	"startup_sec": 0.498103,
+	"syntax":
+	{
+		"JSON": 13
+	},
+	"time": 1376189395
 }

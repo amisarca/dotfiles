@@ -45,6 +45,19 @@
 
 			</dict>
 		</dict>
+    <dict>
+      <key>name</key>
+      <string>Class name (SASS)</string>
+      <key>scope</key>
+      <string>variable.language.sass</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#FFB454</string>
+      </dict>
+    </dict>
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -131,7 +144,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#b8d977</string>
+				<string>#C4E2F2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -275,7 +288,8 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#72AACA</string>
+        <!-- <string>#72AACA</string> -->
+				<string>#FFB454</string>
 			</dict>
 		</dict>
 		<dict>

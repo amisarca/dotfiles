@@ -1,7 +1,11 @@
 {
 	"folder_history":
 	[
+		"/Users/andrei/code/rails/pgabunkerclub",
 		"/Users/andrei/code/rails/noteables",
+		"/Users/andrei/code/python/bep_0007_embeddable_objects",
+		"/Users/andrei/code/python/bep_0007_embeddable_objects/trac/trac",
+		"/Users/andrei/code/python/bep_0007_embeddable_objects/bloodhound_theme/bhtheme/templates",
 		"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca",
 		"/usr/local/google/home/amisarca/stuff",
 		"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/sync",
@@ -17,7 +21,7 @@
 		"/google/src/cloud/amisarca/protocolbuffers/google3"
 	],
 	"last_version": 3047,
-	"last_window_id": 41,
+	"last_window_id": 46,
 	"log_indexing": false,
 	"settings":
 	{
@@ -133,16 +137,28 @@
 			"build_system": "Packages/User/Build/Blaze.sublime-build",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 93.0,
 				"selected_items":
 				[
+					[
+						"brow",
+						"Preferences: Browse Packages"
+					],
 					[
 						"bro",
 						"Preferences: Browse Packages"
 					],
 					[
-						"brow",
-						"Preferences: Browse Packages"
+						"fil",
+						"FileDiffs: Menu"
+					],
+					[
+						"file",
+						"FileDiffs: Menu"
+					],
+					[
+						"html",
+						"Set Syntax: HTML (Rails)"
 					],
 					[
 						"bash",
@@ -189,7 +205,7 @@
 						"Set Syntax: C++"
 					]
 				],
-				"width": 516.0
+				"width": 507.0
 			},
 			"console":
 			{
@@ -203,12 +219,17 @@
 				"menu_visible": true,
 				"show_minimap": false,
 				"show_open_files": false,
-				"show_tabs": false,
+				"show_tabs": true,
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
 			"file_history":
 			[
+				"/Users/andrei/code/rails/noteables/app/controllers/events_controller.rb",
+				"/Users/andrei/code/rails/noteables/Gemfile",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Flatland/Flatland Dark.tmTheme",
+				"/Users/andrei/code/rails/noteables/logfile",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
@@ -232,7 +253,7 @@
 			],
 			"find":
 			{
-				"height": 27.0
+				"height": 35.0
 			},
 			"find_in_files":
 			{
@@ -246,6 +267,16 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"auto_complete",
+					"auto",
+					"\"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false}",
+					"alt+e",
+					"alt+w",
+					"super+a",
+					"super+t",
+					"ctrl",
+					"ctrl+b",
+					"pri",
 					"ruby",
 					"ubuntu",
 					"init",
@@ -305,7 +336,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 33.0
+				"height": 27.0
 			},
 			"input":
 			{
@@ -322,7 +353,7 @@
 			},
 			"replace":
 			{
-				"height": 66.0
+				"height": 50.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -330,6 +361,14 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"moduser",
+						"app/models/user.rb"
+					],
+					[
+						"htm",
+						"app/views/challenges/accept.html.erb"
+					],
 					[
 						"appmoduser",
 						"app/models/user.rb"
@@ -365,7 +404,7 @@
 				],
 				"width": 378.0
 			},
-			"show_minimap": true,
+			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
@@ -489,16 +528,28 @@
 			"build_system": "Packages/User/Build/Blaze.sublime-build",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 93.0,
 				"selected_items":
 				[
+					[
+						"brow",
+						"Preferences: Browse Packages"
+					],
 					[
 						"bro",
 						"Preferences: Browse Packages"
 					],
 					[
-						"brow",
-						"Preferences: Browse Packages"
+						"fil",
+						"FileDiffs: Menu"
+					],
+					[
+						"file",
+						"FileDiffs: Menu"
+					],
+					[
+						"html",
+						"Set Syntax: HTML (Rails)"
 					],
 					[
 						"bash",
@@ -545,7 +596,7 @@
 						"Set Syntax: C++"
 					]
 				],
-				"width": 516.0
+				"width": 507.0
 			},
 			"console":
 			{
@@ -559,12 +610,17 @@
 				"menu_visible": true,
 				"show_minimap": false,
 				"show_open_files": false,
-				"show_tabs": false,
+				"show_tabs": true,
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
 			"file_history":
 			[
+				"/Users/andrei/code/rails/noteables/app/controllers/events_controller.rb",
+				"/Users/andrei/code/rails/noteables/Gemfile",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Flatland/Flatland Dark.tmTheme",
+				"/Users/andrei/code/rails/noteables/logfile",
 				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
@@ -588,7 +644,7 @@
 			],
 			"find":
 			{
-				"height": 27.0
+				"height": 35.0
 			},
 			"find_in_files":
 			{
@@ -602,6 +658,16 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"auto_complete",
+					"auto",
+					"\"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false}",
+					"alt+e",
+					"alt+w",
+					"super+a",
+					"super+t",
+					"ctrl",
+					"ctrl+b",
+					"pri",
 					"ruby",
 					"ubuntu",
 					"init",
@@ -661,7 +727,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 33.0
+				"height": 27.0
 			},
 			"input":
 			{
@@ -676,11 +742,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.5,
 					1.0
 				],
 				"rows":
@@ -701,7 +774,7 @@
 			"position": "0 4 1440 874 0 0 1440 878 ",
 			"replace":
 			{
-				"height": 66.0
+				"height": 50.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -709,6 +782,14 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"moduser",
+						"app/models/user.rb"
+					],
+					[
+						"htm",
+						"app/views/challenges/accept.html.erb"
+					],
 					[
 						"appmoduser",
 						"app/models/user.rb"
@@ -746,8 +827,23 @@
 			},
 			"settings":
 			{
+				"last_automatic_layout":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					]
+				]
 			},
-			"show_minimap": true,
+			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
@@ -756,7 +852,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 41
+			"window_id": 45
 		}
 	],
 	"workspaces":

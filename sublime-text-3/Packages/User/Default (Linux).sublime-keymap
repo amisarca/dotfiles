@@ -25,7 +25,7 @@
 	{ "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -1.0 } },
 
 	{ "keys": ["alt+w"], "command": "find_under_expand" },
-	{ "keys": ["alt+e", "alt+w"], "command": "find_under_expand_skip" },
+	{ "keys": ["alt+e"], "command": "find_under_expand_skip" },
 
 	{ "keys": ["ctrl+i"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	{ "keys": ["ctrl+g"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },

@@ -1,0 +1,1768 @@
+{
+	"folder_history":
+	[
+		"/Users/andrei/code/rails/noteables",
+		"/Users/andrei/code/rails/pgabunkerclub",
+		"/Users/andrei/code/python/bep_0007_embeddable_objects",
+		"/Users/andrei/code/python/bep_0007_embeddable_objects/trac/trac",
+		"/Users/andrei/code/python/bep_0007_embeddable_objects/bloodhound_theme/bhtheme/templates",
+		"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca",
+		"/usr/local/google/home/amisarca/stuff",
+		"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/sync",
+		"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync",
+		"/google/src/cloud/amisarca/corpdb/google3/codelab/unittesting/python",
+		"/usr/local/google/home/amisarca/code/git_codelab/google3/experimental/users/amisarca/git_codelab",
+		"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/git_codelab",
+		"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca",
+		"/usr/local/google/home/amisarca/.oh-my-zsh",
+		"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve",
+		"/google/obj/workspace/4c91ebe6bc39758aa22d343119849522/b30bff2e-5b25-4b1c-bdea-5753028985f9/blaze-out/gcc-4.X.Y-crosstool-v16-hybrid-grtev3-k8-fastbuild/genfiles/codelab/protocolbuffers/python",
+		"/google/src/cloud/amisarca/protocolbuffers/google3/codelab/protocolbuffers",
+		"/google/src/cloud/amisarca/protocolbuffers/google3"
+	],
+	"last_version": 3047,
+	"last_window_id": 47,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 852.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"pro",
+						"corpdb_prop"
+					],
+					[
+						"def",
+						"defs	def self .. end"
+					],
+					[
+						"cl",
+						"cla	class .. end"
+					],
+					[
+						"testDi",
+						"testDiffPropertyForSameString"
+					],
+					[
+						"or",
+						"orgstore_prop"
+					],
+					[
+						"_",
+						"_DiffPropertyBool"
+					],
+					[
+						"te",
+						"testDiffPropertyForSameFloat"
+					],
+					[
+						"bui",
+						"building_corpdb_prop"
+					],
+					[
+						"Di",
+						"DiffProperty"
+					],
+					[
+						"org",
+						"orgstore_building"
+					],
+					[
+						"not",
+						"not_cond"
+					],
+					[
+						"co",
+						"corpdb_prop"
+					],
+					[
+						"cdb",
+						"corpdb_prop_name"
+					],
+					[
+						"_D",
+						"_DiffPropertyFloat"
+					],
+					[
+						"cdbpr",
+						"corpdb_prop_name"
+					],
+					[
+						"orgpo",
+						"orgstore_prop_list"
+					],
+					[
+						"str",
+						"street"
+					],
+					[
+						"cor",
+						"corpdb_prop"
+					],
+					[
+						"corp",
+						"corpdb_building"
+					],
+					[
+						"if",
+						"if	If Condition"
+					],
+					[
+						"in",
+						"individual_mapping"
+					],
+					[
+						"ma",
+						"mapping"
+					],
+					[
+						"prop",
+						"property"
+					],
+					[
+						"fi",
+						"first_building"
+					],
+					[
+						"buil",
+						"building_pb2"
+					]
+				]
+			},
+			"build_system": "Packages/User/Build/Blaze.sublime-build",
+			"command_palette":
+			{
+				"height": 27.0,
+				"selected_items":
+				[
+					[
+						"sass",
+						"Set Syntax: SASS"
+					],
+					[
+						"scss",
+						"Set Syntax: CSS"
+					],
+					[
+						"css",
+						"Set Syntax: CSS"
+					],
+					[
+						"brow",
+						"Preferences: Browse Packages"
+					],
+					[
+						"bro",
+						"Preferences: Browse Packages"
+					],
+					[
+						"fil",
+						"FileDiffs: Menu"
+					],
+					[
+						"file",
+						"FileDiffs: Menu"
+					],
+					[
+						"html",
+						"Set Syntax: HTML (Rails)"
+					],
+					[
+						"bash",
+						"Set Syntax: Shell Script (Bash)"
+					],
+					[
+						"git",
+						"Git: Add..."
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"gcom",
+						"Git: Commit"
+					],
+					[
+						"gad",
+						"Git: Add..."
+					],
+					[
+						"gitad",
+						"Git: Add..."
+					],
+					[
+						"python",
+						"Set Syntax: Python"
+					],
+					[
+						"pyth",
+						"Set Syntax: Python"
+					],
+					[
+						"py",
+						"Set Syntax: Python"
+					],
+					[
+						"pyt",
+						"Set Syntax: Python"
+					],
+					[
+						"c+",
+						"Set Syntax: C++"
+					]
+				],
+				"width": 507.0
+			},
+			"console":
+			{
+				"height": 141.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": true,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Twilight Improved.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/SASS/Syntaxes/SASS.tmLanguage",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+				"/Users/andrei/code/rails/noteables/app/controllers/events_controller.rb",
+				"/Users/andrei/code/rails/noteables/Gemfile",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Flatland/Flatland Dark.tmTheme",
+				"/Users/andrei/code/rails/noteables/logfile",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Flatland/Flatland Dark.sublime-theme",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/sync/building_mapping.py",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/git_codelab/hello_world.cc",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/test.py",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/individual_mapping.py",
+				"/usr/local/google/home/amisarca/.zshrc.orig",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/BUILD",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/BUILD",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Build/blaze.sublime-build",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/BUILD",
+				"/usr/local/google/home/amisarca/.Xmodmap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 95.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"FFB454",
+					"#",
+					"auto_complete",
+					"auto",
+					"\"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false}",
+					"alt+e",
+					"alt+w",
+					"super+a",
+					"super+t",
+					"ctrl",
+					"ctrl+b",
+					"pri",
+					"ruby",
+					"ubuntu",
+					"init",
+					"hover",
+					"keyword",
+					"class",
+					"meta.",
+					"class",
+					"def",
+					"keyword",
+					"C4E2F2",
+					"cons",
+					">string",
+					"\"",
+					"not_cond",
+					"not",
+					"corpdb_prop_name",
+					"orgstore_prop_obj",
+					"corpdb_prop_name",
+					"corpdb_prop",
+					"orgstore_prop",
+					"orgstore_prop_desc",
+					"orgstore_prop_name",
+					"orgstore_prop",
+					"orgstore_prop_iterator",
+					"building",
+					"orgstore_building",
+					"corpdb_building",
+					"corpdb_prop",
+					"\"",
+					"individual_test",
+					"individual",
+					"synonymdict",
+					"building_retrieve",
+					"true",
+					"main",
+					"first_building",
+					"trim",
+					"building_retrieve",
+					"open",
+					"shift",
+					"ctrl+alt+["
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"'"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 27.0
+			},
+			"input":
+			{
+				"height": 35.0
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 321.0
+			},
+			"output.git":
+			{
+				"height": 114.0
+			},
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"moduser",
+						"app/models/user.rb"
+					],
+					[
+						"htm",
+						"app/views/challenges/accept.html.erb"
+					],
+					[
+						"appmoduser",
+						"app/models/user.rb"
+					],
+					[
+						"user",
+						"app/models/user.rb"
+					],
+					[
+						"bui",
+						"corpdb_retrieve/BUILD"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 240.0,
+				"selected_items":
+				[
+					[
+						"",
+						"main"
+					]
+				],
+				"width": 378.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 185.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1440.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"pro",
+						"corpdb_prop"
+					],
+					[
+						"def",
+						"defs	def self .. end"
+					],
+					[
+						"cl",
+						"cla	class .. end"
+					],
+					[
+						"testDi",
+						"testDiffPropertyForSameString"
+					],
+					[
+						"or",
+						"orgstore_prop"
+					],
+					[
+						"_",
+						"_DiffPropertyBool"
+					],
+					[
+						"te",
+						"testDiffPropertyForSameFloat"
+					],
+					[
+						"bui",
+						"building_corpdb_prop"
+					],
+					[
+						"Di",
+						"DiffProperty"
+					],
+					[
+						"org",
+						"orgstore_building"
+					],
+					[
+						"not",
+						"not_cond"
+					],
+					[
+						"co",
+						"corpdb_prop"
+					],
+					[
+						"cdb",
+						"corpdb_prop_name"
+					],
+					[
+						"_D",
+						"_DiffPropertyFloat"
+					],
+					[
+						"cdbpr",
+						"corpdb_prop_name"
+					],
+					[
+						"orgpo",
+						"orgstore_prop_list"
+					],
+					[
+						"str",
+						"street"
+					],
+					[
+						"cor",
+						"corpdb_prop"
+					],
+					[
+						"corp",
+						"corpdb_building"
+					],
+					[
+						"if",
+						"if	If Condition"
+					],
+					[
+						"in",
+						"individual_mapping"
+					],
+					[
+						"ma",
+						"mapping"
+					],
+					[
+						"prop",
+						"property"
+					],
+					[
+						"fi",
+						"first_building"
+					],
+					[
+						"buil",
+						"building_pb2"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/Users/andrei/code/rails/noteables/app/assets/stylesheets/scaffolds.css.scss",
+					"settings":
+					{
+						"buffer_size": 1017,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/andrei/code/rails/noteables/app/assets/stylesheets/users.css.scss",
+					"settings":
+					{
+						"buffer_size": 176,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (Linux).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 3107,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 34113,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "Packages/User/Build/Blaze.sublime-build",
+			"command_palette":
+			{
+				"height": 27.0,
+				"selected_items":
+				[
+					[
+						"sass",
+						"Set Syntax: SASS"
+					],
+					[
+						"scss",
+						"Set Syntax: CSS"
+					],
+					[
+						"css",
+						"Set Syntax: CSS"
+					],
+					[
+						"brow",
+						"Preferences: Browse Packages"
+					],
+					[
+						"bro",
+						"Preferences: Browse Packages"
+					],
+					[
+						"fil",
+						"FileDiffs: Menu"
+					],
+					[
+						"file",
+						"FileDiffs: Menu"
+					],
+					[
+						"html",
+						"Set Syntax: HTML (Rails)"
+					],
+					[
+						"bash",
+						"Set Syntax: Shell Script (Bash)"
+					],
+					[
+						"git",
+						"Git: Add..."
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"gcom",
+						"Git: Commit"
+					],
+					[
+						"gad",
+						"Git: Add..."
+					],
+					[
+						"gitad",
+						"Git: Add..."
+					],
+					[
+						"python",
+						"Set Syntax: Python"
+					],
+					[
+						"pyth",
+						"Set Syntax: Python"
+					],
+					[
+						"py",
+						"Set Syntax: Python"
+					],
+					[
+						"pyt",
+						"Set Syntax: Python"
+					],
+					[
+						"c+",
+						"Set Syntax: C++"
+					]
+				],
+				"width": 507.0
+			},
+			"console":
+			{
+				"height": 141.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": true,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Twilight Improved.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/SASS/Syntaxes/SASS.tmLanguage",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+				"/Users/andrei/code/rails/noteables/app/controllers/events_controller.rb",
+				"/Users/andrei/code/rails/noteables/Gemfile",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Flatland/Flatland Dark.tmTheme",
+				"/Users/andrei/code/rails/noteables/logfile",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Flatland/Flatland Dark.sublime-theme",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/sync/building_mapping.py",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/git_codelab/hello_world.cc",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/test.py",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/individual_mapping.py",
+				"/usr/local/google/home/amisarca/.zshrc.orig",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/BUILD",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/BUILD",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Build/blaze.sublime-build",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/BUILD",
+				"/usr/local/google/home/amisarca/.Xmodmap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 95.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"FFB454",
+					"#",
+					"auto_complete",
+					"auto",
+					"\"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false}",
+					"alt+e",
+					"alt+w",
+					"super+a",
+					"super+t",
+					"ctrl",
+					"ctrl+b",
+					"pri",
+					"ruby",
+					"ubuntu",
+					"init",
+					"hover",
+					"keyword",
+					"class",
+					"meta.",
+					"class",
+					"def",
+					"keyword",
+					"C4E2F2",
+					"cons",
+					">string",
+					"\"",
+					"not_cond",
+					"not",
+					"corpdb_prop_name",
+					"orgstore_prop_obj",
+					"corpdb_prop_name",
+					"corpdb_prop",
+					"orgstore_prop",
+					"orgstore_prop_desc",
+					"orgstore_prop_name",
+					"orgstore_prop",
+					"orgstore_prop_iterator",
+					"building",
+					"orgstore_building",
+					"corpdb_building",
+					"corpdb_prop",
+					"\"",
+					"individual_test",
+					"individual",
+					"synonymdict",
+					"building_retrieve",
+					"true",
+					"main",
+					"first_building",
+					"trim",
+					"building_retrieve",
+					"open",
+					"shift",
+					"ctrl+alt+["
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"'"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"follow_symlinks": true,
+					"path": "/Users/andrei/code/rails/noteables"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 2,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/Users/andrei/code/rails/noteables/app/assets/stylesheets/scaffolds.css.scss",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1017,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/Users/andrei/code/rails/noteables/app/assets/stylesheets/users.css.scss",
+							"semi_transient": true,
+							"settings":
+							{
+								"buffer_size": 176,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (Linux).sublime-keymap",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3107,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 3,
+							"file": "/Users/andrei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 34113,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										848,
+										848
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 27.0
+			},
+			"input":
+			{
+				"height": 35.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 321.0
+			},
+			"output.git":
+			{
+				"height": 114.0
+			},
+			"position": "0 4 1440 874 0 0 1440 878 ",
+			"project": "",
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"moduser",
+						"app/models/user.rb"
+					],
+					[
+						"htm",
+						"app/views/challenges/accept.html.erb"
+					],
+					[
+						"appmoduser",
+						"app/models/user.rb"
+					],
+					[
+						"user",
+						"app/models/user.rb"
+					],
+					[
+						"bui",
+						"corpdb_retrieve/BUILD"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 240.0,
+				"selected_items":
+				[
+					[
+						"",
+						"main"
+					]
+				],
+				"width": 378.0
+			},
+			"settings":
+			{
+				"last_automatic_layout":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					]
+				]
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 185.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 45,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"pro",
+						"corpdb_prop"
+					],
+					[
+						"def",
+						"defs	def self .. end"
+					],
+					[
+						"cl",
+						"cla	class .. end"
+					],
+					[
+						"testDi",
+						"testDiffPropertyForSameString"
+					],
+					[
+						"or",
+						"orgstore_prop"
+					],
+					[
+						"_",
+						"_DiffPropertyBool"
+					],
+					[
+						"te",
+						"testDiffPropertyForSameFloat"
+					],
+					[
+						"bui",
+						"building_corpdb_prop"
+					],
+					[
+						"Di",
+						"DiffProperty"
+					],
+					[
+						"org",
+						"orgstore_building"
+					],
+					[
+						"not",
+						"not_cond"
+					],
+					[
+						"co",
+						"corpdb_prop"
+					],
+					[
+						"cdb",
+						"corpdb_prop_name"
+					],
+					[
+						"_D",
+						"_DiffPropertyFloat"
+					],
+					[
+						"cdbpr",
+						"corpdb_prop_name"
+					],
+					[
+						"orgpo",
+						"orgstore_prop_list"
+					],
+					[
+						"str",
+						"street"
+					],
+					[
+						"cor",
+						"corpdb_prop"
+					],
+					[
+						"corp",
+						"corpdb_building"
+					],
+					[
+						"if",
+						"if	If Condition"
+					],
+					[
+						"in",
+						"individual_mapping"
+					],
+					[
+						"ma",
+						"mapping"
+					],
+					[
+						"prop",
+						"property"
+					],
+					[
+						"fi",
+						"first_building"
+					],
+					[
+						"buil",
+						"building_pb2"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/Users/andrei/Desktop/Default/Default (Linux).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 34523,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "Packages/User/Build/Blaze.sublime-build",
+			"command_palette":
+			{
+				"height": 27.0,
+				"selected_items":
+				[
+					[
+						"sass",
+						"Set Syntax: SASS"
+					],
+					[
+						"scss",
+						"Set Syntax: CSS"
+					],
+					[
+						"css",
+						"Set Syntax: CSS"
+					],
+					[
+						"brow",
+						"Preferences: Browse Packages"
+					],
+					[
+						"bro",
+						"Preferences: Browse Packages"
+					],
+					[
+						"fil",
+						"FileDiffs: Menu"
+					],
+					[
+						"file",
+						"FileDiffs: Menu"
+					],
+					[
+						"html",
+						"Set Syntax: HTML (Rails)"
+					],
+					[
+						"bash",
+						"Set Syntax: Shell Script (Bash)"
+					],
+					[
+						"git",
+						"Git: Add..."
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"gcom",
+						"Git: Commit"
+					],
+					[
+						"gad",
+						"Git: Add..."
+					],
+					[
+						"gitad",
+						"Git: Add..."
+					],
+					[
+						"python",
+						"Set Syntax: Python"
+					],
+					[
+						"pyth",
+						"Set Syntax: Python"
+					],
+					[
+						"py",
+						"Set Syntax: Python"
+					],
+					[
+						"pyt",
+						"Set Syntax: Python"
+					],
+					[
+						"c+",
+						"Set Syntax: C++"
+					]
+				],
+				"width": 507.0
+			},
+			"console":
+			{
+				"height": 141.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": true,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Flatland Dark.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Color Schemes/Twilight Improved.tmTheme",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/SASS/Syntaxes/SASS.tmLanguage",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+				"/Users/andrei/code/rails/noteables/app/controllers/events_controller.rb",
+				"/Users/andrei/code/rails/noteables/Gemfile",
+				"/Users/andrei/Library/Application Support/Sublime Text 3/Packages/Flatland/Flatland Dark.tmTheme",
+				"/Users/andrei/code/rails/noteables/logfile",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Theme - Soda Improved/Soda Ubuntu Blue.sublime-theme",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Flatland/Flatland Dark.sublime-theme",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/sync/building_mapping.py",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/git_codelab/hello_world.cc",
+				"/usr/local/google/home/amisarca/code/corpdb/google3/experimental/users/amisarca/test.py",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/individual_mapping.py",
+				"/usr/local/google/home/amisarca/.zshrc.orig",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/BUILD",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/sync/BUILD",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/User/Build/blaze.sublime-build",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/corpdb_retrieve/building_retrieve.py",
+				"/google/src/cloud/amisarca/corpdb/google3/experimental/users/amisarca/orgstore_retrieve/BUILD",
+				"/usr/local/google/home/amisarca/.Xmodmap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+				"/usr/local/google/home/amisarca/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 95.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"FFB454",
+					"#",
+					"auto_complete",
+					"auto",
+					"\"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false}",
+					"alt+e",
+					"alt+w",
+					"super+a",
+					"super+t",
+					"ctrl",
+					"ctrl+b",
+					"pri",
+					"ruby",
+					"ubuntu",
+					"init",
+					"hover",
+					"keyword",
+					"class",
+					"meta.",
+					"class",
+					"def",
+					"keyword",
+					"C4E2F2",
+					"cons",
+					">string",
+					"\"",
+					"not_cond",
+					"not",
+					"corpdb_prop_name",
+					"orgstore_prop_obj",
+					"corpdb_prop_name",
+					"corpdb_prop",
+					"orgstore_prop",
+					"orgstore_prop_desc",
+					"orgstore_prop_name",
+					"orgstore_prop",
+					"orgstore_prop_iterator",
+					"building",
+					"orgstore_building",
+					"corpdb_building",
+					"corpdb_prop",
+					"\"",
+					"individual_test",
+					"individual",
+					"synonymdict",
+					"building_retrieve",
+					"true",
+					"main",
+					"first_building",
+					"trim",
+					"building_retrieve",
+					"open",
+					"shift",
+					"ctrl+alt+["
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"'"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/Users/andrei/Desktop/Default/Default (Linux).sublime-keymap",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 34523,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4434,
+										4261
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 999.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 27.0
+			},
+			"input":
+			{
+				"height": 35.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 321.0
+			},
+			"output.git":
+			{
+				"height": 114.0
+			},
+			"position": "0 4 1440 874 0 0 1440 878 ",
+			"project": "",
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"moduser",
+						"app/models/user.rb"
+					],
+					[
+						"htm",
+						"app/views/challenges/accept.html.erb"
+					],
+					[
+						"appmoduser",
+						"app/models/user.rb"
+					],
+					[
+						"user",
+						"app/models/user.rb"
+					],
+					[
+						"bui",
+						"corpdb_retrieve/BUILD"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 240.0,
+				"selected_items":
+				[
+					[
+						"",
+						"main"
+					]
+				],
+				"width": 378.0
+			},
+			"settings":
+			{
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 185.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 47,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/Users/andrei/code/sublime/projects/noteables.sublime-workspace"
+		]
+	}
+}

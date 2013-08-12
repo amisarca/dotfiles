@@ -14,7 +14,10 @@ and don't need to be repeated here. Anything listed here will take precedence, h
   { "keys": ["super+alt+s"], "command": "save_all" },
   { "keys": ["super+w"], "command": "close" },
 
-  { "keys": ["super+k", "super+b"], "command": "toggle_side_bar" },
+  { "keys": ["super+k", "super+s"], "command": "toggle_status_bar" },
+  { "keys": ["super+k", "super+t"], "command": "toggle_tabs" },
+  { "keys": ["super+k", "super+m"], "command": "toggle_minimap" },
+
   { "keys": ["super+ctrl+f"], "command": "toggle_full_screen" },
   { "keys": ["super+ctrl+shift+f"], "command": "toggle_distraction_free" },
 
@@ -41,11 +44,11 @@ and don't need to be repeated here. Anything listed here will take precedence, h
   { "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
   { "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
 
-  { "keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 1.0} },
-  { "keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -1.0} },
+  { "keys": ["ctrl+alt+up"], "command": "move", "args": {"by": "pages", "forward": false} },
+  { "keys": ["ctrl+alt+down"], "command": "move", "args": {"by": "pages", "forward": true} },
 
-  { "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
-  { "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+  { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
 
   { "keys": ["super+shift+["], "command": "prev_view" },
   { "keys": ["super+shift+]"], "command": "next_view" },
@@ -153,8 +156,8 @@ and don't need to be repeated here. Anything listed here will take precedence, h
   },
 
   { "keys": ["super+l"], "command": "expand_selection", "args": {"to": "line"} },
-  { "keys": ["super+d"], "command": "find_under_expand" },
-  { "keys": ["super+k", "super+d"], "command": "find_under_expand_skip" },
+  { "keys": ["alt+w"], "command": "find_under_expand" },
+  { "keys": ["alt+e"], "command": "find_under_expand_skip" },
   { "keys": ["super+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
   { "keys": ["ctrl+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },
   { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "brackets"} },
@@ -180,14 +183,14 @@ and don't need to be repeated here. Anything listed here will take precedence, h
   { "keys": ["super+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
   { "keys": ["super+ctrl+p"], "command": "prompt_select_workspace" },
   { "keys": ["super+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-  { "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+  { "keys": ["super+i"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
   { "keys": ["f12"], "command": "goto_definition" },
   { "keys": ["super+alt+down"], "command": "goto_definition" },
   { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
   { "keys": ["ctrl+minus"], "command": "jump_back" },
   { "keys": ["ctrl+shift+minus"], "command": "jump_forward" },
 
-  { "keys": ["super+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false} },
+  // { "keys": ["super+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false} },
   { "keys": ["super+shift+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse": true} },
   { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
   { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
@@ -209,8 +212,8 @@ and don't need to be repeated here. Anything listed here will take precedence, h
   { "keys": ["ctrl+f6"], "command": "next_misspelling" },
   { "keys": ["ctrl+shift+f6"], "command": "prev_misspelling" },
 
-  { "keys": ["ctrl+super+up"], "command": "swap_line_up" },
-  { "keys": ["ctrl+super+down"], "command": "swap_line_down" },
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" },
 
   { "keys": ["ctrl+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
   { "keys": ["ctrl+delete"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
@@ -219,7 +222,7 @@ and don't need to be repeated here. Anything listed here will take precedence, h
   { "keys": ["super+alt+forward_slash"], "command": "toggle_comment", "args": { "block": true } },
 
   { "keys": ["super+j"], "command": "join_lines" },
-  { "keys": ["super+shift+d"], "command": "duplicate_line" },
+  { "keys": ["super+shift+down"], "command": "duplicate_line" },
 
   { "keys": ["ctrl+backquote"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
@@ -572,7 +575,7 @@ and don't need to be repeated here. Anything listed here will take precedence, h
 
   { "keys": ["ctrl+shift+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
 
-  { "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+  { "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 
   { "keys": ["super+alt+q"], "command": "wrap_lines" },
 
@@ -589,7 +592,7 @@ and don't need to be repeated here. Anything listed here will take precedence, h
   { "keys": ["super+k", "super+9"], "command": "fold_by_level", "args": {"level": 9} },
   { "keys": ["super+k", "super+0"], "command": "unfold_all" },
   { "keys": ["super+k", "super+j"], "command": "unfold_all" },
-  { "keys": ["super+k", "super+t"], "command": "fold_tag_attributes" },
+  { "keys": ["super+k", "super+a"], "command": "fold_tag_attributes" },
 
   { "keys": ["super+alt+o"], "command": "toggle_overwrite" },
 
