@@ -22,7 +22,7 @@
 		"/google/src/cloud/amisarca/protocolbuffers/google3"
 	],
 	"last_version": 3047,
-	"last_window_id": 49,
+	"last_window_id": 51,
 	"log_indexing": false,
 	"settings":
 	{
@@ -142,6 +142,10 @@
 				"selected_items":
 				[
 					[
+						"bro",
+						"Preferences: Browse Packages"
+					],
+					[
 						"broe",
 						"Preferences: Browse Packages"
 					],
@@ -159,10 +163,6 @@
 					],
 					[
 						"brow",
-						"Preferences: Browse Packages"
-					],
-					[
-						"bro",
 						"Preferences: Browse Packages"
 					],
 					[
@@ -290,6 +290,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"super",
+					"ctrl+k",
 					"support",
 					"keyword.language",
 					":",
@@ -569,6 +571,10 @@
 				"selected_items":
 				[
 					[
+						"bro",
+						"Preferences: Browse Packages"
+					],
+					[
 						"broe",
 						"Preferences: Browse Packages"
 					],
@@ -586,10 +592,6 @@
 					],
 					[
 						"brow",
-						"Preferences: Browse Packages"
-					],
-					[
-						"bro",
 						"Preferences: Browse Packages"
 					],
 					[
@@ -717,6 +719,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"super",
+					"ctrl+k",
 					"support",
 					"keyword.language",
 					":",
